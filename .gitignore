@@ -1,3 +1,8 @@
+# PyCharm
+# http://www.jetbrains.com/pycharm/webhelp/project.html
+.idea
+.iml
+
 *.py[cod]
 
 # C extensions
