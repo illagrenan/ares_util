@@ -39,18 +39,39 @@ $ python
 >>> call_ares(42)
 False
 >>> call_ares(27074358)
-{'legal': {'company_name': u'Asseco Central Europe, a.s.', 'business_number': 27074358}, 'address': {'city': u'Praha', 'region': u'Hlavn\xed m\u011bsto Praha', 'street':
+{'legal': {'company_name': u'Asseco Central Europe, a.s.', 'company_id': 27074358}, 'address': {'city': u'Praha', 'region': u'Hlavn\xed m\u011bsto Praha', 'street':
 u'Bud\u011bjovick\xe1 778/3a', 'city_part': u'Michle'}}
 ```
 
 ### Django podpora
 
-> Viz TODOs.
+K dispozi jsou dva [Django validátory](https://docs.djangoproject.com/en/1.6/ref/validators/) formulářových polí:
+
+* `czech_company_id_numeric_validator` - Ověřuje, zda IČ splňuje statické parametry, tj. 8 číslic a kontrolní součet.
+* `czech_company_id_ares_api_validator` - Platnost IČ ověřuje pomocí ARES API. Tento validátor před ARES požadavkem rovněž ověřuje statické parametry, proto by **neměly být použity oba validátory zároveň**.
+
+```python
+# settings.py
+INSTALLED_APPS = (
+    # ...
+    'ares_util',
+)
+
+```
+```python
+from ares_util.validators import czech_company_id_numeric_validator, czech_company_id_ares_api_validator
+from django import forms
+
+# forms.py
+class DemoForm(forms.Form):
+    company_id = forms.IntegerField(required=True, validators=[czech_company_id_ares_api_validator])
+
+```
 
 
 # TODOs
 
-- [ ] Dokončit podporu pro Django (validátory formulářových polí).
+- [X] Dokončit podporu pro Django (validátory formulářových polí).
 - [ ] Travis CI, Coveralls, Crate.io.
 - [ ] Ověřit a případně vyřešit kompatibilitu s Python 3.
 
