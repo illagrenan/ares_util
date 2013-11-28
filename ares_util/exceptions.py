@@ -1,9 +1,9 @@
 # coding=utf-8
 
 
-class ValidationError(Exception):
+class InvalidCompanyIDError(Exception):
     pass
 
 
-class AresNoResponse(Exception):
+class AresNoResponseError(Exception):
     pass

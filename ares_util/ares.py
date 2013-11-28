@@ -4,60 +4,60 @@
 import urllib2
 import sys
 import xmltodict
-from .validators import validate_czech_business_id
-from .exceptions import ValidationError, AresNoResponse
+
+from .exceptions import InvalidCompanyIDError, AresNoResponseError
 
 ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?ico=%s'
 
 
-def call_ares(business_id):
+def call_ares(company_id):
     """
-    Validate given business_id and fetch data from ARES.
+    Validate given company_id and fetch data from ARES.
 
     Example:
     ========
-        >>> invalid_business_id = 42
-        >>> call_ares(invalid_business_id)
+        >>> invalid_company_id = 42
+        >>> call_ares(invalid_company_id)
         False
 
-        >>> valid_business_id = 27074358
-        >>> returned_dict = call_ares(valid_business_id)
-        >>> returned_dict['legal']['business_number'] == valid_business_id
+        >>> valid_company_id = 27074358
+        >>> returned_dict = call_ares(valid_company_id)
+        >>> returned_dict['legal']['business_number'] == valid_company_id
         True
 
     Run doctest:
     ============
         >>> # python -m doctest .\ares.py
 
-    @param business_id: int 8-digit number
+    @param company_id: int 8-digit number
     @return: @raise AresNoResponse:
     """
     try:
-        validate_czech_business_id(business_id)
-    except ValidationError:
+        validate_czech_company_id(company_id)
+    except InvalidCompanyIDError:
         return False
 
-    response = urllib2.urlopen(ARES_API_URL % business_id)
+    response = urllib2.urlopen(ARES_API_URL % company_id)
 
     if response.getcode() != 200:
-        raise AresNoResponse()
+        raise AresNoResponseError()
 
     xml_reponse = response.read()
     ares_data = xmltodict.parse(xml_reponse)
 
-    root = ares_data['are:Ares_odpovedi']['are:Odpoved']
-    number_of_results = root['are:Pocet_zaznamu']
+    response_root = ares_data['are:Ares_odpovedi']['are:Odpoved']
+    number_of_results = response_root['are:Pocet_zaznamu']
 
     if int(number_of_results) == 0:
         return False
 
-    zaznam = root['are:Zaznam']
-    address = zaznam['are:Identifikace']['are:Adresa_ARES']
+    company_record = response_root['are:Zaznam']
+    address = company_record['are:Identifikace']['are:Adresa_ARES']
 
     result_company_info = {
         'legal': {
-            'company_name': zaznam['are:Obchodni_firma'],
-            'business_number': int(zaznam['are:ICO'])
+            'company_name': company_record['are:Obchodni_firma'],
+            'business_number': int(company_record['are:ICO'])
         },
         'address': {
             'region': address['dtt:Nazev_okresu'],
@@ -71,16 +71,42 @@ def call_ares(business_id):
     return result_company_info
 
 
+def validate_czech_company_id(business_id):
+    """
+    http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic
+    http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
+
+    @param business_id:
+    @raise ValidationError:
+    """
+    business_id = str(business_id)
+
+    if len(business_id) != 8:
+        raise InvalidCompanyIDError("Company ID must be 8 digits long")
+
+    try:
+        digits = map(int, list(business_id.rjust(8, "0")))
+    except ValueError:
+        raise InvalidCompanyIDError("Company ID must be a number")
+
+    remainder = sum([digits[i] * (8 - i) for i in range(7)]) % 11
+    cksum = {0: 1, 10: 1, 1: 0}.get(remainder, 11 - remainder)
+    if digits[7] != cksum:
+        raise InvalidCompanyIDError("Wrong Company ID checksum")
+
+    return True
+
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print ('Pass arguments')
+        print ('Pass company ID as a function argument')
         sys.exit(2)
 
-    business_id_to_check = sys.argv[1]
-    ares_response = call_ares(business_id_to_check)
+    company_id_to_check = sys.argv[1]
+    ares_response = call_ares(company_id_to_check)
 
     if not ares_response:
-        print('Business ID "%s" is not valid' % business_id_to_check)
+        print('Company ID "%s" is not valid' % company_id_to_check)
     else:
         print (ares_response)
 
