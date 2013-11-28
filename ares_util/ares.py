@@ -22,7 +22,7 @@ def call_ares(company_id):
 
         >>> valid_company_id = 27074358
         >>> returned_dict = call_ares(valid_company_id)
-        >>> returned_dict['legal']['business_number'] == valid_company_id
+        >>> returned_dict['legal']['company_id'] == valid_company_id
         True
 
     Run doctest:
@@ -57,7 +57,7 @@ def call_ares(company_id):
     result_company_info = {
         'legal': {
             'company_name': company_record['are:Obchodni_firma'],
-            'business_number': int(company_record['are:ICO'])
+            'company_id': int(company_record['are:ICO'])
         },
         'address': {
             'region': address['dtt:Nazev_okresu'],
