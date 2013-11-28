@@ -5,9 +5,10 @@ python:
     - "pypy"
 install:
     - pip install coveralls --use-mirrors
+    - pip install nose --use-mirrors
 script:
-    - python setup.py test
     - python setup.py build
+    - nosetests --with-coverage --cover-package=cstypo --cover-tests --cover-erase --with-doctest
 after_success:
     - coveralls
 notifications:
