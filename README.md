@@ -1,5 +1,7 @@
 # Ares_util #
 
+![Travis CI Badge](https://api.travis-ci.org/illagrenan/ares_util.png)
+
 ## Představení
 
 Jednoduchý nástroj pro validaci<sup>1</sup> českého IČ. U předaného čísla je nejdříve ověřen jeho kontrolní součet (viz [Reference](https://github.com/illagrenan/ares_util/master/README.md#reference)) a dle výsledku se následně zasílá požadavek na [ARES XML API](http://wwwinfo.mfcr.cz/ares/ares_xml.html.cz).
