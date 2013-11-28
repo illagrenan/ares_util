@@ -1,6 +1,8 @@
 # Ares_util #
 
-![Travis CI Badge](https://api.travis-ci.org/illagrenan/ares_util.png)&nbsp;[![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)
+[![Travis CI Badge](https://api.travis-ci.org/illagrenan/ares_util.png)](https://travis-ci.org/illagrenan/ares_util)
+&nbsp;
+[![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)
 
 ## Představení
 
