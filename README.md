@@ -4,7 +4,8 @@
 
 Jednoduchý nástroj pro validaci<sup>1</sup> českého IČ. U předaného čísla je nejdříve ověřen jeho kontrolní součet (viz [Reference](https://github.com/illagrenan/ares_util/master/README.md#reference)) a dle výsledku se následně zasílá požadavek na [ARES XML API](http://wwwinfo.mfcr.cz/ares/ares_xml.html.cz).
 
-Pokud je IČ validní, vracím 
+Pokud je IČ validní, vrací nástroj `dict` se základními údaji o firmě (obchodní název, adresa).
+
 
 > Doporučuji prostudovat [Podmínky provozu ARES API](http://wwwinfo.mfcr.cz/ares/ares_podminky.html.cz), zejména pak:
 > 
@@ -16,6 +17,7 @@ Pokud je IČ validní, vracím
 > * mají větší počet současně zadaných dotazů (pro automatizované XML dotazy),
 > * obcházejí povolené limity využíváním dotazování z většího množství IP adres,
 > * automatizovaně propátrávají databázi náhodnými údaji nebo generují většinu nesprávných dotazů.
+
 
 ## Instalace
 
