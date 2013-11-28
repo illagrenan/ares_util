@@ -4,15 +4,32 @@
 
 ## Instalace
 
-### Závislosti
+```shell
+pip install ares-util
+```
 
 
 ## Použití ##
 
 
+```shell
+$ python
+>>> from ares_util.ares import call_ares
+>>> call_ares(42)
+False
+>>> call_ares(27074358)
+{'legal': {'company_name': u'Asseco Central Europe, a.s.', 'business_number': 27074358}, 'address': {'city': u'Praha', 'region': u'Hlavn\xed m\u011bsto Praha', 'street':
+u'Bud\u011bjovick\xe1 778/3a', 'city_part': u'Michle'}}
+```
+
 ### Django podpora
 
+> Viz TODOs.
 
+# TODOs
+
+- [ ] Dokončit podporu pro Django (validátory formulářových polí)
+- [ ] Travis CI, Coveralls, Crate.io
 
 # Licence
 
