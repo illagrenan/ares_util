@@ -10,7 +10,7 @@ setup(
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
-    long_description=(open('README.rst').read()),
+    long_description=(open('README.md').read()),
     url='https://github.com/illagrenan/ares_util',
     license='MIT',
     author='Vašek Dohnal',

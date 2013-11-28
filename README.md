@@ -1,3 +1,21 @@
+# Ares_util #
+
+## Představení
+
+## Instalace
+
+### Závislosti
+
+
+## Použití ##
+
+
+### Django podpora
+
+
+
+# Licence
+
 The MIT License (MIT)
 
 Copyright (c) 2013 Vašek Dohnal
