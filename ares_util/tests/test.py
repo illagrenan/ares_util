@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # coding=utf-8
 
-from unittest import TestCase
-import unittest
+from unittest2 import TestCase
+import unittest2 as unittest
 from ..ares import call_ares, validate_czech_company_id
 from ..exceptions import InvalidCompanyIDError
 
