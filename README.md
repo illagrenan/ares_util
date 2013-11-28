@@ -64,7 +64,7 @@ from django import forms
 
 # forms.py
 class DemoForm(forms.Form):
-    business_id = forms.IntegerField(required=True, validators=[czech_company_id_ares_api_validator])
+    company_id = forms.IntegerField(required=True, validators=[czech_company_id_ares_api_validator])
 
 ```
 
