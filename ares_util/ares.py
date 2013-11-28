@@ -4,21 +4,15 @@
 import urllib2
 import sys
 import xmltodict
+from .validators import validate_czech_business_id
+from .exceptions import ValidationError, AresNoResponse
 
 ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?ico=%s'
 
 
-class ValidationError(Exception):
-    pass
-
-
-class AresNoResponse(Exception):
-    pass
-
-
-def call_ares(czech_business_id):
+def call_ares(business_id):
     """
-    Foo bar lalala
+    Validate given business_id and fetch data from ARES.
 
     Example:
     ========
@@ -35,16 +29,15 @@ def call_ares(czech_business_id):
     ============
         >>> # python -m doctest .\ares.py
 
-    @param czech_business_id: int 8-digit number
+    @param business_id: int 8-digit number
     @return: @raise AresNoResponse:
     """
     try:
-        # Save API
-        validate_czech_business_id(czech_business_id)
+        validate_czech_business_id(business_id)
     except ValidationError:
         return False
 
-    response = urllib2.urlopen(ARES_API_URL % czech_business_id)
+    response = urllib2.urlopen(ARES_API_URL % business_id)
 
     if response.getcode() != 200:
         raise AresNoResponse()
@@ -59,7 +52,7 @@ def call_ares(czech_business_id):
         return False
 
     zaznam = root['are:Zaznam']
-    adresa = zaznam['are:Identifikace']['are:Adresa_ARES']
+    address = zaznam['are:Identifikace']['are:Adresa_ARES']
 
     result_company_info = {
         'legal': {
@@ -67,32 +60,15 @@ def call_ares(czech_business_id):
             'business_number': int(zaznam['are:ICO'])
         },
         'address': {
-            'region': adresa['dtt:Nazev_okresu'],
-            'city': adresa['dtt:Nazev_obce'],
-            'city_part': adresa['dtt:Nazev_casti_obce'],
-            'street': adresa['dtt:Nazev_ulice'] + " " + adresa['dtt:Cislo_domovni'] + "/" + adresa[
+            'region': address['dtt:Nazev_okresu'],
+            'city': address['dtt:Nazev_obce'],
+            'city_part': address['dtt:Nazev_casti_obce'],
+            'street': address['dtt:Nazev_ulice'] + " " + address['dtt:Cislo_domovni'] + "/" + address[
                 'dtt:Cislo_orientacni'],
         }
     }
 
     return result_company_info
-
-
-def validate_czech_business_id(ico):
-    ico = str(ico)
-
-    if len(ico) != 8:
-        raise ValidationError("IČ musí mít přesně 8 znaků")
-
-    try:
-        digits = map(int, list(ico.rjust(8, "0")))
-    except ValueError:
-        raise ValidationError("IČ není číslo")
-
-    remainder = sum([digits[i] * (8 - i) for i in range(7)]) % 11
-    cksum = {0: 1, 10: 1, 1: 0}.get(remainder, 11 - remainder)
-    if digits[7] != cksum:
-        raise ValidationError("Špatný kontrolní součet IČ")
 
 
 if __name__ == "__main__":

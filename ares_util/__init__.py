@@ -1,1 +1,3 @@
-__author__ = 'Vasek'
+# coding=utf-8
+
+__author__ = 'Vasek Dohnal'

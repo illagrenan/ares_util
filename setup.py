@@ -6,9 +6,11 @@ from setuptools import setup, find_packages
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='ares_util',
-    version='0.0.1',
-    description='Zakladni informace z ARES API.',
-    long_description=(open('README.md').read()),
+    version='0.0.2',
+    description='A tool for information system allowing a retrieval '
+                'of information on economic entities registered in '
+                'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
+    long_description=(open('README.rst').read()),
     url='https://github.com/illagrenan/ares_util',
     license='MIT',
     author='Vašek Dohnal',
@@ -20,11 +22,14 @@ setup(
     packages=find_packages(exclude=['tests*']),
 
 
-    install_requires=['xmltodict',],
-
-    py_modules=['ares'],
+    install_requires=['xmltodict', ],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',
+        'License :: OSI Approved :: MIT License',
+        'Development Status :: 3 - Alpha',
+        'Environment :: Web Environment',
+        'Environment :: Console',
+        'Intended Audience :: Developers'
     ],
 )
