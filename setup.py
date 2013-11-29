@@ -1,16 +1,20 @@
 # coding=utf-8
 
+import os
+
 from setuptools import setup, find_packages
 
+# https://coderwall.com/p/qawuyq
+os.system("pandoc --from=markdown --to=rst README.md -o README.rst")
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='ares_util',
-    version='0.0.3',
+    version='0.0.4',
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
-    long_description=(open('README.md').read()),
+    long_description=(open('README.rst').read()),
     url='https://github.com/illagrenan/ares_util',
     license='MIT',
     author='Vašek Dohnal',
@@ -33,3 +37,5 @@ setup(
         'Intended Audience :: Developers'
     ],
 )
+
+os.remove('README.rst')

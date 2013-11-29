@@ -7,6 +7,8 @@ env:
     - DJANGO_VERSION=1.6
     - DJANGO_VERSION=1.5
 install:
+    - sudo apt-get install pandoc
+    - pip install pypandoc
     - pip install unittest2 --use-mirrors
     - pip install -q Django==$DJANGO_VERSION --use-mirrors
     - pip install xmltodict --use-mirrors
@@ -14,6 +16,8 @@ install:
     - pip install nose --use-mirrors
 script:
     - python setup.py build
+    - python setup.py sdist
+    - python setup.py bdist_wheel
     - nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
 after_success:
     - coveralls
