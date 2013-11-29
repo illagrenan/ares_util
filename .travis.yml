@@ -17,7 +17,6 @@ install:
 script:
     - python setup.py build
     - python setup.py sdist
-    - python setup.py bdist_wheel
     - nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
 after_success:
     - coveralls
