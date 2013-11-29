@@ -74,7 +74,9 @@ class DemoForm(forms.Form):
 # TODOs
 
 - [X] Dokončit podporu pro Django (validátory formulářových polí).
-- [ ] Travis CI, Coveralls, Crate.io.
+- [X] Travis CI, Coveralls
+- [ ] Crate.io
+- [ ] Opravit homepage na pypi
 - [ ] Ověřit a případně vyřešit kompatibilitu s Python 3.
 
 # Reference
