@@ -1,11 +1,7 @@
 # coding=utf-8
 
-import os
-
 from setuptools import setup, find_packages
 
-# https://coderwall.com/p/qawuyq
-os.system("pandoc --from=markdown --to=rst README.md -o README.rst")
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
@@ -14,7 +10,19 @@ setup(
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
+
+    # ########################################################################
+    #
+    # README.rst is generated from README.md:
+    #
+    #   $ pandoc --from=markdown --to=rst README.md -o README.rst
+    #
+    #       ~ OR ~
+    #
+    #   $ fab build
+    # ########################################################################
     long_description=(open('README.rst').read()),
+
     url='https://github.com/illagrenan/ares_util',
     license='MIT',
     author='Vašek Dohnal',
@@ -37,5 +45,3 @@ setup(
         'Intended Audience :: Developers'
     ],
 )
-
-os.remove('README.rst')
