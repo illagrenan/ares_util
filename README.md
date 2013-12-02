@@ -33,7 +33,7 @@ pip install ares-util
 
 ## Použití ##
 
-> Testováno v Python `2.7.*`. Build i testy pro Python 3 na Travisu procházejí, nicméně 100% potvrdit kompatibilitu prozatím nemohu.
+> Testováno v Python `2.7.*`.
 
 ```shell
 $ python
