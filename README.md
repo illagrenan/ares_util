@@ -47,6 +47,8 @@ u'Bud\u011bjovick\xe1 778/3a', 'city_part': u'Michle'}}
 
 ### Django podpora
 
+> Testováno pro Django ve verzi `1.5` a nejnovější `1.6`.
+
 K dispozi jsou dva [Django validátory](https://docs.djangoproject.com/en/1.6/ref/validators/) formulářových polí:
 
 * `czech_company_id_numeric_validator` - Ověřuje, zda IČ splňuje statické parametry, tj. 8 číslic a kontrolní součet.
