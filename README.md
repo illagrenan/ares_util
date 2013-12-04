@@ -47,6 +47,8 @@ u'Bud\u011bjovick\xe1 778/3a', 'city_part': u'Michle'}}
 
 ### Django podpora
 
+> Testováno pro Django ve verzi `1.5` a nejnovější `1.6`.
+
 K dispozi jsou dva [Django validátory](https://docs.djangoproject.com/en/1.6/ref/validators/) formulářových polí:
 
 * `czech_company_id_numeric_validator` - Ověřuje, zda IČ splňuje statické parametry, tj. 8 číslic a kontrolní součet.
@@ -76,8 +78,9 @@ class DemoForm(forms.Form):
 - [X] Dokončit podporu pro Django (validátory formulářových polí).
 - [X] Travis CI, Coveralls
 - [ ] Crate.io
-- [ ] Opravit homepage na pypi
+- [X] Opravit homepage na pypi
 - [ ] Ověřit a případně vyřešit kompatibilitu s Python 3.
+- [ ] Zvážit podporu pro načítání dat i z Justice.cz ([http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz](http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz))
 
 # Reference
 1. http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic, http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
