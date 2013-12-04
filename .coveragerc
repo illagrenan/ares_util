@@ -1,2 +1,8 @@
+# http://nedbatchelder.com/code/coverage/config.html
+
 [report]
 include = ares_util/*
+
+exclude_lines =
+    raise AresNoResponseError()
+    if __name__ == "__main__":

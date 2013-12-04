@@ -63,12 +63,24 @@ def call_ares(company_id):
             'region': address['dtt:Nazev_okresu'],
             'city': address['dtt:Nazev_obce'],
             'city_part': address['dtt:Nazev_casti_obce'],
-            'street': address['dtt:Nazev_ulice'] + " " + address['dtt:Cislo_domovni'] + "/" + address[
-                'dtt:Cislo_orientacni'],
+            'street': address['dtt:Nazev_ulice'] + " " + build_czech_address(address['dtt:Cislo_domovni'], address.get(
+                'dtt:Cislo_orientacni', None)),
         }
     }
 
     return result_company_info
+
+
+def build_czech_address(house_number, orientation_number):
+    """
+    https://cs.wikipedia.org/wiki/Ozna%C4%8Dov%C3%A1n%C3%AD_dom%C5%AF
+
+    číslo popisné/číslo orientační
+    """
+    if not orientation_number:
+        return str(house_number)
+
+    return str(house_number) + "/" + str(orientation_number)
 
 
 def validate_czech_company_id(business_id):

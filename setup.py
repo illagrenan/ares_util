@@ -31,7 +31,8 @@ setup(
     # The exclude makes sure that a top-level tests package doesn’t get
     # installed (it’s still part of the source distribution)
     # since that would wreak havoc.
-    packages=find_packages(exclude=['tests*']),
+    # find_packages(exclude=['tests*'])
+    packages=['ares_util', 'ares_util.ares', 'ares_util.validators'],
 
 
     install_requires=['xmltodict', ],

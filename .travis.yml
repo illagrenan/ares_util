@@ -9,6 +9,7 @@ env:
 install:
     - sudo apt-get install pandoc
     - pip install pypandoc
+
     - pip install unittest2 --use-mirrors
     - pip install -q Django==$DJANGO_VERSION --use-mirrors
     - pip install xmltodict --use-mirrors
@@ -17,7 +18,7 @@ install:
 script:
     - python setup.py build
     - python setup.py sdist
-    - nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
+    - nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
 after_success:
     - coveralls
 notifications:
