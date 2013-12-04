@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='ares_util',
-    version='0.0.5',
+    version='0.0.6',
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
@@ -32,7 +32,7 @@ setup(
     # installed (it’s still part of the source distribution)
     # since that would wreak havoc.
     # find_packages(exclude=['tests*'])
-    packages=['ares_util', 'ares_util.ares', 'ares_util.validators'],
+    packages=['ares_util'],
 
 
     install_requires=['xmltodict', ],

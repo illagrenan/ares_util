@@ -1,19 +1,7 @@
 # coding=utf-8
 
-
-#$ python setup.py sdist
-#$ python setup.py bdist_wheel
-#
-#$ pip install --no-index dist/*.zip
-#$ pip install --use-wheel --no-index --find-links dist ares_util
-#
-#$ pip uninstall ares_util
-#$ easy_install -U pip
-#$ pip install setuptools --upgrade
-#
-#$ python setup.py sdist upload -r pypi
-#$ python setup.py bdist_wheel upload -r pypi
 from fabric import colors
+from fabric.context_managers import settings
 from fabric.contrib.console import confirm
 from fabric.operations import local
 
@@ -33,6 +21,14 @@ def update_package_tools():
     local("pip install setuptools --upgrade")
 
     _print_success("Updated.")
+
+
+def test_install():
+    local("easy_install -U pip")
+    local("pip install setuptools --upgrade")
+    with settings(warn_only=True):
+        local("pip uninstall ares_util --yes")
+    local("pip install --use-wheel --no-index --find-links dist ares_util")
 
 
 def build():
