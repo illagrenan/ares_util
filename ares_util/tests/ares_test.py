@@ -2,7 +2,6 @@
 # coding=utf-8
 
 from unittest2 import TestCase
-import unittest2 as unittest
 from ..ares import call_ares
 
 
@@ -25,7 +24,3 @@ class CallARESTestCase(TestCase):
         # ČVUT v Praze
         expected = "Zikova 1903"
         self.assertEqual(actual, expected)
-
-
-if __name__ == '__main__':
-    unittest.main()

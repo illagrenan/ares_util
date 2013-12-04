@@ -2,7 +2,6 @@
 # coding=utf-8
 
 from unittest2 import TestCase
-import unittest2 as unittest
 from ..ares import build_czech_address
 
 
@@ -23,7 +22,3 @@ class AddressTestCase(TestCase):
         expected = "64"
         actual = build_czech_address(house_number=64, orientation_number=False)
         self.assertEqual(expected, actual)
-
-
-if __name__ == '__main__':
-    unittest.main()
