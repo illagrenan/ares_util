@@ -24,3 +24,8 @@ class CallARESTestCase(TestCase):
         # ČVUT v Praze
         expected = "Zikova 1903"
         self.assertEqual(actual, expected)
+
+        try:
+            call_ares(company_id=62739913)
+        except KeyError as error:
+            self.fail(error)

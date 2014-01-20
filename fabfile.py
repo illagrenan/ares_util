@@ -31,6 +31,11 @@ def test_install():
     local("pip install --use-wheel --no-index --find-links dist ares_util")
 
 
+def test():
+    local("nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest")
+    _print_success("Done.")
+
+
 def build():
     # https://coderwall.com/p/qawuyq
     local("nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest")

@@ -55,6 +55,8 @@ Použití
 Django podpora
 ~~~~~~~~~~~~~~
 
+    Testováno pro Django ve verzi ``1.5`` a nejnovější ``1.6``.
+
 K dispozi jsou dva `Django
 validátory <https://docs.djangoproject.com/en/1.6/ref/validators/>`__
 formulářových polí:
@@ -89,8 +91,10 @@ TODOs
 -  [X] Dokončit podporu pro Django (validátory formulářových polí).
 -  [X] Travis CI, Coveralls
 -  [ ] Crate.io
--  [ ] Opravit homepage na pypi
+-  [X] Opravit homepage na pypi
 -  [ ] Ověřit a případně vyřešit kompatibilitu s Python 3.
+-  [ ] Zvážit podporu pro načítání dat i z Justice.cz
+   (http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz)
 
 Reference
 =========

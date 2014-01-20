@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='ares_util',
-    version='0.0.6',
+    version='0.0.8',
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',

@@ -60,10 +60,10 @@ def call_ares(company_id):
             'company_id': int(company_record['are:ICO'])
         },
         'address': {
-            'region': address['dtt:Nazev_okresu'],
+            'region': address.get('dtt:Nazev_okresu', None),
             'city': address['dtt:Nazev_obce'],
-            'city_part': address['dtt:Nazev_casti_obce'],
-            'street': address['dtt:Nazev_ulice'] + " " + build_czech_address(address['dtt:Cislo_domovni'], address.get(
+            'city_part': address.get('dtt:Nazev_casti_obce', None),
+            'street': address['dtt:Nazev_ulice'] + " " + build_czech_address(address.get('dtt:Cislo_domovni', None), address.get(
                 'dtt:Cislo_orientacni', None)),
         }
     }
