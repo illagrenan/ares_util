@@ -26,6 +26,7 @@ class CallARESTestCase(TestCase):
         self.assertEqual(actual, expected)
 
         try:
-            call_ares(company_id=62739913)
+            for id in (62739913, 25063677):
+                call_ares(company_id=id)
         except KeyError as error:
             self.fail(error)

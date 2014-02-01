@@ -9,3 +9,4 @@ unittest2
 wheel
 wsgiref
 xmltodict
+colorama

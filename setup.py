@@ -1,12 +1,12 @@
 # coding=utf-8
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='ares_util',
-    version='0.0.8',
+    version='0.1.0',
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',

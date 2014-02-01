@@ -3,10 +3,11 @@
 from fabric import colors
 from fabric.context_managers import settings
 from fabric.contrib.console import confirm
+from fabric.decorators import task
 from fabric.operations import local
 
 
-def _print_success(message):
+def print_success(message):
     try:
         from colorama import init, Back
 
@@ -16,26 +17,35 @@ def _print_success(message):
         print(colors.green(u"%s" % message, bold=True))
 
 
+@task()
 def update_package_tools():
     local("easy_install -U pip")
     local("pip install setuptools --upgrade")
 
-    _print_success("Updated.")
+    print_success("Updated.")
 
 
+@task()
+def install_requirements():
+    local("pip install -r .\\requirements.txt --upgrade")
+
+    print_success("Installed || Updated.")
+
+@task()
 def test_install():
-    local("easy_install -U pip")
-    local("pip install setuptools --upgrade")
+    update_package_tools()
     with settings(warn_only=True):
         local("pip uninstall ares_util --yes")
     local("pip install --use-wheel --no-index --find-links dist ares_util")
 
 
+@task()
 def test():
     local("nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest")
-    _print_success("Done.")
+    print_success("Done.")
 
 
+@task()
 def build():
     # https://coderwall.com/p/qawuyq
     local("nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest")
@@ -43,12 +53,13 @@ def build():
     local("python setup.py sdist")
     local("python setup.py bdist_wheel")
 
-    _print_success("Done.")
+    print_success("Done.")
 
 
+@task()
 def publish():
     if confirm(u'Really publish?', default=False):
         local('python setup.py sdist upload -r pypi')
         local('python setup.py bdist_wheel upload -r pypi')
 
-        _print_success("Published.")
+        print_success("Published.")

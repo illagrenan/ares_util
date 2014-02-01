@@ -3,9 +3,11 @@
 
 import urllib2
 import sys
+
 import xmltodict
 
 from .exceptions import InvalidCompanyIDError, AresNoResponseError
+
 
 ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?ico=%s'
 
@@ -56,15 +58,17 @@ def call_ares(company_id):
 
     result_company_info = {
         'legal': {
-            'company_name': company_record['are:Obchodni_firma'],
-            'company_id': int(company_record['are:ICO'])
+            'company_name': company_record.get('are:Obchodni_firma', None),
+            'company_id': int(company_record['are:ICO']),
+            'legal_form': get_legal_form(company_record.get('are:Pravni_forma', None))
         },
         'address': {
             'region': address.get('dtt:Nazev_okresu', None),
-            'city': address['dtt:Nazev_obce'],
+            'city': address.get('dtt:Nazev_obce', None),
             'city_part': address.get('dtt:Nazev_casti_obce', None),
-            'street': address['dtt:Nazev_ulice'] + " " + build_czech_address(address.get('dtt:Cislo_domovni', None), address.get(
-                'dtt:Cislo_orientacni', None)),
+            'street': address.get('dtt:Nazev_ulice', str()) + " " + build_czech_address(
+                address.get('dtt:Cislo_domovni', None), address.get(
+                    'dtt:Cislo_orientacni', None)),
         }
     }
 
@@ -81,6 +85,19 @@ def build_czech_address(house_number, orientation_number):
         return str(house_number)
 
     return str(house_number) + "/" + str(orientation_number)
+
+
+def get_legal_form(legal_form):
+    """
+    http://wwwinfo.mfcr.cz/ares/aresPrFor.html.cz
+
+    @param legal_form:
+    @return:
+    """
+    if legal_form:
+        return legal_form.get('dtt:Kod_PF', None)
+
+    return None
 
 
 def validate_czech_company_id(business_id):
