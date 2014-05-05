@@ -22,7 +22,7 @@ class CallARESTestCase(TestCase):
 
         actual = call_ares(company_id=68407700)['address']['street']
         # ČVUT v Praze
-        expected = "Zikova 1903"
+        expected = "Zikova 1903/2"
         self.assertEqual(actual, expected)
 
         try:

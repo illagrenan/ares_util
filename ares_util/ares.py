@@ -1,4 +1,4 @@
-#!/usr/bin/python
+# !/usr/bin/python
 # coding=utf-8
 
 import urllib2
@@ -69,6 +69,7 @@ def call_ares(company_id):
             'street': address.get('dtt:Nazev_ulice', str()) + " " + build_czech_address(
                 address.get('dtt:Cislo_domovni', None), address.get(
                     'dtt:Cislo_orientacni', None)),
+            'zip_code': address.get('dtt:PSC', None)
         }
     }
 
