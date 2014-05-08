@@ -5,6 +5,13 @@
 [![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)
 &nbsp;
 [![PyPI version](https://badge.fury.io/py/ares_util.png)](http://badge.fury.io/py/ares_util)
+&nbsp;
+[![Wheel Status](https://pypip.in/wheel/ares_util/badge.png)](https://pypi.python.org/pypi/ares_util/)
+&nbsp;
+[![Egg Status](https://pypip.in/egg/ares_util/badge.png)](https://pypi.python.org/pypi/ares_util/)
+&nbsp;
+[![License](https://pypip.in/license/ares_util/badge.png)](https://pypi.python.org/pypi/ares_util/)
+
 
 ## Představení
 
