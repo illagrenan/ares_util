@@ -9,7 +9,7 @@ import xmltodict
 from .exceptions import InvalidCompanyIDError, AresNoResponseError
 
 
-ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?ico=%s'
+ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi?ico=%s'
 
 
 def call_ares(company_id):
@@ -48,44 +48,49 @@ def call_ares(company_id):
     ares_data = xmltodict.parse(xml_reponse)
 
     response_root = ares_data['are:Ares_odpovedi']['are:Odpoved']
-    number_of_results = response_root['are:Pocet_zaznamu']
+    number_of_results = response_root['D:PZA']
 
     if int(number_of_results) == 0:
         return False
 
-    company_record = response_root['are:Zaznam']
-    address = company_record['are:Identifikace']['are:Adresa_ARES']
+    company_record = response_root['D:VBAS']
+    address = company_record['D:AA']
 
     result_company_info = {
         'legal': {
-            'company_name': company_record.get('are:Obchodni_firma', None),
-            'company_id': int(company_record['are:ICO']),
-            'legal_form': get_legal_form(company_record.get('are:Pravni_forma', None))
+            'company_name': get_text_value(company_record.get('D:OF', None)),
+            'company_id': int(get_text_value(company_record.get('D:ICO', None))),
+            'company_vat_id': get_text_value(company_record.get('D:DIC', None)),
+            'legal_form': get_legal_form(company_record.get('D:PF', None))
         },
         'address': {
-            'region': address.get('dtt:Nazev_okresu', None),
-            'city': address.get('dtt:Nazev_obce', None),
-            'city_part': address.get('dtt:Nazev_casti_obce', None),
-            'street': address.get('dtt:Nazev_ulice', str()) + " " + build_czech_address(
-                address.get('dtt:Cislo_domovni', None), address.get(
-                    'dtt:Cislo_orientacni', None)),
-            'zip_code': address.get('dtt:PSC', None)
+            'region': address.get('D:NOK', None),
+            'city': address.get('D:N', None),
+            'city_part': address.get('D:NCO', None),
+            'street': build_czech_street(address.get('D:NU', str()), address.get('D:N', None),
+                                         address.get('D:NCO', None), address.get('D:CD', None),
+                                         address.get('D:CO', None)),
+            'zip_code': address.get('D:PSC', None)
         }
     }
-
     return result_company_info
 
 
-def build_czech_address(house_number, orientation_number):
+def get_text_value(node):
+    return node.get('#text', None) if node else None
+
+
+def build_czech_street(street_name, city_name, neighborhood, house_number, orientation_number):
     """
     https://cs.wikipedia.org/wiki/Ozna%C4%8Dov%C3%A1n%C3%AD_dom%C5%AF
 
     číslo popisné/číslo orientační
     """
+    street_name = street_name or neighborhood or city_name  # Fallback in case of a small village
     if not orientation_number:
-        return str(house_number)
+        return street_name + ' ' + str(house_number)
 
-    return str(house_number) + "/" + str(orientation_number)
+    return street_name + ' ' + str(house_number) + "/" + str(orientation_number)
 
 
 def get_legal_form(legal_form):
@@ -96,7 +101,7 @@ def get_legal_form(legal_form):
     @return:
     """
     if legal_form:
-        return legal_form.get('dtt:Kod_PF', None)
+        return legal_form.get('D:KPF', None)
 
     return None
 
