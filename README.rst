@@ -1,7 +1,8 @@
 Ares\_util
 ==========
 
-|Travis CI Badge|   |Coverage Status|   |PyPI version|
+|Travis CI Badge|   |Coverage Status|   |PyPI version|   |Wheel Status|
+  |Egg Status|   |License|
 
 Představení
 -----------
@@ -140,3 +141,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
    :target: https://coveralls.io/r/illagrenan/ares_util
 .. |PyPI version| image:: https://badge.fury.io/py/ares_util.png
    :target: http://badge.fury.io/py/ares_util
+.. |Wheel Status| image:: https://pypip.in/wheel/ares_util/badge.png
+   :target: https://pypi.python.org/pypi/ares_util/
+.. |Egg Status| image:: https://pypip.in/egg/ares_util/badge.png
+   :target: https://pypi.python.org/pypi/ares_util/
+.. |License| image:: https://pypip.in/license/ares_util/badge.png
+   :target: https://pypi.python.org/pypi/ares_util/
