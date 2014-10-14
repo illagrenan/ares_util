@@ -28,7 +28,7 @@ def update_package_tools():
 
 @task()
 def install_requirements():
-    local("pip install -r .\\requirements.txt --upgrade")
+    local("pip install -r .\\requirements.txt --upgrade --use-wheel")
 
     print_success("Installed || Updated.")
 
