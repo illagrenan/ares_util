@@ -3,16 +3,18 @@
 
 from __future__ import unicode_literals
 
-import urllib2
 import sys
 import warnings
 
+from httpcache import CachingHTTPAdapter
+import requests
 import xmltodict
 
 from .exceptions import InvalidCompanyIDError, AresNoResponseError
 
+
 COMPANY_ID_LENGTH = 8
-ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi?ico=%s'
+ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi'
 
 
 def call_ares(company_id):
@@ -42,12 +44,17 @@ def call_ares(company_id):
     except InvalidCompanyIDError:
         return False
 
-    response = urllib2.urlopen(ARES_API_URL % company_id)
+    params = {'ico': company_id}
 
-    if response.getcode() != 200:
+    s = requests.Session()
+    s.mount('http://', CachingHTTPAdapter())
+    s.mount('https://', CachingHTTPAdapter())
+    response = requests.get(ARES_API_URL, params=params)
+
+    if response.status_code != 200:
         raise AresNoResponseError()
 
-    xml_reponse = response.read()
+    xml_reponse = response.text
     ares_data = xmltodict.parse(xml_reponse)
 
     response_root = ares_data['are:Ares_odpovedi']['are:Odpoved']

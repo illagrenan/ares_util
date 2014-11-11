@@ -1,7 +1,8 @@
 # coding=utf-8
 
-from setuptools import setup
+from __future__ import unicode_literals
 
+from setuptools import setup
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
@@ -15,9 +16,9 @@ setup(
     #
     # README.rst is generated from README.md:
     #
-    #   $ pandoc --from=markdown --to=rst README.md -o README.rst
+    # $ pandoc --from=markdown --to=rst README.md -o README.rst
     #
-    #       ~ OR ~
+    # ~ OR ~
     #
     #   $ fab build
     # ########################################################################
@@ -35,7 +36,7 @@ setup(
     packages=['ares_util'],
 
 
-    install_requires=['xmltodict', ],
+    install_requires=['xmltodict', 'requests', 'httpcache', ],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',

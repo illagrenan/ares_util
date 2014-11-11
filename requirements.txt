@@ -10,3 +10,5 @@ wheel
 wsgiref
 xmltodict
 colorama
+requests
+httpcache
