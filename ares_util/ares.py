@@ -49,8 +49,8 @@ def call_ares(company_id):
     if response.status_code != 200:
         raise AresNoResponseError()
 
-    xml_reponse = response.text
-    ares_data = xmltodict.parse(xml_reponse)
+    xml_response = response.text
+    ares_data = xmltodict.parse(xml_response)
 
     response_root = ares_data['are:Ares_odpovedi']['are:Odpoved']
     number_of_results = response_root['D:PZA']
