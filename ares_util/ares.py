@@ -6,7 +6,6 @@ from __future__ import unicode_literals
 import sys
 import warnings
 
-from httpcache import CachingHTTPAdapter
 import requests
 import xmltodict
 
@@ -45,10 +44,6 @@ def call_ares(company_id):
         return False
 
     params = {'ico': company_id}
-
-    s = requests.Session()
-    s.mount('http://', CachingHTTPAdapter())
-    s.mount('https://', CachingHTTPAdapter())
     response = requests.get(ARES_API_URL, params=params)
 
     if response.status_code != 200:

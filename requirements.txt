@@ -11,4 +11,3 @@ wsgiref
 xmltodict
 colorama
 requests
-httpcache

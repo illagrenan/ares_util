@@ -1,7 +1,5 @@
 # coding=utf-8
 
-from __future__ import unicode_literals
-
 from setuptools import setup
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
@@ -20,7 +18,7 @@ setup(
     #
     # ~ OR ~
     #
-    #   $ fab build
+    # $ fab build
     # ########################################################################
     long_description=(open('README.rst').read()),
 
@@ -36,7 +34,7 @@ setup(
     packages=['ares_util'],
 
 
-    install_requires=['xmltodict', 'requests', 'httpcache', ],
+    install_requires=['xmltodict', 'requests', ],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',

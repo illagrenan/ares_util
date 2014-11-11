@@ -34,7 +34,6 @@ def install_requirements():
 
 @task()
 def test_install():
-    update_package_tools()
     with settings(warn_only=True):
         local("pip uninstall ares_util --yes")
         print_success("Uninstall OK.")
@@ -53,7 +52,7 @@ def test():
 @task()
 def build():
     # https://coderwall.com/p/qawuyq
-    test()
+    # test()
     local("pandoc --from=markdown --to=rst README.md -o README.rst")
     local("python setup.py sdist")
     local("python setup.py bdist_wheel")
