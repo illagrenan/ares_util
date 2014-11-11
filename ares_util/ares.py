@@ -11,7 +11,7 @@ import xmltodict
 
 from .exceptions import InvalidCompanyIDError, AresNoResponseError
 
-
+COMPANY_ID_LENGTH = 8
 ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi?ico=%s'
 
 
@@ -122,17 +122,17 @@ def validate_czech_company_id(business_id):
         warnings.warn("In version 0.1.5 integer parameter will be invalid. "
                       "Use string instead.", DeprecationWarning, stacklevel=2)
 
-    business_id = str(business_id)
+    business_id = unicode(business_id)
 
-    if len(business_id) != 8:
-        raise InvalidCompanyIDError("Company ID must be 8 digits long")
+    # if len(business_id) != 8:
+    # raise InvalidCompanyIDError("Company ID must be 8 digits long")
 
     try:
-        digits = map(int, list(business_id.rjust(8, "0")))
+        digits = map(int, list(business_id.rjust(COMPANY_ID_LENGTH, "0")))
     except ValueError:
         raise InvalidCompanyIDError("Company ID must be a number")
 
-    remainder = sum([digits[i] * (8 - i) for i in range(7)]) % 11
+    remainder = sum([digits[i] * (COMPANY_ID_LENGTH - i) for i in range(7)]) % 11
     cksum = {0: 1, 10: 1, 1: 0}.get(remainder, 11 - remainder)
     if digits[7] != cksum:
         raise InvalidCompanyIDError("Wrong Company ID checksum")
