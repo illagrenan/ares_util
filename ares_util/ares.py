@@ -1,8 +1,11 @@
 # !/usr/bin/python
 # coding=utf-8
 
+from __future__ import unicode_literals
+
 import urllib2
 import sys
+import warnings
 
 import xmltodict
 
@@ -111,9 +114,14 @@ def validate_czech_company_id(business_id):
     http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic
     http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
 
-    @param business_id:
+    @param business_id: str
     @raise ValidationError:
     """
+
+    if isinstance(business_id, int):
+        warnings.warn("In version 0.1.5 integer parameter will be invalid. "
+                      "Use string instead.", DeprecationWarning, stacklevel=2)
+
     business_id = str(business_id)
 
     if len(business_id) != 8:
