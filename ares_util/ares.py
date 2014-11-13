@@ -1,15 +1,18 @@
 # !/usr/bin/python
 # coding=utf-8
 
-import urllib2
-import sys
+from __future__ import unicode_literals
 
+import sys
+import warnings
+
+import requests
 import xmltodict
 
+from .settings import ARES_API_URL, COMPANY_ID_LENGTH
+
+from .helpers import normalize_company_id_length
 from .exceptions import InvalidCompanyIDError, AresNoResponseError
-
-
-ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi?ico=%s'
 
 
 def call_ares(company_id):
@@ -27,10 +30,6 @@ def call_ares(company_id):
         >>> returned_dict['legal']['company_id'] == valid_company_id
         True
 
-    Run doctest:
-    ============
-        >>> # python -m doctest .\ares.py
-
     @param company_id: int 8-digit number
     @return: @raise AresNoResponse:
     """
@@ -39,13 +38,14 @@ def call_ares(company_id):
     except InvalidCompanyIDError:
         return False
 
-    response = urllib2.urlopen(ARES_API_URL % company_id)
+    params = {'ico': company_id}
+    response = requests.get(ARES_API_URL, params=params)
 
-    if response.getcode() != 200:
+    if response.status_code != 200:
         raise AresNoResponseError()
 
-    xml_reponse = response.read()
-    ares_data = xmltodict.parse(xml_reponse)
+    xml_response = response.text
+    ares_data = xmltodict.parse(xml_response)
 
     response_root = ares_data['are:Ares_odpovedi']['are:Odpoved']
     number_of_results = response_root['D:PZA']
@@ -111,20 +111,25 @@ def validate_czech_company_id(business_id):
     http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic
     http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
 
-    @param business_id:
+    @param business_id: str
     @raise ValidationError:
     """
-    business_id = str(business_id)
 
-    if len(business_id) != 8:
-        raise InvalidCompanyIDError("Company ID must be 8 digits long")
+    if isinstance(business_id, int):
+        warnings.warn("In version 0.1.5 integer parameter will be invalid. "
+                      "Use string instead.", DeprecationWarning, stacklevel=2)
+
+    business_id = unicode(business_id)
+
+    # if len(business_id) != 8:
+    # raise InvalidCompanyIDError("Company ID must be 8 digits long")
 
     try:
-        digits = map(int, list(business_id.rjust(8, "0")))
+        digits = map(int, list(normalize_company_id_length(business_id)))
     except ValueError:
         raise InvalidCompanyIDError("Company ID must be a number")
 
-    remainder = sum([digits[i] * (8 - i) for i in range(7)]) % 11
+    remainder = sum([digits[i] * (COMPANY_ID_LENGTH - i) for i in range(7)]) % 11
     cksum = {0: 1, 10: 1, 1: 0}.get(remainder, 11 - remainder)
     if digits[7] != cksum:
         raise InvalidCompanyIDError("Wrong Company ID checksum")

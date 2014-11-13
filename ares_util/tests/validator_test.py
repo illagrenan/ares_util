@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # coding=utf-8
 
+from __future__ import unicode_literals
+
 from unittest2 import TestCase
 from django.core.exceptions import ValidationError
 
@@ -11,7 +13,7 @@ from ..exceptions import InvalidCompanyIDError
 
 class ValidateCzechBusinessIdTestCase(TestCase):
     invalid_values = [1234567, 12345678, "foo", "abcdefgh"]
-    valid_values = [68407700, 27074358, 27604977, 26168685, 25596641, 62739913]
+    valid_values = [68407700, 27074358, 27604977, 26168685, 25596641, 62739913, "1603094", "01603094"]
 
     def test_invalid_values(self):
         for invalid_value in self.invalid_values:

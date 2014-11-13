@@ -10,3 +10,4 @@ wheel
 wsgiref
 xmltodict
 colorama
+requests
