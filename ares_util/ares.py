@@ -21,14 +21,14 @@ def call_ares(company_id):
 
     Example:
     ========
-    >>> invalid_company_id = 42
-    >>> call_ares(invalid_company_id)
-    False
+        >>> invalid_company_id = 42
+        >>> call_ares(invalid_company_id)
+        False
 
-    >>> valid_company_id = "27074358"
-    >>> returned_dict = call_ares(valid_company_id)
-    >>> returned_dict['legal']['company_id'] == valid_company_id
-    True
+        >>> valid_company_id = "27074358"
+        >>> returned_dict = call_ares(valid_company_id)
+        >>> returned_dict['legal']['company_id'] == valid_company_id
+        True
 
     @param company_id: int 8-digit number
     @return: @raise AresNoResponse:

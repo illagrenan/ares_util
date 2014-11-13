@@ -12,13 +12,13 @@ def normalize_company_id_length(business_id):
 
     Example:
     ========
-    >>> company_id = "27074358"
-    >>> normalize_company_id_length(company_id) == "27074358"
-    True
+        >>> company_id = "27074358"
+        >>> normalize_company_id_length(company_id) == "27074358"
+        True
 
-    >>> company_id = "2707435"
-    >>> normalize_company_id_length(company_id) == "02707435"
-    True
+        >>> company_id = "2707435"
+        >>> normalize_company_id_length(company_id) == "02707435"
+        True
 
     @type business_id: unicode_literals
     @rtype : unicode_literals

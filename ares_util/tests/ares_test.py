@@ -4,7 +4,9 @@
 from __future__ import unicode_literals
 
 from unittest2 import TestCase
+
 from ..ares import call_ares
+from ..helpers import normalize_company_id_length
 
 
 class CallARESTestCase(TestCase):
@@ -32,6 +34,6 @@ class CallARESTestCase(TestCase):
         try:
             for one_id in other_valid_company_ids:
                 ares_data = call_ares(company_id=one_id)
-                self.assertEqual(one_id, ares_data['legal']['company_id'])
+                self.assertEqual(normalize_company_id_length(one_id), ares_data['legal']['company_id'])
         except KeyError as error:
             self.fail(error)
