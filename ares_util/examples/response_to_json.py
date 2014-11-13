@@ -6,7 +6,7 @@ import os
 import sys
 import json
 
-sys.path.insert(1, os.path.normpath('../..'))
+sys.path.insert(1, os.path.join(os.path.dirname(os.path.realpath(__file__)), '../..'))
 
 
 def main():
