@@ -1,4 +1,4 @@
-Django<=1.6.9
+django>=1.5,<1.8
 Fabric
 coverage
 ecdsa
@@ -10,4 +10,3 @@ wheel
 wsgiref
 xmltodict
 colorama
-requests

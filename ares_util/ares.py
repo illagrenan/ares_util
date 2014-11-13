@@ -4,9 +4,10 @@
 from __future__ import unicode_literals
 
 import sys
+import urllib
+import urllib2
 import warnings
 
-import requests
 import xmltodict
 
 from .settings import ARES_API_URL, COMPANY_ID_LENGTH
@@ -38,13 +39,13 @@ def call_ares(company_id):
     except InvalidCompanyIDError:
         return False
 
-    params = {'ico': company_id}
-    response = requests.get(ARES_API_URL, params=params)
+    params = urllib.urlencode({'ico': company_id})
+    response = urllib2.urlopen(ARES_API_URL + "?%s" % params)
 
-    if response.status_code != 200:
+    if response.getcode() != 200:
         raise AresNoResponseError()
 
-    xml_response = response.text
+    xml_response = response.read()
     ares_data = xmltodict.parse(xml_response)
 
     response_root = ares_data['are:Ares_odpovedi']['are:Odpoved']

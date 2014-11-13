@@ -55,18 +55,30 @@ $ python
 >>> from ares_util.ares import call_ares
 >>> call_ares(42)
 False
->>> call_ares(27074358)
-{'legal': {'company_name': u'Asseco Central Europe, a.s.', 'company_id': 27074358}, 'address': {'city': u'Praha', 'region': u'Hlavn\xed m\u011bsto Praha', 'street':
-u'Bud\u011bjovick\xe1 778/3a', 'city_part': u'Michle'}}
+>>> call_ares('68407700')
+{
+    u'legal': {
+        u'company_vat_id': u'CZ68407700',
+        u'company_name': u'České vysoké učení technické v Praze',
+        u'legal_form': u'601', u'company_id': u'68407700'
+    },
+    u'address': {
+        u'city': u'Praha',
+		u'region': u'Hlavní město Praha',
+		u'street': u'Zikova 1903/4',
+        u'city_part': u'Dejvice',
+		u'zip_code': u'16000'
+    }
+}
 ```
 
 ### Django podpora
 
-> Testováno pro Django ve verzi `1.5` a nejnovější `1.6`.
+> Testováno pro Django `>=1.5.*,<=1.7.*`.
 
-K dispozi jsou dva [Django validátory](https://docs.djangoproject.com/en/1.6/ref/validators/) formulářových polí:
+K dispozi jsou dva [Django validátory](https://docs.djangoproject.com/en/dev/ref/validators/) formulářových polí:
 
-* `czech_company_id_numeric_validator` - Ověřuje, zda IČ splňuje statické parametry, tj. 8 číslic a kontrolní součet.
+* `czech_company_id_numeric_validator` - Ověřuje, zda IČ splňuje statické parametry, tj. 7 nebo 8 číslic a kontrolní součet.
 * `czech_company_id_ares_api_validator` - Platnost IČ ověřuje pomocí ARES API. Tento validátor před ARES požadavkem rovněž ověřuje statické parametry, proto by **neměly být použity oba validátory zároveň**.
 
 ```python

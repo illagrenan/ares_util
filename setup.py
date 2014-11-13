@@ -5,7 +5,7 @@ from setuptools import setup
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='ares_util',
-    version='0.1.2',
+    version='0.1.3',
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
@@ -34,7 +34,7 @@ setup(
     packages=['ares_util'],
 
 
-    install_requires=['xmltodict', 'requests', ],
+    install_requires=['xmltodict', ],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',
