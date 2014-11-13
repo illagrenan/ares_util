@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 
 from unittest2 import TestCase
 
-from ..ares import call_ares
+from ..ares import call_ares, get_legal_form
 from ..helpers import normalize_company_id_length
 
 
@@ -37,3 +37,20 @@ class CallARESTestCase(TestCase):
                 self.assertEqual(normalize_company_id_length(one_id), ares_data['legal']['company_id'])
         except KeyError as error:
             self.fail(error)
+
+
+class LegalFormTest(TestCase):
+    def test_get_legal_form_if_present(self):
+        valid_legal_form = "121"
+
+        valid_partial_ares_api_response = {
+            'D:KPF': valid_legal_form
+        }
+
+        actual_legal_form = get_legal_form(valid_partial_ares_api_response)
+        self.assertEqual(valid_legal_form, actual_legal_form)
+
+    def test_get_none_if_legal_form_not_present(self):
+        empty_ares_api_call_response = {}
+
+        self.assertIsNone(get_legal_form(empty_ares_api_call_response))
