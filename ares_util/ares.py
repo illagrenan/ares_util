@@ -26,7 +26,7 @@ def call_ares(company_id):
         >>> call_ares(invalid_company_id)
         False
 
-        >>> valid_company_id = 27074358
+        >>> valid_company_id = "27074358"
         >>> returned_dict = call_ares(valid_company_id)
         >>> returned_dict['legal']['company_id'] == valid_company_id
         True
@@ -64,7 +64,7 @@ def call_ares(company_id):
     result_company_info = {
         'legal': {
             'company_name': get_text_value(company_record.get('D:OF', None)),
-            'company_id': int(get_text_value(company_record.get('D:ICO', None))),
+            'company_id': get_text_value(company_record.get('D:ICO', None)),
             'company_vat_id': get_text_value(company_record.get('D:DIC', None)),
             'legal_form': get_legal_form(company_record.get('D:PF', None))
         },
