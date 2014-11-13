@@ -34,8 +34,16 @@ Pokud je IČ validní, vrací nástroj `dict` se základními údaji o firmě (o
 
 ## Instalace
 
+**A)** Stabilní verze (doporučeno)
+
 ```shell
-pip install ares-util
+pip install --upgrade ares-util
+```
+
+**B)** Vývojová verze
+
+```shell
+pip install --upgrade git+git://github.com/illagrenan/ares_util.git
 ```
 
 ## Použití ##
