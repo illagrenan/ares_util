@@ -9,11 +9,10 @@ import warnings
 import requests
 import xmltodict
 
+from .settings import ARES_API_URL, COMPANY_ID_LENGTH
+
+from .helpers import normalize_company_id_length
 from .exceptions import InvalidCompanyIDError, AresNoResponseError
-
-
-COMPANY_ID_LENGTH = 8
-ARES_API_URL = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi'
 
 
 def call_ares(company_id):
@@ -22,18 +21,14 @@ def call_ares(company_id):
 
     Example:
     ========
-        >>> invalid_company_id = 42
-        >>> call_ares(invalid_company_id)
-        False
+    >>> invalid_company_id = 42
+    >>> call_ares(invalid_company_id)
+    False
 
-        >>> valid_company_id = "27074358"
-        >>> returned_dict = call_ares(valid_company_id)
-        >>> returned_dict['legal']['company_id'] == valid_company_id
-        True
-
-    Run doctest:
-    ============
-        >>> # python -m doctest .\ares.py
+    >>> valid_company_id = "27074358"
+    >>> returned_dict = call_ares(valid_company_id)
+    >>> returned_dict['legal']['company_id'] == valid_company_id
+    True
 
     @param company_id: int 8-digit number
     @return: @raise AresNoResponse:
@@ -130,7 +125,7 @@ def validate_czech_company_id(business_id):
     # raise InvalidCompanyIDError("Company ID must be 8 digits long")
 
     try:
-        digits = map(int, list(business_id.rjust(COMPANY_ID_LENGTH, "0")))
+        digits = map(int, list(normalize_company_id_length(business_id)))
     except ValueError:
         raise InvalidCompanyIDError("Company ID must be a number")
 

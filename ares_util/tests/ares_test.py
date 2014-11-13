@@ -9,11 +9,10 @@ from ..ares import call_ares
 
 class CallARESTestCase(TestCase):
     def test_invalid_values(self):
-        self.assertFalse(call_ares(False))
-        self.assertFalse(call_ares(True))
-        self.assertFalse(call_ares(42))
-        self.assertFalse(call_ares(-42))
-        self.assertFalse(call_ares("foo"))
+        invalid_values = [False, True, 42, -42, "foo"]
+
+        for invalid_value in invalid_values:
+            self.assertFalse(call_ares(invalid_value))
 
     def test_numerically_valid(self):
         # IČ 25596641 je numericky platné, není však zaregistrované
@@ -28,10 +27,11 @@ class CallARESTestCase(TestCase):
         expected = "Zikova 1903/4"
         self.assertEqual(actual, expected)
 
-        other_valid_company_ids = (62739913, 25063677, '1603094', '01603094')
+        other_valid_company_ids = ('62739913', '25063677', '1603094', '01603094')
 
         try:
             for one_id in other_valid_company_ids:
-                call_ares(company_id=one_id)
+                ares_data = call_ares(company_id=one_id)
+                self.assertEqual(one_id, ares_data['legal']['company_id'])
         except KeyError as error:
             self.fail(error)
