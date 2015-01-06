@@ -56,6 +56,7 @@ def call_ares(company_id):
 
     company_record = response_root['D:VBAS']
     address = company_record['D:AA']
+    text_address = address.get('D:AT', '')
 
     result_company_info = {
         'legal': {
@@ -66,11 +67,11 @@ def call_ares(company_id):
         },
         'address': {
             'region': address.get('D:NOK', None),
-            'city': address.get('D:N', None),
+            'city': build_city(address.get('D:N', None), text_address),
             'city_part': address.get('D:NCO', None),
             'street': build_czech_street(address.get('D:NU', str()), address.get('D:N', None),
                                          address.get('D:NCO', None), address.get('D:CD', None),
-                                         address.get('D:CO', None)),
+                                         address.get('D:CO', None), text_address),
             'zip_code': address.get('D:PSC', None)
         }
     }
@@ -81,17 +82,25 @@ def get_text_value(node):
     return node.get('#text', None) if node else None
 
 
-def build_czech_street(street_name, city_name, neighborhood, house_number, orientation_number):
+def build_czech_street(street_name, city_name, neighborhood, house_number, orientation_number, address):
     """
     https://cs.wikipedia.org/wiki/Ozna%C4%8Dov%C3%A1n%C3%AD_dom%C5%AF
 
     číslo popisné/číslo orientační
     """
     street_name = street_name or neighborhood or city_name  # Fallback in case of a small village
+
+    if not street_name or not house_number:
+        return address.split(',')[-1].strip()
+
     if not orientation_number:
         return street_name + ' ' + str(house_number)
 
     return street_name + ' ' + str(house_number) + "/" + str(orientation_number)
+
+
+def build_city(city, address):
+    return city or address.split(',')[0].strip()
 
 
 def get_legal_form(legal_form):
