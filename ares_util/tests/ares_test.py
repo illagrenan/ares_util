@@ -6,7 +6,9 @@ from __future__ import unicode_literals
 from unittest2 import TestCase
 
 from ..ares import call_ares, get_legal_form
+from .. import ares
 from ..helpers import normalize_company_id_length
+from ..exceptions import AresConnectionError
 
 
 class CallARESTestCase(TestCase):
@@ -27,7 +29,6 @@ class CallARESTestCase(TestCase):
         self.assertEqual(ares_response['legal']['company_name'], "České vysoké učení technické v Praze")
         self.assertEqual(ares_response['address']['street'], "Zikova 1903/4")
 
-
     def test_valid_values(self):
         other_valid_company_ids = ('62739913', '25063677', '1603094', '01603094', '27074358')
 
@@ -37,6 +38,12 @@ class CallARESTestCase(TestCase):
                 self.assertEqual(normalize_company_id_length(one_id), ares_data['legal']['company_id'])
         except KeyError as error:
             self.fail(error)
+
+    def test_raises_ares_connection_exception(self):
+        correct_url = ares.ARES_API_URL
+        ares.ARES_API_URL = 'http://nonsenseurl.nonsence'
+        self.assertRaises(AresConnectionError, call_ares, company_id='62739913')
+        ares.ARES_API_URL = correct_url
 
 
 class LegalFormTest(TestCase):

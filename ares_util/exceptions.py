@@ -10,3 +10,6 @@ class InvalidCompanyIDError(Exception):
 
 class AresNoResponseError(Exception):
     pass
+
+class AresConnectionError(Exception):
+    pass
