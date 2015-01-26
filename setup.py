@@ -1,7 +1,5 @@
 # coding=utf-8
 
-from __future__ import unicode_literals
-
 from setuptools import setup
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/

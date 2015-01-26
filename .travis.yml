@@ -18,6 +18,8 @@ install:
     - pip install xmltodict --use-mirrors
     - pip install coveralls --use-mirrors
     - pip install nose --use-mirrors
+    - pip install future --use-mirrors
+    - pip install six --use-mirrors
 script:
     - python setup.py build
     - python setup.py sdist
