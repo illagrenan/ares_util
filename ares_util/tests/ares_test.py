@@ -3,12 +3,17 @@
 
 from __future__ import unicode_literals
 
-from unittest2 import TestCase
+import six
 
 from ..ares import call_ares, get_legal_form
 from .. import ares
 from ..helpers import normalize_company_id_length
 from ..exceptions import AresConnectionError
+
+if six.PY2:
+    from unittest2 import TestCase
+else:
+    from unittest import TestCase
 
 
 class CallARESTestCase(TestCase):

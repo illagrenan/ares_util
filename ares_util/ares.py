@@ -7,6 +7,7 @@ from __future__ import division
 from __future__ import absolute_import
 from builtins import *
 from future import standard_library
+
 standard_library.install_aliases()
 from builtins import map
 from builtins import str
@@ -166,7 +167,7 @@ def validate_czech_company_id(business_id):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print ('Pass company ID as a function argument')
+        print('Pass company ID as a function argument')
         sys.exit(2)
 
     company_id_to_check = sys.argv[1]
@@ -175,6 +176,6 @@ if __name__ == "__main__":
     if not ares_response:
         print('Company ID "%s" is not valid' % company_id_to_check)
     else:
-        print (ares_response)
+        print(ares_response)
 
     sys.exit(1)
