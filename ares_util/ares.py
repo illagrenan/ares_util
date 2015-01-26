@@ -3,10 +3,18 @@
 
 from __future__ import unicode_literals
 from __future__ import print_function
+from __future__ import division
+from __future__ import absolute_import
+from builtins import *
+from future import standard_library
+standard_library.install_aliases()
+from builtins import map
+from builtins import str
+from builtins import range
 
 import sys
-import urllib
-import urllib2
+import urllib.request, urllib.parse, urllib.error
+import urllib.request, urllib.error, urllib.parse
 import warnings
 
 import xmltodict
@@ -40,13 +48,13 @@ def call_ares(company_id):
     except InvalidCompanyIDError:
         return False
 
-    params = urllib.urlencode({'ico': company_id})
+    params = urllib.parse.urlencode({'ico': company_id})
 
     try:
-        response = urllib2.urlopen(ARES_API_URL + "?%s" % params)
-    except urllib2.HTTPError as e:
+        response = urllib.request.urlopen(ARES_API_URL + "?%s" % params)
+    except urllib.error.HTTPError as e:
         raise AresConnectionError('HTTPError ' + str(e.code))
-    except urllib2.URLError as e:
+    except urllib.error.URLError as e:
         raise AresConnectionError('URLError, ' + str(e.reason))
     except Exception as e:
         raise AresConnectionError('Exception, ' + str(e))
@@ -138,13 +146,13 @@ def validate_czech_company_id(business_id):
         warnings.warn("In version 0.1.5 integer parameter will be invalid. "
                       "Use string instead.", DeprecationWarning, stacklevel=2)
 
-    business_id = unicode(business_id)
+    business_id = str(business_id)
 
     # if len(business_id) != 8:
     # raise InvalidCompanyIDError("Company ID must be 8 digits long")
 
     try:
-        digits = map(int, list(normalize_company_id_length(business_id)))
+        digits = list(map(int, list(normalize_company_id_length(business_id))))
     except ValueError:
         raise InvalidCompanyIDError("Company ID must be a number")
 
