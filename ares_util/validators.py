@@ -17,7 +17,7 @@ from .exceptions import InvalidCompanyIDError
 def czech_company_id_numeric_validator(business_id):
     try:
         validate_czech_company_id(business_id)
-    except InvalidCompanyIDError, e:
+    except InvalidCompanyIDError as e:
         raise ValidationError(str(e))
 
 
