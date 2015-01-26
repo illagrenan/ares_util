@@ -1,5 +1,13 @@
 # coding=utf-8
 
+from __future__ import print_function
+from __future__ import division
+from __future__ import absolute_import
+from __future__ import unicode_literals
+from future import standard_library
+
+standard_library.install_aliases()
+from builtins import *
 from fabric import colors
 from fabric.context_managers import settings
 from fabric.contrib.console import confirm
@@ -31,6 +39,7 @@ def install_requirements():
     local("pip install -r .\\requirements.txt --upgrade --use-wheel")
 
     print_success("Installed || Updated.")
+
 
 @task()
 def test_install():
