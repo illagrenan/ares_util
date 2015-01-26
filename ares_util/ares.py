@@ -13,7 +13,7 @@ import xmltodict
 from .settings import ARES_API_URL, COMPANY_ID_LENGTH
 
 from .helpers import normalize_company_id_length
-from .exceptions import InvalidCompanyIDError, AresNoResponseError
+from .exceptions import InvalidCompanyIDError, AresNoResponseError, AresConnectionError
 
 
 def call_ares(company_id):
@@ -40,7 +40,15 @@ def call_ares(company_id):
         return False
 
     params = urllib.urlencode({'ico': company_id})
-    response = urllib2.urlopen(ARES_API_URL + "?%s" % params)
+
+    try:
+        response = urllib2.urlopen(ARES_API_URL + "?%s" % params)
+    except urllib2.HTTPError as e:
+        raise AresConnectionError('HTTPError ' + str(e.code))
+    except urllib2.URLError as e:
+        raise AresConnectionError('URLError, ' + str(e.reason))
+    except Exception as e:
+        raise AresConnectionError('Exception, ' + str(e))
 
     if response.getcode() != 200:
         raise AresNoResponseError()
