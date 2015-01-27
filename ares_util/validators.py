@@ -4,6 +4,13 @@
 """This module is designed only for use with Django."""
 
 from __future__ import unicode_literals
+from __future__ import print_function
+from __future__ import division
+from __future__ import absolute_import
+from future import standard_library
+
+standard_library.install_aliases()
+from builtins import str
 
 from django.core.exceptions import ValidationError
 
@@ -17,7 +24,7 @@ from .exceptions import InvalidCompanyIDError
 def czech_company_id_numeric_validator(business_id):
     try:
         validate_czech_company_id(business_id)
-    except InvalidCompanyIDError, e:
+    except InvalidCompanyIDError as e:
         raise ValidationError(str(e))
 
 

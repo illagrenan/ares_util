@@ -3,12 +3,17 @@
 
 from __future__ import unicode_literals
 
-from unittest2 import TestCase
+import six
 from django.core.exceptions import ValidationError
 
 from ..ares import validate_czech_company_id
 from ..validators import czech_company_id_numeric_validator, czech_company_id_ares_api_validator
 from ..exceptions import InvalidCompanyIDError
+
+if six.PY2:
+    from unittest2 import TestCase
+else:
+    from unittest import TestCase
 
 
 class ValidateCzechBusinessIdTestCase(TestCase):

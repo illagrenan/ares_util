@@ -34,10 +34,12 @@ setup(
     packages=['ares_util'],
 
 
-    install_requires=['xmltodict', ],
+    install_requires=['xmltodict', 'future', ],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
         'License :: OSI Approved :: MIT License',
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',

@@ -1,5 +1,7 @@
 # Ares_util #
 
+[![Supported Python versions](https://pypip.in/py_versions/ares_util/badge.svg)]( https://pypi.python.org/pypi/ares_util/)
+&nbsp;
 [![Travis CI Badge](https://api.travis-ci.org/illagrenan/ares_util.png)](https://travis-ci.org/illagrenan/ares_util)
 &nbsp;
 [![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)
@@ -98,16 +100,6 @@ class DemoForm(forms.Form):
     company_id = forms.IntegerField(required=True, validators=[czech_company_id_ares_api_validator])
 
 ```
-
-
-# TODOs
-
-- [X] Dokončit podporu pro Django (validátory formulářových polí).
-- [X] Travis CI, Coveralls
-- [ ] Crate.io
-- [X] Opravit homepage na pypi
-- [ ] Ověřit a případně vyřešit kompatibilitu s Python 3.
-- [ ] Zvážit podporu pro načítání dat i z Justice.cz ([http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz](http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz))
 
 # Reference
 1. http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic, http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
