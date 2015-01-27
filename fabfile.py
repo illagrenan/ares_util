@@ -14,7 +14,7 @@ import sys
 
 if not six.PY2:
     print("Run Fabfile only under Python 2.x")
-    sys.exit(1)
+    sys.exit(0)
 
 from fabric import colors
 from fabric.context_managers import settings

@@ -178,4 +178,4 @@ if __name__ == "__main__":
     else:
         print(ares_response)
 
-    sys.exit(1)
+    sys.exit(0)
