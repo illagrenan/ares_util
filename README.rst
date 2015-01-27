@@ -1,8 +1,8 @@
 Ares\_util
 ==========
 
-|Travis CI Badge|   |Coverage Status|   |PyPI version|   |Wheel Status|
-  |Egg Status|   |License|
+|Supported Python versions|   |Travis CI Badge|   |Coverage Status|  
+|PyPI version|   |Wheel Status|   |Egg Status|   |License|
 
 Představení
 -----------
@@ -106,17 +106,6 @@ formulářových polí:
     class DemoForm(forms.Form):
         company_id = forms.IntegerField(required=True, validators=[czech_company_id_ares_api_validator])
 
-TODOs
-=====
-
--  [X] Dokončit podporu pro Django (validátory formulářových polí).
--  [X] Travis CI, Coveralls
--  [ ] Crate.io
--  [X] Opravit homepage na pypi
--  [ ] Ověřit a případně vyřešit kompatibilitu s Python 3.
--  [ ] Zvážit podporu pro načítání dat i z Justice.cz
-   (http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz)
-
 Reference
 =========
 
@@ -155,6 +144,8 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+.. |Supported Python versions| image:: https://pypip.in/py_versions/ares_util/badge.svg
+   :target: https://pypi.python.org/pypi/ares_util/
 .. |Travis CI Badge| image:: https://api.travis-ci.org/illagrenan/ares_util.png
    :target: https://travis-ci.org/illagrenan/ares_util
 .. |Coverage Status| image:: https://coveralls.io/repos/illagrenan/ares_util/badge.png
