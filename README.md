@@ -1,5 +1,7 @@
 # Ares_util #
 
+[![Supported Python versions](https://pypip.in/py_versions/ares_util/badge.svg)]( https://pypi.python.org/pypi/ares_util/)
+&nbsp;
 [![Travis CI Badge](https://api.travis-ci.org/illagrenan/ares_util.png)](https://travis-ci.org/illagrenan/ares_util)
 &nbsp;
 [![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)
