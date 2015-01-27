@@ -101,16 +101,6 @@ class DemoForm(forms.Form):
 
 ```
 
-
-# TODOs
-
-- [X] Dokončit podporu pro Django (validátory formulářových polí).
-- [X] Travis CI, Coveralls
-- [ ] Crate.io
-- [X] Opravit homepage na pypi
-- [ ] Ověřit a případně vyřešit kompatibilitu s Python 3.
-- [ ] Zvážit podporu pro načítání dat i z Justice.cz ([http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz](http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz))
-
 # Reference
 1. http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic, http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
 
