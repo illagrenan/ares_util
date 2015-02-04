@@ -2,7 +2,16 @@ Ares\_util
 ==========
 
 |Supported Python versions|   |Travis CI Badge|   |Coverage Status|  
-|PyPI version|   |Wheel Status|   |Egg Status|   |License|
+|PyPI version|   |License|   |Requirements Status|
+
+.. raw:: html
+
+   <!---
+   [![Wheel Status](https://pypip.in/wheel/ares_util/badge.svg)](https://pypi.python.org/pypi/ares_util/)
+   &nbsp;
+   [![Egg Status](https://pypip.in/egg/ares_util/badge.svg)](https://pypi.python.org/pypi/ares_util/)
+   &nbsp;
+   -->
 
 Představení
 -----------
@@ -49,7 +58,8 @@ Instalace
 Použití
 -------
 
-    Testováno v Python ``2.7.*``.
+    Doplňek podporuje Python ``2.7.*``, od verze ``0.1.6``
+    experimentálně Python ``3.3`` a ``3.4``.
 
 .. code:: shell
 
@@ -76,7 +86,7 @@ Použití
 Django podpora
 ~~~~~~~~~~~~~~
 
-    Testováno pro Django ``>=1.5.*,<=1.7.*``.
+    Testováno pro Django ``>=1.5.*,<1.8``.
 
 K dispozi jsou dva `Django
 validátory <https://docs.djangoproject.com/en/dev/ref/validators/>`__
@@ -152,9 +162,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
    :target: https://coveralls.io/r/illagrenan/ares_util
 .. |PyPI version| image:: https://badge.fury.io/py/ares_util.png
    :target: http://badge.fury.io/py/ares_util
-.. |Wheel Status| image:: https://pypip.in/wheel/ares_util/badge.png
-   :target: https://pypi.python.org/pypi/ares_util/
-.. |Egg Status| image:: https://pypip.in/egg/ares_util/badge.png
-   :target: https://pypi.python.org/pypi/ares_util/
 .. |License| image:: https://pypip.in/license/ares_util/badge.png
    :target: https://pypi.python.org/pypi/ares_util/
+.. |Requirements Status| image:: https://requires.io/github/illagrenan/ares_util/requirements.svg?branch=master
+   :target: https://requires.io/github/illagrenan/ares_util/requirements/?branch=master
