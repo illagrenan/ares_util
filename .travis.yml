@@ -16,7 +16,6 @@ env:
   - DJANGO=1.7.0
   - DJANGO=1.7.7
   - DJANGO=1.8
-  - DJANGO<2.0
 install:
     - pip install -q Django==$DJANGO
     - if [[ $TRAVIS_PYTHON_VERSION != 3.3 || $TRAVIS_PYTHON_VERSION != 3.4 ]]; then pip install fabric unittest2; fi
@@ -54,8 +53,6 @@ matrix:
         - DJANGO=1.7.0
         - DJANGO=1.7.7
         - DJANGO=1.8.0
-        - DJANGO<2.0
-
     # Fails. Django issue #19944
     # https://code.djangoproject.com/ticket/19944
     - python: pypy
