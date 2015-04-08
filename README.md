@@ -57,7 +57,7 @@ pip install --upgrade git+git://github.com/illagrenan/ares_util.git
 > Doplňek podporuje Python `2.7.*`, od verze `0.1.6` experimentálně Python `3.3` a `3.4`.
 
 ```shell
-$ python
+python
 >>> from ares_util.ares import call_ares
 >>> call_ares(42)
 False
@@ -80,7 +80,7 @@ False
 
 ### Django podpora
 
-> Testováno pro Django `>=1.5.*,<1.8`.
+> Testováno pro Django `>=1.5.*,=<1.8`.
 
 K dispozi jsou dva [Django validátory](https://docs.djangoproject.com/en/dev/ref/validators/) formulářových polí:
 
