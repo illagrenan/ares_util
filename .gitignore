@@ -43,3 +43,4 @@ nosetests.xml
 /build.txt
 /*.json
 *.bak
+/ares_util/*.spec
