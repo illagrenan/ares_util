@@ -43,7 +43,7 @@ setup(
     packages=['ares_util'],
 
 
-    install_requires=['xmltodict', 'future', ],
+    install_requires=['xmltodict', 'future', 'requests'],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',
