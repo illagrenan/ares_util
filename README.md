@@ -54,7 +54,7 @@ pip install --upgrade git+git://github.com/illagrenan/ares_util.git
 
 ## Použití ##
 
-> Doplňek podporuje Python `2.7.*`, od verze `0.1.6` experimentálně Python `3.3` a `3.4`.
+> Doplněk podporuje Python `2.7`, `3.3` a `3.4`. TravisCI testuje i oproti `pypy`.
 
 ```shell
 python
@@ -80,7 +80,7 @@ False
 
 ### Django podpora
 
-> Testováno pro Django `>=1.5.*,=<1.8`.
+> Testováno pro Django `>=1.5.*,<1.9.*`.
 
 K dispozi jsou dva [Django validátory](https://docs.djangoproject.com/en/dev/ref/validators/) formulářových polí:
 
@@ -107,6 +107,16 @@ class DemoForm(forms.Form):
 
 # Reference
 1. http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic, http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
+
+# Lokální vývoj
+
+Chcete-li upravit doplněk lokálně, jednoduše stáhněte zdrojové kódy a nainstalujte závislosti:
+
+```bash
+pip install -r requirements.txt --upgrade
+```
+
+Testy spustíte pomocí `tox` anebo `fab test` máte-li Fabric.
 
 # Technické informace
 
