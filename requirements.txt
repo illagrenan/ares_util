@@ -1,14 +1,13 @@
 ################################
 # Development requirements
 ################################
-django>=1.5,<1.9
+django>=1.6,<1.9
 Fabric
 coverage
 ecdsa
 nose
 paramiko==1.15.2
 pycrypto
-unittest2
 wheel
 wsgiref
 xmltodict
