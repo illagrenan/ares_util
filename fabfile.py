@@ -5,8 +5,10 @@ from __future__ import division
 from __future__ import absolute_import
 from __future__ import unicode_literals
 
+import shutil
 
 from future import standard_library
+
 
 standard_library.install_aliases()
 from builtins import *
@@ -40,9 +42,22 @@ def update_package_tools():
 
 @task()
 def install_requirements():
-    local("pip install -r .\\requirements.txt --upgrade --use-wheel")
+    local("pip install -r requirements.txt --upgrade --use-wheel")
 
     green("Installed || Updated.")
+
+
+@task()
+def clean():
+    try:
+        shutil.rmtree('ares_util.egg-info')
+        shutil.rmtree('build')
+        shutil.rmtree('dist')
+        shutil.rmtree('__pycache__')
+    except WindowsError:
+        pass
+
+    green("Cleaned")
 
 
 @task()
@@ -53,12 +68,14 @@ def test_install():
 
     local("pip install --use-wheel --no-index --find-links dist ares_util")
     local("pip uninstall ares_util --yes")
+
     green("Install test OK.")
 
 
 @task()
 def test():
     local("nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest")
+
     green("Test OK.")
 
 
