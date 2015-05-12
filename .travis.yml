@@ -24,6 +24,7 @@ install:
     - pip install nose
     - pip install future
     - pip install six
+    - pip install requests[security]
 script:
     - python setup.py build
     - python setup.py sdist

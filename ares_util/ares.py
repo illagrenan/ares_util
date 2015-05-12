@@ -9,6 +9,9 @@ from __future__ import absolute_import
 from builtins import *
 from future import standard_library
 
+import requests
+from requests.exceptions import RequestException
+
 standard_library.install_aliases()
 
 from builtins import map
@@ -16,13 +19,11 @@ from builtins import str
 from builtins import range
 
 import sys
-import urllib.request, urllib.parse, urllib.error
-import urllib.request, urllib.error, urllib.parse
 import warnings
 
 import xmltodict
 
-from .settings import ARES_API_URL, COMPANY_ID_LENGTH
+from .settings import COMPANY_ID_LENGTH, ARES_API_URL
 
 from .helpers import normalize_company_id_length
 from .exceptions import InvalidCompanyIDError, AresNoResponseError, AresConnectionError
@@ -51,22 +52,23 @@ def call_ares(company_id):
     except InvalidCompanyIDError:
         return False
 
-    params = urllib.parse.urlencode({'ico': company_id})
+    params = {'ico': company_id}
 
     try:
-        response = urllib.request.urlopen(ARES_API_URL + "?%s" % params)
-    except urllib.error.HTTPError as e:
-        raise AresConnectionError('HTTPError ' + str(e.code))
-    except urllib.error.URLError as e:
-        raise AresConnectionError('URLError, ' + str(e.reason))
-    except Exception as e:
+        response = requests.get(ARES_API_URL, params=params)
+    except RequestException as e:
         raise AresConnectionError('Exception, ' + str(e))
 
-    if response.getcode() != 200:
+    if response.status_code != 200:
         raise AresNoResponseError()
 
-    xml_response = response.read()
-    ares_data = xmltodict.parse(xml_response)
+    # See: http://docs.python-requests.org/en/latest/user/quickstart/#response-content
+    # If you change the encoding, Requests will use the new value of r.encoding whenever you
+    # call r.text. You might want to do this in any situation where you can apply special logic
+    # to work out what the encoding of the content will be. For example, HTTP and XML have
+    # the ability to specify their encoding in their body.
+    response.encoding = 'utf-8'
+    ares_data = xmltodict.parse(response.text)
 
     response_root = ares_data['are:Ares_odpovedi']['are:Odpoved']
     number_of_results = response_root['D:PZA']
