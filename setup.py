@@ -2,6 +2,15 @@
 
 from setuptools import setup
 
+try:
+    from pypandoc import convert
+
+    read_md = lambda f: convert(f, 'rst')
+    # http://stackoverflow.com/a/23265673/752142
+except ImportError:
+    print("warning: pypandoc module not found, could not convert Markdown to RST")
+    read_md = lambda f: open(f, 'r').read()
+
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='ares_util',
@@ -20,7 +29,7 @@ setup(
     #
     # $ fab build
     # ########################################################################
-    long_description=(open('README.rst').read()),
+    long_description=read_md('README.md'),
 
     url='https://github.com/illagrenan/ares_util',
     license='MIT',

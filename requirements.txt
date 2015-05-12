@@ -1,3 +1,6 @@
+################################
+# Development requirements
+################################
 django>=1.5,<1.9
 Fabric
 coverage
@@ -12,3 +15,7 @@ xmltodict
 colorama
 future
 six
+-e git+git://github.com/illagrenan/color-printer.git#egg=color-printer
+pypandoc
+tox
+flake8
