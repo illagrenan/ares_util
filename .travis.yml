@@ -26,9 +26,10 @@ install:
     - pip install six
     - pip install requests[security]
 script:
+    - python setup.py nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
     - python setup.py build
     - python setup.py sdist
-    - nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
+    - python setup.py bdist_wheel
 # before_script:
     # - flake8 .
 after_success:

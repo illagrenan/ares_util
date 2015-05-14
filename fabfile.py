@@ -81,8 +81,10 @@ def test():
 
 @task()
 def build():
+    local("python setup.py build")
     local("python setup.py sdist")
     local("python setup.py bdist_wheel")
+    local("python setup.py bdist_wininst")
 
     green("Build OK.")
 
