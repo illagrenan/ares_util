@@ -26,9 +26,9 @@ from fabric.decorators import task
 from fabric.operations import local
 
 try:
-    from color_printer.colors import green
+    from color_printer.colors import green, red
 except ImportError:
-    green = print
+    green = red = print
 
 
 @task()
@@ -54,8 +54,8 @@ def clean():
         shutil.rmtree('build')
         shutil.rmtree('dist')
         shutil.rmtree('__pycache__')
-    except WindowsError:
-        pass
+    except WindowsError as e:
+        red(e.message)
 
     green("Cleaned")
 
