@@ -12,6 +12,8 @@
 &nbsp;
 [![Requirements Status](https://requires.io/github/illagrenan/ares_util/requirements.svg?branch=master)](https://requires.io/github/illagrenan/ares_util/requirements/?branch=master)
 
+[![Code Issues](http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg)](http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca)
+
 <!---
 [![Wheel Status](https://pypip.in/wheel/ares_util/badge.svg)](https://pypi.python.org/pypi/ares_util/)
 &nbsp;
