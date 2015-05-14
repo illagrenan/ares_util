@@ -2,7 +2,6 @@
 # Development requirements
 ################################
 django>=1.6,<1.9
-fabric
 xmltodict
 coveralls
 wheel
