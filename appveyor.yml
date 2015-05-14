@@ -60,13 +60,14 @@ build: false  # Not a C# project, build stuff at the test step instead.
 
 test_script:
   # Build the compiled extension and run the project tests
-  - "%CMD_IN_ENV% python setup.py build"
-  - "%CMD_IN_ENV% python setup.py sdist"
-  - "%CMD_IN_ENV% nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest"
+  - "%CMD_IN_ENV% python setup.py nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest"
 
 after_test:
   # If tests are successful, create a whl package for the project.
-  - "%CMD_IN_ENV% python setup.py bdist_wheel bdist_wininst"
+  - "%CMD_IN_ENV% python setup.py build"
+  - "%CMD_IN_ENV% python setup.py sdist"
+  - "%CMD_IN_ENV% python setup.py bdist_wheel"
+  - "%CMD_IN_ENV% python setup.py bdist_wininst"
   - ps: "ls dist"
 
 artifacts:

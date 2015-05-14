@@ -2,15 +2,17 @@
 
 [![Supported Python versions](https://pypip.in/py_versions/ares_util/badge.svg)]( https://pypi.python.org/pypi/ares_util/)
 &nbsp;
-[![Travis CI Badge](https://api.travis-ci.org/illagrenan/ares_util.png)](https://travis-ci.org/illagrenan/ares_util)
-&nbsp;
-[![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)
-&nbsp;
 [![PyPI version](https://badge.fury.io/py/ares_util.png)](http://badge.fury.io/py/ares_util)
 &nbsp;
 [![License](https://pypip.in/license/ares_util/badge.png)](https://pypi.python.org/pypi/ares_util/)
 &nbsp;
 [![Requirements Status](https://requires.io/github/illagrenan/ares_util/requirements.svg?branch=master)](https://requires.io/github/illagrenan/ares_util/requirements/?branch=master)
+
+[![Travis CI Badge](https://api.travis-ci.org/illagrenan/ares_util.png)](https://travis-ci.org/illagrenan/ares_util)
+&nbsp;
+[![Build status](https://ci.appveyor.com/api/projects/status/8ui732iutoe9r0vj?svg=true)](https://ci.appveyor.com/project/illagrenan/ares-util)
+&nbsp;
+[![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)
 
 [![Code Issues](http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg)](http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca)
 
