@@ -33,7 +33,7 @@ setup(
 
     url='https://github.com/illagrenan/ares_util',
     license='MIT',
-    author=u'Vašek Dohnal',
+    author='Vasek Dohnal',
     author_email='vaclav.dohnal@gmail.com',
 
     # The exclude makes sure that a top-level tests package doesn’t get
