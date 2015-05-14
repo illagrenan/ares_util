@@ -12,9 +12,7 @@
 &nbsp;
 [![Build status](https://ci.appveyor.com/api/projects/status/8ui732iutoe9r0vj?svg=true)](https://ci.appveyor.com/project/illagrenan/ares-util)
 &nbsp;
-[![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)
-
-[![Code Issues](http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg)](http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca)
+[![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)&nbsp;[![Code Issues](http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg)](http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca)
 
 
 ## Představení
