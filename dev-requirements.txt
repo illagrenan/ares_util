@@ -1,0 +1,10 @@
+################################
+# Development requirements
+################################
+fabric
+xmltodict
+coveralls
+nose
+future
+six
+requests
