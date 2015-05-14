@@ -19,3 +19,4 @@ pypandoc
 tox
 flake8
 requests[security]
+twine

@@ -81,6 +81,9 @@ def test():
 
 @task()
 def build():
+    # pip install docutils
+    local("python setup.py check --verbose --strict --restructuredtext")
+
     local("python setup.py build")
     local("python setup.py sdist")
     local("python setup.py bdist_wheel")
@@ -91,6 +94,14 @@ def build():
 
 @task()
 def publish():
+    if confirm(u'Really publish?', default=False):
+        local('twine upload dist/*')
+
+        green("Published.")
+
+
+@task()
+def publish_insecure():
     if confirm(u'Really publish?', default=False):
         local('python setup.py sdist upload -r pypi')
         local('python setup.py bdist_wheel upload -r pypi')

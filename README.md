@@ -16,12 +16,6 @@
 
 [![Code Issues](http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg)](http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca)
 
-<!---
-[![Wheel Status](https://pypip.in/wheel/ares_util/badge.svg)](https://pypi.python.org/pypi/ares_util/)
-&nbsp;
-[![Egg Status](https://pypip.in/egg/ares_util/badge.svg)](https://pypi.python.org/pypi/ares_util/)
-&nbsp;
--->
 
 ## Představení
 
@@ -97,8 +91,8 @@ INSTALLED_APPS = (
     # ...
     'ares_util',
 )
-
 ```
+
 ```python
 from ares_util.validators import czech_company_id_numeric_validator, czech_company_id_ares_api_validator
 from django import forms
@@ -116,7 +110,7 @@ class DemoForm(forms.Form):
 
 Chcete-li upravit doplněk lokálně, jednoduše stáhněte zdrojové kódy a nainstalujte závislosti:
 
-```bash
+```shell
 pip install -r requirements.txt --upgrade
 ```
 
