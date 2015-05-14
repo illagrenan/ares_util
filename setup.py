@@ -9,7 +9,10 @@ try:
     # http://stackoverflow.com/a/23265673/752142
 except ImportError:
     print("warning: pypandoc module not found, could not convert Markdown to RST")
-    read_md = lambda f: open(f, 'r').read()
+    try:
+        read_md = lambda f: open(f, 'r').read()
+    except UnicodeDecodeError:
+        read_md = "Encoding problems with README.md"
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
