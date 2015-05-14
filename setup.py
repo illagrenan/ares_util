@@ -5,14 +5,15 @@ from setuptools import setup
 try:
     from pypandoc import convert
 
-    read_md = lambda f: convert(f, 'rst')
-    # http://stackoverflow.com/a/23265673/752142
+    def read_md(file_name):
+        # http://stackoverflow.com/a/23265673/752142
+        return convert(file_name, 'rst')
 except ImportError:
     print("warning: pypandoc module not found, could not convert Markdown to RST")
 
-    def read_md(f):
+    def read_md(file_name):
         try:
-            return open(f, 'r').read()
+            return open(file_name, 'r').read()
         except UnicodeDecodeError:
             return "Encoding problems with README.md"
 

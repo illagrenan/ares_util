@@ -178,7 +178,7 @@ if __name__ == "__main__":
     ares_response = call_ares(company_id_to_check)
 
     if not ares_response:
-        print('Company ID "%s" is not valid' % company_id_to_check)
+        print("Company ID \"{0}\" is not valid".format(company_id_to_check))
     else:
         print(ares_response)
 
