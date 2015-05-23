@@ -15,7 +15,7 @@ env:
   - DJANGO=1.6.11
   - DJANGO=1.7.0
   - DJANGO=1.7.8
-  - DJANGO=1.8.1
+  - DJANGO=1.8.2
 install:
     - pip install -q Django==$DJANGO
     - if [[ $TRAVIS_PYTHON_VERSION != 3.3 || $TRAVIS_PYTHON_VERSION != 3.4 ]]; then pip install fabric unittest2; fi
