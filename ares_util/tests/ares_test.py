@@ -29,6 +29,14 @@ class CallARESTestCase(TestCase):
         self.assertEqual(ares_response['legal']['company_name'], "České vysoké učení technické v Praze")
         self.assertEqual(ares_response['address']['street'], "Zikova 1903/4")
 
+    def test_special_case_for_issue9(self):
+        ares_response = call_ares(company_id=25834151)
+
+        self.assertEqual(ares_response['legal']['company_name'], "HELLA AUTOTECHNIK NOVA, s.r.o.")
+        self.assertEqual(ares_response['address']['street'], "Družstevní 338/16")
+        self.assertEqual(ares_response['address']['city'], "Mohelnice")
+        self.assertEqual(ares_response['address']['zip_code'], "78985")
+
     def test_valid_values(self):
         other_valid_company_ids = ('62739913', '25063677', '1603094', '01603094', '27074358')
 
