@@ -4,7 +4,7 @@
 &nbsp;
 [![PyPI version](https://badge.fury.io/py/ares_util.png)](http://badge.fury.io/py/ares_util)
 &nbsp;
-[![License](https://pypip.in/license/ares_util/badge.png)](https://pypi.python.org/pypi/ares_util/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/ares_util/)
 &nbsp;
 [![Requirements Status](https://requires.io/github/illagrenan/ares_util/requirements.svg?branch=master)](https://requires.io/github/illagrenan/ares_util/requirements/?branch=master)
 
