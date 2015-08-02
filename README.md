@@ -1,7 +1,5 @@
 # Ares_util #
 
-[![Supported Python versions](https://pypip.in/py_versions/ares_util/badge.svg)]( https://pypi.python.org/pypi/ares_util/)
-&nbsp;
 [![PyPI version](https://badge.fury.io/py/ares_util.png)](http://badge.fury.io/py/ares_util)
 &nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/ares_util/)
