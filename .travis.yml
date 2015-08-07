@@ -21,10 +21,10 @@ install:
     - easy_install -U pip & pip install setuptools wheel --upgrade
     - pip install -q Django==$DJANGO
     - if [[ $TRAVIS_PYTHON_VERSION != 3.3 || $TRAVIS_PYTHON_VERSION != 3.4 ]]; then pip install fabric unittest2; fi
+    - if [[ $TRAVIS_PYTHON_VERSION == pypi ]]; then pip install future<15; else pip install future; fi
     - pip install xmltodict
     - pip install coveralls
     - pip install nose
-    - pip install future
     - pip install six
     - pip install requests
     - pip install travis
