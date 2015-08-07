@@ -5,10 +5,10 @@ from __future__ import unicode_literals
 from __future__ import print_function
 from __future__ import division
 from __future__ import absolute_import
+import re
 
 from builtins import *
 from future import standard_library
-
 import requests
 from requests.exceptions import RequestException
 
@@ -20,6 +20,7 @@ from builtins import range
 
 import sys
 import warnings
+import logging
 
 import xmltodict
 
@@ -78,7 +79,7 @@ def call_ares(company_id):
 
     company_record = response_root['D:VBAS']
     address = company_record['D:AA']
-    text_address = address.get('D:AT', '')
+    full_text_address = address.get('D:AT', '')
 
     result_company_info = {
         'legal': {
@@ -89,12 +90,13 @@ def call_ares(company_id):
         },
         'address': {
             'region': address.get('D:NOK', None),
-            'city': build_city(address.get('D:N', None), text_address),
+            'city': build_city(address.get('D:N', None), full_text_address),
             'city_part': address.get('D:NCO', None),
             'street': build_czech_street(address.get('D:NU', str()), address.get('D:N', None),
-                                         address.get('D:NCO', None), address.get('D:CD', None),
-                                         address.get('D:CO', None), text_address),
-            'zip_code': address.get('D:PSC', None)
+                                         address.get('D:NCO', None),
+                                         address.get('D:CD', None) or address.get('D:CA', None),
+                                         address.get('D:CO', None), full_text_address),
+            'zip_code': get_czech_zip_code(address.get('D:PSC', None), full_text_address)
         }
     }
     return result_company_info
@@ -104,7 +106,23 @@ def get_text_value(node):
     return node.get('#text', None) if node else None
 
 
-def build_czech_street(street_name, city_name, neighborhood, house_number, orientation_number, address):
+def get_czech_zip_code(ares_data, full_text_address):
+    if ares_data and ares_data.isdigit():
+        return ares_data.strip()
+
+    p = re.compile(ur'PS[CČ]?\s+(?P<zip_code>\d+)', re.IGNORECASE | re.UNICODE)
+    search = re.search(p, full_text_address)
+
+    if search:
+        return search.groupdict()["zip_code"].strip()
+    else:
+        logging.warning("Cannot retrieve ZIP_CODE from this: \"%s\" address" % full_text_address)
+
+        # TODO Improve this code
+        return ""
+
+
+def build_czech_street(street_name, city_name, neighborhood, house_number, orientation_number, full_text_address):
     """
     https://cs.wikipedia.org/wiki/Ozna%C4%8Dov%C3%A1n%C3%AD_dom%C5%AF
 
@@ -112,13 +130,37 @@ def build_czech_street(street_name, city_name, neighborhood, house_number, orien
     """
     street_name = street_name or neighborhood or city_name  # Fallback in case of a small village
 
-    if not street_name or not house_number:
-        return address.split(',')[-1].strip()
+    if not street_name and not house_number:
+        return guess_czech_street_from_full_text_address(full_text_address)
 
     if not orientation_number:
-        return street_name + ' ' + str(house_number)
+        return "{0}{1}".format(street_name, " %s" % house_number if house_number else "")
 
-    return street_name + ' ' + str(house_number) + "/" + str(orientation_number)
+    return "{0} {1}/{2}".format(street_name, str(house_number), str(orientation_number))
+
+
+def guess_czech_street_from_full_text_address(full_text_address):
+    address_parts = full_text_address.split(',')
+
+    # Examples:
+    #   Ústí nad Labem-město, Vaníčkova 11
+    #                         ^^^^^^^^^^^^
+    #
+    #   Bohutín 310
+    #   ^^^^^^^^^^^
+    if len(address_parts) < 3:
+        # Get the last element of a list
+        return address_parts[-1].strip()
+
+    # Examples:
+    #   Mohelnice, Družstevní 338/16, PSČ 78985
+    #              ^^^^^^^^^^^^^^^^^
+    elif len(address_parts) == 3:
+        return address_parts[1].strip()
+    else:
+        logging.warning("Cannot parse this: \"%s\" address" % full_text_address)
+        # TODO Improve this code
+        return ""
 
 
 def build_city(city, address):
