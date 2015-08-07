@@ -60,7 +60,8 @@ False
     u'legal': {
         u'company_vat_id': u'CZ68407700',
         u'company_name': u'České vysoké učení technické v Praze',
-        u'legal_form': u'601', u'company_id': u'68407700'
+        u'legal_form': u'601',
+        u'company_id': u'68407700'
     },
     u'address': {
         u'city': u'Praha',
@@ -111,6 +112,16 @@ pip install -r requirements.txt --upgrade
 ```
 
 Testy spustíte pomocí `tox` anebo `fab test` máte-li Fabric.
+
+Využít můžete i přibalený Flask server pro lokální testování. Stačí spustit:
+
+```
+$ python .\server.py
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+```
+
+a v prohlížeči otevřít např.: `http://127.0.0.1:5000/42`.
 
 # Technické informace
 
