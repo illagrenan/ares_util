@@ -10,3 +10,4 @@ nose
 future
 six
 requests
+flask

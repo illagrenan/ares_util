@@ -30,6 +30,7 @@ class CallARESTestCase(TestCase):
         self.assertEqual(ares_response['address']['street'], "Zikova 1903/4")
 
     def test_special_case_for_issue9(self):
+        # See: http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi?ico=25834151
         ares_response = call_ares(company_id=25834151)
 
         self.assertEqual(ares_response['legal']['company_name'], "HELLA AUTOTECHNIK NOVA, s.r.o.")
