@@ -2,10 +2,10 @@ language: python
 sudo: false
 python:
 # - 2.6
-  - 2.7
-  - 3.3
-  - 3.4
-# - pypy
+  # - 2.7
+  # - 3.3
+  # - 3.4
+  - pypy
 #  - nightly
 env:
   - DJANGO=1.4.0
@@ -21,7 +21,7 @@ install:
     - easy_install -U pip & pip install setuptools wheel --upgrade
     - pip install -q Django==$DJANGO
     - if [[ $TRAVIS_PYTHON_VERSION != 3.3 || $TRAVIS_PYTHON_VERSION != 3.4 ]]; then pip install fabric unittest2; fi
-    - if [[ $TRAVIS_PYTHON_VERSION == pypi ]]; then pip install future<15; else pip install future; fi
+    - if [[ $TRAVIS_PYTHON_VERSION == pypy ]]; then pip install future<15; else pip install future; fi
     - pip install xmltodict
     - pip install coveralls
     - pip install nose
