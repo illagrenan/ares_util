@@ -25,6 +25,7 @@ install:
     - pip install future
     - pip install six
     - pip install requests[security]
+    - pip install travis
 script:
     - python setup.py nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
     - python setup.py build
