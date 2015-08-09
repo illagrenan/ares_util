@@ -10,7 +10,7 @@ from future import standard_library
 
 standard_library.install_aliases()
 
-from ..ares import get_czech_zip_code, guess_czech_street_from_full_text_address
+from ..ares import get_czech_zip_code, guess_czech_street_from_full_text_address, build_city
 
 from unittest import TestCase
 
@@ -25,12 +25,36 @@ class ZIPCodeTestCase(TestCase):
         actual = get_czech_zip_code(ares_data="1111", full_text_address="U obchodního rejstříku 15, Praha, PSČ 2222")
         self.assertEqual(expected, actual)
 
+    def test_get_czech_zip_code_1(self):
+        expected = "27704"
+        actual = get_czech_zip_code(ares_data="", full_text_address="Daminěves 35, 277 04 Cítov")
+
+        self.assertEqual(expected, actual)
+
 
 class CzechStreetTestCase(TestCase):
-    def test_get_czech_zip_code(self):
+    def test_get_strett(self):
         full_text = "Praha, U Pythonisty 42/36, PSČ 4200"
         expected = "U Pythonisty 42/36"
 
         actual = guess_czech_street_from_full_text_address(full_text)
+
+        self.assertEqual(expected, actual)
+
+    def test_get_street_reversed(self):
+        full_text = "Daminěves 35, 277 04 Cítov"
+        expected = "Daminěves 35"
+
+        actual = guess_czech_street_from_full_text_address(full_text)
+
+        self.assertEqual(expected, actual)
+
+
+class CityTestCase(TestCase):
+    def test_get_czech_zip_code(self):
+        full_text = "Daminěves 35, 277 04 Cítov"
+        expected = "Cítov"
+
+        actual = build_city(city=None, address=full_text)
 
         self.assertEqual(expected, actual)

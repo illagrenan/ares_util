@@ -9,7 +9,6 @@ import shutil
 
 from future import standard_library
 
-
 standard_library.install_aliases()
 from builtins import *
 
@@ -75,6 +74,13 @@ def test_install():
 @task()
 def test():
     local("nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest")
+
+    green("Test OK.")
+
+
+@task()
+def pytest():
+    local("py.test ares_util --doctest-modules --cov=ares_util -v --showlocals")
 
     green("Test OK.")
 
