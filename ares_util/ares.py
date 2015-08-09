@@ -103,7 +103,7 @@ def call_ares(company_id):
 
 
 def get_text_value(node):
-    return node.get('#text', None) if node else None
+    return node.get('#text') if node else None
 
 
 def get_czech_zip_code(ares_data, full_text_address):
