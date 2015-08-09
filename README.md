@@ -115,8 +115,8 @@ Testy spustíte pomocí `tox` anebo `fab test` máte-li Fabric.
 
 Využít můžete i přibalený Flask server pro lokální testování. Stačí spustit:
 
-```
-$ python .\server.py
+```shell
+python .\server.py
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
  * Restarting with stat
 ```

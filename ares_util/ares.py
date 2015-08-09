@@ -116,7 +116,7 @@ def get_czech_zip_code(ares_data, full_text_address):
     if search:
         return search.groupdict()["zip_code"].strip()
     else:
-        logging.warning("Cannot retrieve ZIP_CODE from this: \"%s\" address" % full_text_address)
+        logging.warning("Cannot retrieve ZIP_CODE from this: \"{0}\" address".format(full_text_address))
 
         # TODO Improve this code
         return ""
