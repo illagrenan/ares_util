@@ -83,20 +83,20 @@ def call_ares(company_id):
 
     result_company_info = {
         'legal': {
-            'company_name': get_text_value(company_record.get('D:OF', None)),
-            'company_id': get_text_value(company_record.get('D:ICO', None)),
-            'company_vat_id': get_text_value(company_record.get('D:DIC', None)),
-            'legal_form': get_legal_form(company_record.get('D:PF', None))
+            'company_name': get_text_value(company_record.get('D:OF')),
+            'company_id': get_text_value(company_record.get('D:ICO')),
+            'company_vat_id': get_text_value(company_record.get('D:DIC')),
+            'legal_form': get_legal_form(company_record.get('D:PF'))
         },
         'address': {
-            'region': address.get('D:NOK', None),
-            'city': build_city(address.get('D:N', None), full_text_address),
-            'city_part': address.get('D:NCO', None),
-            'street': build_czech_street(address.get('D:NU', str()), address.get('D:N', None),
-                                         address.get('D:NCO', None),
-                                         address.get('D:CD', None) or address.get('D:CA', None),
-                                         address.get('D:CO', None), full_text_address),
-            'zip_code': get_czech_zip_code(address.get('D:PSC', None), full_text_address)
+            'region': address.get('D:NOK'),
+            'city': build_city(address.get('D:N'), full_text_address),
+            'city_part': address.get('D:NCO'),
+            'street': build_czech_street(address.get('D:NU', str()), address.get('D:N'),
+                                         address.get('D:NCO'),
+                                         address.get('D:CD') or address.get('D:CA'),
+                                         address.get('D:CO'), full_text_address),
+            'zip_code': get_czech_zip_code(address.get('D:PSC'), full_text_address)
         }
     }
     return result_company_info
