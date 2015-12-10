@@ -1,19 +1,12 @@
 # !/usr/bin/python
 # coding=utf-8
 
-"""This module is designed only for use with Django."""
-
-from __future__ import unicode_literals
-from __future__ import print_function
-from __future__ import division
 from __future__ import absolute_import
-from future import standard_library
-
-standard_library.install_aliases()
-from builtins import str
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
 
 from django.core.exceptions import ValidationError
-
 # TODO Add support for Django translations
 # from django.utils.translation import ugettext as _
 

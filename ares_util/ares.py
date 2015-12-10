@@ -1,33 +1,26 @@
 # !/usr/bin/python
 # coding=utf-8
 
-from __future__ import unicode_literals
-from __future__ import print_function
-from __future__ import division
 from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
+
+import logging
 import re
-
-from builtins import *
-from future import standard_library
-import requests
-from requests.exceptions import RequestException
-
-standard_library.install_aliases()
-
-from builtins import map
-from builtins import str
-from builtins import range
-
 import sys
 import warnings
-import logging
 
+import requests
 import xmltodict
+from builtins import map
+from builtins import range
+from builtins import str
+from requests.exceptions import RequestException
 
-from .settings import COMPANY_ID_LENGTH, ARES_API_URL
-
-from .helpers import normalize_company_id_length
 from .exceptions import InvalidCompanyIDError, AresNoResponseError, AresConnectionError
+from .helpers import normalize_company_id_length
+from .settings import COMPANY_ID_LENGTH, ARES_API_URL
 
 
 def call_ares(company_id):
