@@ -120,11 +120,11 @@ def build_czech_street(street_name, city_name, neighborhood, house_number, orien
     https://cs.wikipedia.org/wiki/Ozna%C4%8Dov%C3%A1n%C3%AD_dom%C5%AF
     číslo popisné/číslo orientační
 
-    :type street_name: unicode
-    :type city_name: unicode
-    :type neighborhood: unicode
-    :type house_number: unicode
-    :type orientation_number: unicode
+    :type street_name: unicode|None
+    :type city_name: unicode|None
+    :type neighborhood: unicode|None
+    :type house_number: int|None
+    :type orientation_number: int|None
     :type full_text_address: unicode
     :rtype: unicode
     """
