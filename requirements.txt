@@ -1,11 +1,9 @@
+################################
+# ares_util requirements
+################################
 Django
-Fabric
-coverage
-ecdsa
-nose
-pycrypto
-wheel
-wsgiref
 xmltodict
-colorama
+coverage
+nose
+six
 requests
