@@ -103,7 +103,7 @@ def get_czech_zip_code(ares_data, full_text_address):
     if ares_data and ares_data.isdigit():
         return ares_data.strip()
 
-    p = re.compile(ur'PS[CČ]?\s+(?P<zip_code>\d+)', re.IGNORECASE | re.UNICODE)
+    p = re.compile(r'PS[CČ]?\s+(?P<zip_code>\d+)', re.IGNORECASE | re.UNICODE)
     search = re.search(p, full_text_address)
 
     if search:
