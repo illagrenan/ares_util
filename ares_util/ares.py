@@ -10,9 +10,6 @@ import logging
 import re
 import sys
 import warnings
-from builtins import map
-from builtins import range
-from builtins import str
 
 import requests
 import xmltodict
@@ -38,8 +35,8 @@ def call_ares(company_id):
         >>> returned_dict['legal']['company_id'] == valid_company_id
         True
 
-    @param company_id: int 8-digit number
-    @return: @raise AresNoResponse:
+    :param company_id: 8-digit number
+    :type company_id: unicode|int
     """
     try:
         validate_czech_company_id(company_id)
@@ -96,15 +93,24 @@ def call_ares(company_id):
 
 
 def get_text_value(node):
+    """
+    :type node: dict
+    :rtype: unicode
+    """
     return node.get('#text') if node else None
 
 
 def get_czech_zip_code(ares_data, full_text_address):
+    """
+    :type ares_data: unicode
+    :type full_text_address: unicode
+    :rtype: unicode
+    """
     if ares_data and ares_data.isdigit():
         return ares_data.strip()
 
-    p = re.compile(r'PS[CČ]?\s+(?P<zip_code>\d+)', re.IGNORECASE | re.UNICODE)
-    search = re.search(p, full_text_address)
+    zip_code_regex = re.compile(r'PS[CČ]?\s+(?P<zip_code>\d+)', re.IGNORECASE | re.UNICODE)
+    search = re.search(zip_code_regex, full_text_address)
 
     if search:
         return search.groupdict()["zip_code"].strip()
@@ -140,6 +146,10 @@ def build_czech_street(street_name, city_name, neighborhood, house_number, orien
 
 
 def guess_czech_street_from_full_text_address(full_text_address):
+    """
+    :type full_text_address: unicode
+    :rtype: unicode
+    """
     address_parts = full_text_address.split(',')
 
     # Examples:
@@ -164,6 +174,11 @@ def guess_czech_street_from_full_text_address(full_text_address):
 
 
 def build_city(city, address):
+    """
+    :type city: unicode
+    :type address: unicode
+    :rtype: unicode
+    """
     return city or address.split(',')[0].strip()
 
 
@@ -171,8 +186,8 @@ def get_legal_form(legal_form):
     """
     http://wwwinfo.mfcr.cz/ares/aresPrFor.html.cz
 
-    @param legal_form:
-    @return:
+    :type legal_form: dict
+    :rtype: unicode
     """
     if legal_form:
         return legal_form.get('D:KPF', None)
@@ -185,8 +200,8 @@ def validate_czech_company_id(business_id):
     http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic
     http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
 
-    @param business_id: str
-    @raise ValidationError:
+    :type business_id: unicode
+    :rtype: bool
     """
 
     if isinstance(business_id, int):

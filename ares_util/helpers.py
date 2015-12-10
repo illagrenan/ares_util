@@ -23,8 +23,9 @@ def normalize_company_id_length(business_id):
         >>> normalize_company_id_length(company_id) == "02707435"
         True
 
-    @type business_id: unicode_literals
-    @rtype : unicode_literals
+
+    :type business_id: unicode
+    :rtype: unicode
     """
 
     return business_id.rjust(COMPANY_ID_LENGTH, "0")
