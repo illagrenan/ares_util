@@ -1,16 +1,16 @@
 # Ares_util #
 
-[![Travis CI Badge](https://api.travis-ci.org/illagrenan/ares_util.png)](https://travis-ci.org/illagrenan/ares_util)
-&nbsp;
-[![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)
-&nbsp;
 [![PyPI version](https://badge.fury.io/py/ares_util.png)](http://badge.fury.io/py/ares_util)
 &nbsp;
-[![Wheel Status](https://pypip.in/wheel/ares_util/badge.png)](https://pypi.python.org/pypi/ares_util/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/ares_util/)
 &nbsp;
-[![Egg Status](https://pypip.in/egg/ares_util/badge.png)](https://pypi.python.org/pypi/ares_util/)
+[![Requirements Status](https://requires.io/github/illagrenan/ares_util/requirements.svg?branch=master)](https://requires.io/github/illagrenan/ares_util/requirements/?branch=master)
+
+[![Travis CI Badge](https://api.travis-ci.org/illagrenan/ares_util.png)](https://travis-ci.org/illagrenan/ares_util)
 &nbsp;
-[![License](https://pypip.in/license/ares_util/badge.png)](https://pypi.python.org/pypi/ares_util/)
+[![Build status](https://ci.appveyor.com/api/projects/status/8ui732iutoe9r0vj?svg=true)](https://ci.appveyor.com/project/illagrenan/ares-util)
+&nbsp;
+[![Coverage Status](https://coveralls.io/repos/illagrenan/ares_util/badge.png)](https://coveralls.io/r/illagrenan/ares_util)&nbsp;[![Code Issues](http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg)](http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca)
 
 
 ## Představení
@@ -48,25 +48,38 @@ pip install --upgrade git+git://github.com/illagrenan/ares_util.git
 
 ## Použití ##
 
-> Testováno v Python `2.7.*`.
+> Doplněk podporuje Python `2.7`, `3.3` a `3.4`. TravisCI testuje i oproti `pypy`.
 
 ```shell
-$ python
+python
 >>> from ares_util.ares import call_ares
 >>> call_ares(42)
 False
->>> call_ares(27074358)
-{'legal': {'company_name': u'Asseco Central Europe, a.s.', 'company_id': 27074358}, 'address': {'city': u'Praha', 'region': u'Hlavn\xed m\u011bsto Praha', 'street':
-u'Bud\u011bjovick\xe1 778/3a', 'city_part': u'Michle'}}
+>>> call_ares('68407700')
+{
+    u'legal': {
+        u'company_vat_id': u'CZ68407700',
+        u'company_name': u'České vysoké učení technické v Praze',
+        u'legal_form': u'601',
+        u'company_id': u'68407700'
+    },
+    u'address': {
+        u'city': u'Praha',
+		u'region': u'Hlavní město Praha',
+		u'street': u'Zikova 1903/4',
+        u'city_part': u'Dejvice',
+		u'zip_code': u'16000'
+    }
+}
 ```
 
 ### Django podpora
 
-> Testováno pro Django ve verzi `1.5` a nejnovější `1.6`.
+> Testováno pro Django `>=1.5.*,<1.9.*`.
 
-K dispozi jsou dva [Django validátory](https://docs.djangoproject.com/en/1.6/ref/validators/) formulářových polí:
+K dispozi jsou dva [Django validátory](https://docs.djangoproject.com/en/dev/ref/validators/) formulářových polí:
 
-* `czech_company_id_numeric_validator` - Ověřuje, zda IČ splňuje statické parametry, tj. 8 číslic a kontrolní součet.
+* `czech_company_id_numeric_validator` - Ověřuje, zda IČ splňuje statické parametry, tj. 7 nebo 8 číslic a kontrolní součet.
 * `czech_company_id_ares_api_validator` - Platnost IČ ověřuje pomocí ARES API. Tento validátor před ARES požadavkem rovněž ověřuje statické parametry, proto by **neměly být použity oba validátory zároveň**.
 
 ```python
@@ -75,8 +88,8 @@ INSTALLED_APPS = (
     # ...
     'ares_util',
 )
-
 ```
+
 ```python
 from ares_util.validators import czech_company_id_numeric_validator, czech_company_id_ares_api_validator
 from django import forms
@@ -87,18 +100,28 @@ class DemoForm(forms.Form):
 
 ```
 
-
-# TODOs
-
-- [X] Dokončit podporu pro Django (validátory formulářových polí).
-- [X] Travis CI, Coveralls
-- [ ] Crate.io
-- [X] Opravit homepage na pypi
-- [ ] Ověřit a případně vyřešit kompatibilitu s Python 3.
-- [ ] Zvážit podporu pro načítání dat i z Justice.cz ([http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz](http://www.tomas-dvorak.cz/clanky/nacitani-dat-z-obchodniho-rejstriku-justicecz))
-
 # Reference
 1. http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic, http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
+
+# Lokální vývoj
+
+Chcete-li upravit doplněk lokálně, jednoduše stáhněte zdrojové kódy a nainstalujte závislosti:
+
+```shell
+pip install -r requirements.txt --upgrade
+```
+
+Testy spustíte pomocí `tox` anebo `fab test` máte-li Fabric.
+
+Využít můžete i přibalený Flask server pro lokální testování. Stačí spustit:
+
+```shell
+python .\server.py
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+```
+
+a v prohlížeči otevřít např.: `http://127.0.0.1:5000/42`.
 
 # Technické informace
 
@@ -108,7 +131,7 @@ XML response z ARESu je zpracována pomocí [xmltodict](https://github.com/marti
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Vašek Dohnal
+Copyright (c) 2013&ndash;2015 Vašek Dohnal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

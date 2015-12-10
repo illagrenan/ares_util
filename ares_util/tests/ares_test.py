@@ -3,10 +3,12 @@
 
 from __future__ import unicode_literals
 
-from unittest2 import TestCase
+from unittest import TestCase
 
 from ..ares import call_ares, get_legal_form
+from .. import ares
 from ..helpers import normalize_company_id_length
+from ..exceptions import AresConnectionError
 
 
 class CallARESTestCase(TestCase):
@@ -21,15 +23,23 @@ class CallARESTestCase(TestCase):
         # Viz http://phpfashion.com/jak-overit-platne-ic-a-rodne-cislo
         self.assertFalse(call_ares(company_id=25596641), dict)
 
+    def test_encoding(self):
+        ares_response = call_ares(company_id=68407700)
+
+        self.assertEqual(ares_response['legal']['company_name'], "České vysoké učení technické v Praze")
+        self.assertEqual(ares_response['address']['street'], "Zikova 1903/4")
+
+    def test_special_case_for_issue9(self):
+        # See: http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi?ico=25834151
+        ares_response = call_ares(company_id=25834151)
+
+        self.assertEqual(ares_response['legal']['company_name'], "HELLA AUTOTECHNIK NOVA, s.r.o.")
+        self.assertEqual(ares_response['address']['street'], "Družstevní 338/16")
+        self.assertEqual(ares_response['address']['city'], "Mohelnice")
+        self.assertEqual(ares_response['address']['zip_code'], "78985")
+
     def test_valid_values(self):
-        self.assertIsInstance(call_ares(company_id=27074358), dict)
-
-        actual = call_ares(company_id=68407700)['address']['street']
-        # ČVUT v Praze
-        expected = "Zikova 1903/4"
-        self.assertEqual(actual, expected)
-
-        other_valid_company_ids = ('62739913', '25063677', '1603094', '01603094')
+        other_valid_company_ids = ('62739913', '25063677', '1603094', '01603094', '27074358')
 
         try:
             for one_id in other_valid_company_ids:
@@ -37,6 +47,12 @@ class CallARESTestCase(TestCase):
                 self.assertEqual(normalize_company_id_length(one_id), ares_data['legal']['company_id'])
         except KeyError as error:
             self.fail(error)
+
+    def test_raises_ares_connection_exception(self):
+        correct_url = ares.ARES_API_URL
+        ares.ARES_API_URL = 'http://nonsenseurl.nonsence'
+        self.assertRaises(AresConnectionError, call_ares, company_id='62739913')
+        ares.ARES_API_URL = correct_url
 
 
 class LegalFormTest(TestCase):

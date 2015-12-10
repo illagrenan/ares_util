@@ -6,7 +6,8 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from unittest2 import TestCase
+from unittest import TestCase
+
 from django.core.exceptions import ValidationError
 
 from ..ares import validate_czech_company_id

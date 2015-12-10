@@ -2,17 +2,32 @@
 # coding=utf-8
 
 from __future__ import unicode_literals
+from __future__ import print_function
+from __future__ import division
+from __future__ import absolute_import
+import re
+
+from builtins import *
+from future import standard_library
+import requests
+from requests.exceptions import RequestException
+
+standard_library.install_aliases()
+
+from builtins import map
+from builtins import str
+from builtins import range
 
 import sys
 import warnings
+import logging
 
-import requests
 import xmltodict
 
-from .settings import ARES_API_URL, COMPANY_ID_LENGTH
+from .settings import COMPANY_ID_LENGTH, ARES_API_URL
 
 from .helpers import normalize_company_id_length
-from .exceptions import InvalidCompanyIDError, AresNoResponseError
+from .exceptions import InvalidCompanyIDError, AresNoResponseError, AresConnectionError
 
 
 def call_ares(company_id):
@@ -39,13 +54,22 @@ def call_ares(company_id):
         return False
 
     params = {'ico': company_id}
-    response = requests.get(ARES_API_URL, params=params)
+
+    try:
+        response = requests.get(ARES_API_URL, params=params)
+    except RequestException as e:
+        raise AresConnectionError('Exception, ' + str(e))
 
     if response.status_code != 200:
         raise AresNoResponseError()
 
-    xml_response = response.text
-    ares_data = xmltodict.parse(xml_response)
+    # See: http://docs.python-requests.org/en/latest/user/quickstart/#response-content
+    # If you change the encoding, Requests will use the new value of r.encoding whenever you
+    # call r.text. You might want to do this in any situation where you can apply special logic
+    # to work out what the encoding of the content will be. For example, HTTP and XML have
+    # the ability to specify their encoding in their body.
+    response.encoding = 'utf-8'
+    ares_data = xmltodict.parse(response.text)
 
     response_root = ares_data['are:Ares_odpovedi']['are:Odpoved']
     number_of_results = response_root['D:PZA']
@@ -55,42 +79,92 @@ def call_ares(company_id):
 
     company_record = response_root['D:VBAS']
     address = company_record['D:AA']
+    full_text_address = address.get('D:AT', '')
 
     result_company_info = {
         'legal': {
-            'company_name': get_text_value(company_record.get('D:OF', None)),
-            'company_id': get_text_value(company_record.get('D:ICO', None)),
-            'company_vat_id': get_text_value(company_record.get('D:DIC', None)),
-            'legal_form': get_legal_form(company_record.get('D:PF', None))
+            'company_name': get_text_value(company_record.get('D:OF')),
+            'company_id': get_text_value(company_record.get('D:ICO')),
+            'company_vat_id': get_text_value(company_record.get('D:DIC')),
+            'legal_form': get_legal_form(company_record.get('D:PF'))
         },
         'address': {
-            'region': address.get('D:NOK', None),
-            'city': address.get('D:N', None),
-            'city_part': address.get('D:NCO', None),
-            'street': build_czech_street(address.get('D:NU', str()), address.get('D:N', None),
-                                         address.get('D:NCO', None), address.get('D:CD', None),
-                                         address.get('D:CO', None)),
-            'zip_code': address.get('D:PSC', None)
+            'region': address.get('D:NOK'),
+            'city': build_city(address.get('D:N'), full_text_address),
+            'city_part': address.get('D:NCO'),
+            'street': build_czech_street(address.get('D:NU', str()), address.get('D:N'),
+                                         address.get('D:NCO'),
+                                         address.get('D:CD') or address.get('D:CA'),
+                                         address.get('D:CO'), full_text_address),
+            'zip_code': get_czech_zip_code(address.get('D:PSC'), full_text_address)
         }
     }
     return result_company_info
 
 
 def get_text_value(node):
-    return node.get('#text', None) if node else None
+    return node.get('#text') if node else None
 
 
-def build_czech_street(street_name, city_name, neighborhood, house_number, orientation_number):
+def get_czech_zip_code(ares_data, full_text_address):
+    if ares_data and ares_data.isdigit():
+        return ares_data.strip()
+
+    p = re.compile(ur'PS[CČ]?\s+(?P<zip_code>\d+)', re.IGNORECASE | re.UNICODE)
+    search = re.search(p, full_text_address)
+
+    if search:
+        return search.groupdict()["zip_code"].strip()
+    else:
+        logging.warning("Cannot retrieve ZIP_CODE from this: \"{0}\" address".format(full_text_address))
+
+        # TODO Improve this code
+        return ""
+
+
+def build_czech_street(street_name, city_name, neighborhood, house_number, orientation_number, full_text_address):
     """
     https://cs.wikipedia.org/wiki/Ozna%C4%8Dov%C3%A1n%C3%AD_dom%C5%AF
 
     číslo popisné/číslo orientační
     """
     street_name = street_name or neighborhood or city_name  # Fallback in case of a small village
-    if not orientation_number:
-        return street_name + ' ' + str(house_number)
 
-    return street_name + ' ' + str(house_number) + "/" + str(orientation_number)
+    if not street_name and not house_number:
+        return guess_czech_street_from_full_text_address(full_text_address)
+
+    if not orientation_number:
+        return "{0}{1}".format(street_name, " %s" % house_number if house_number else "")
+
+    return "{0} {1}/{2}".format(street_name, str(house_number), str(orientation_number))
+
+
+def guess_czech_street_from_full_text_address(full_text_address):
+    address_parts = full_text_address.split(',')
+
+    # Examples:
+    #   Ústí nad Labem-město, Vaníčkova 11
+    #                         ^^^^^^^^^^^^
+    #
+    #   Bohutín 310
+    #   ^^^^^^^^^^^
+    if len(address_parts) < 3:
+        # Get the last element of a list
+        return address_parts[-1].strip()
+
+    # Examples:
+    #   Mohelnice, Družstevní 338/16, PSČ 78985
+    #              ^^^^^^^^^^^^^^^^^
+    elif len(address_parts) == 3:
+        return address_parts[1].strip()
+    else:
+        logging.warning("Cannot parse this: \"%s\" address" % full_text_address)
+        # TODO Improve this code
+        return ""
+
+
+def build_city(city, address):
+    return city or address.split(',')[0].strip()
 
 
 def get_legal_form(legal_form):
@@ -119,13 +193,13 @@ def validate_czech_company_id(business_id):
         warnings.warn("In version 0.1.5 integer parameter will be invalid. "
                       "Use string instead.", DeprecationWarning, stacklevel=2)
 
-    business_id = unicode(business_id)
+    business_id = str(business_id)
 
     # if len(business_id) != 8:
     # raise InvalidCompanyIDError("Company ID must be 8 digits long")
 
     try:
-        digits = map(int, list(normalize_company_id_length(business_id)))
+        digits = list(map(int, list(normalize_company_id_length(business_id))))
     except ValueError:
         raise InvalidCompanyIDError("Company ID must be a number")
 
@@ -139,15 +213,15 @@ def validate_czech_company_id(business_id):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print ('Pass company ID as a function argument')
+        print('Pass company ID as a function argument')
         sys.exit(2)
 
     company_id_to_check = sys.argv[1]
     ares_response = call_ares(company_id_to_check)
 
     if not ares_response:
-        print('Company ID "%s" is not valid' % company_id_to_check)
+        print("Company ID \"{0}\" is not valid".format(company_id_to_check))
     else:
-        print (ares_response)
+        print(ares_response)
 
-    sys.exit(1)
+    sys.exit(0)
