@@ -10,12 +10,12 @@ import logging
 import re
 import sys
 import warnings
-
-import requests
-import xmltodict
 from builtins import map
 from builtins import range
 from builtins import str
+
+import requests
+import xmltodict
 from requests.exceptions import RequestException
 
 from .exceptions import InvalidCompanyIDError, AresNoResponseError, AresConnectionError
@@ -118,8 +118,15 @@ def get_czech_zip_code(ares_data, full_text_address):
 def build_czech_street(street_name, city_name, neighborhood, house_number, orientation_number, full_text_address):
     """
     https://cs.wikipedia.org/wiki/Ozna%C4%8Dov%C3%A1n%C3%AD_dom%C5%AF
-
     číslo popisné/číslo orientační
+
+    :type street_name: unicode
+    :type city_name: unicode
+    :type neighborhood: unicode
+    :type house_number: unicode
+    :type orientation_number: unicode
+    :type full_text_address: unicode
+    :rtype: unicode
     """
     street_name = street_name or neighborhood or city_name  # Fallback in case of a small village
 
