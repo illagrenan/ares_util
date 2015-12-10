@@ -1,11 +1,9 @@
-Django<=1.6.9
+Django
 Fabric
 coverage
 ecdsa
 nose
-paramiko==1.12.1
 pycrypto
-unittest2
 wheel
 wsgiref
 xmltodict

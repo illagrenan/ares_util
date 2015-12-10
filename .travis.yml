@@ -1,25 +1,56 @@
 language: python
+sudo: false
 python:
-    - "2.6"
-    - "2.7"
-    - "pypy"
+  - 2.7
+  - 3.3
+  - 3.4
+  - 3.5
+# - pypy
+# - nightly
 env:
-    - DJANGO_VERSION=1.6
-    - DJANGO_VERSION=1.5
+  - DJANGO=1.5.0
+  - DJANGO=1.5.12
+  - DJANGO=1.6.0
+  - DJANGO=1.6.11
+  - DJANGO=1.7.0
+  - DJANGO=1.7.11
+  - DJANGO=1.8.7
+  - DJANGO=1.9.0
 install:
-    - sudo apt-get install pandoc
-    - pip install pypandoc
-    - pip install fabric
-    - pip install unittest2 --use-mirrors
-    - pip install -q Django==$DJANGO_VERSION --use-mirrors
-    - pip install xmltodict --use-mirrors
-    - pip install coveralls --use-mirrors
-    - pip install nose --use-mirrors
+    - easy_install -U pip & pip install setuptools wheel --upgrade
+    - pip install -q Django==$DJANGO
+    - pip install xmltodict
+    - pip install coveralls
+    - pip install nose
+    - pip install six
+    - pip install requests
+    - pip install travis
+    - pip install flask
 script:
+    - rm -f fabfile.py
     - python setup.py build
     - python setup.py sdist
-    - nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
+    - python setup.py bdist_wheel
+    - python setup.py nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
 after_success:
     - coveralls
 notifications:
     email: false
+matrix:
+  exclude:
+    # Taken from: https://github.com/darklow/django-suit/blob/develop/.travis.yml
+    # Django doesn't support following combinations
+    - python: 3.3
+      env: DJANGO=1.4.0
+    - python: 3.3
+      env: DJANGO=1.4.20
+    - python: 3.4
+      env: DJANGO=1.4.0
+    - python: 3.4
+      env: DJANGO=1.4.20
+    # Fails. Django issue #19944
+    # https://code.djangoproject.com/ticket/19944
+    - python: pypy
+      env: DJANGO=1.5
+    - python: pypy
+      env: DJANGO=1.5.12
