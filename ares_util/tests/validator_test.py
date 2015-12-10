@@ -1,14 +1,17 @@
 #!/usr/bin/python
 # coding=utf-8
 
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
 from __future__ import unicode_literals
 
 from unittest2 import TestCase
 from django.core.exceptions import ValidationError
 
 from ..ares import validate_czech_company_id
-from ..validators import czech_company_id_numeric_validator, czech_company_id_ares_api_validator
 from ..exceptions import InvalidCompanyIDError
+from ..validators import czech_company_id_numeric_validator, czech_company_id_ares_api_validator
 
 
 class ValidateCzechBusinessIdTestCase(TestCase):
