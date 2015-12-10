@@ -10,6 +10,9 @@ import logging
 import re
 import sys
 import warnings
+from builtins import map
+from builtins import range
+from builtins import str
 
 import requests
 import xmltodict
