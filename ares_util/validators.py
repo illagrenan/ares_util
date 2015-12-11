@@ -6,6 +6,8 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
+from builtins import (str)
+
 from django.core.exceptions import ValidationError
 # TODO Add support for Django translations
 # from django.utils.translation import ugettext as _

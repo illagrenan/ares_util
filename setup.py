@@ -50,7 +50,7 @@ setup(
     # find_packages(exclude=['tests*'])
     packages=['ares_util'],
 
-    install_requires=['xmltodict', 'requests'],
+    install_requires=['xmltodict', 'future', 'requests'],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',
