@@ -73,6 +73,7 @@ test_script:
 
 after_test:
   # If tests are successful, create a whl package for the project.
+  - "%CMD_IN_ENV% pip install wheel setuptools --upgrade"
   - "%CMD_IN_ENV% python setup.py build"
   - "%CMD_IN_ENV% python setup.py sdist"
   - "%CMD_IN_ENV% python setup.py bdist_wheel"
