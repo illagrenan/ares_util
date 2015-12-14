@@ -68,7 +68,7 @@ build: false  # Not a C# project, build stuff at the test step instead.
 
 test_script:
   # Build the compiled extension and run the project tests
-  - Remove-Item fabfile.py server.py
+  - del fabfile.py server.py
   - "%CMD_IN_ENV% python setup.py nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest"
 
 after_test:
