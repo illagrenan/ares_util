@@ -1,13 +1,13 @@
 ################################
 # Development requirements
 ################################
-django>=1.6,<1.9
+django
 xmltodict
-fabric
+Fabric
+colorama
 coveralls
 wheel
 nose
-future
 six
 requests
 flask

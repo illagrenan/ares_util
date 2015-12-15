@@ -1,14 +1,17 @@
-#!/usr/bin/python
+# !/usr/bin/python
 # coding=utf-8
 
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
 from __future__ import unicode_literals
 
 from unittest import TestCase
 
-from ..ares import call_ares, get_legal_form
 from .. import ares
-from ..helpers import normalize_company_id_length
+from ..ares import call_ares, get_legal_form
 from ..exceptions import AresConnectionError
+from ..helpers import normalize_company_id_length
 
 
 class CallARESTestCase(TestCase):
@@ -39,7 +42,7 @@ class CallARESTestCase(TestCase):
         self.assertEqual(ares_response['address']['zip_code'], "78985")
 
     def test_valid_values(self):
-        other_valid_company_ids = ('62739913', '25063677', '1603094', '01603094', '27074358')
+        other_valid_company_ids = ('25063677', '1603094', '01603094', '27074358')
 
         try:
             for one_id in other_valid_company_ids:

@@ -1,19 +1,14 @@
 # coding=utf-8
 
-from __future__ import print_function
-from __future__ import division
 from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
 from __future__ import unicode_literals
 
 import shutil
-
-from future import standard_library
-
-standard_library.install_aliases()
-from builtins import *
+import sys
 
 import six
-import sys
 
 if not six.PY2:
     print("Run Fabfile only under Python 2.x")

@@ -44,3 +44,7 @@ nosetests.xml
 /*.json
 *.bak
 /ares_util/*.spec
+/.env
+/activate.ps1
+/.env3
+/activate3.ps1

@@ -1,33 +1,24 @@
 # !/usr/bin/python
 # coding=utf-8
 
-from __future__ import unicode_literals
-from __future__ import print_function
-from __future__ import division
 from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
+
+import logging
 import re
-
-from builtins import *
-from future import standard_library
-import requests
-from requests.exceptions import RequestException
-
-standard_library.install_aliases()
-
-from builtins import map
-from builtins import str
-from builtins import range
-
 import sys
 import warnings
-import logging
+from builtins import (int, list, range, str, map)
 
+import requests
 import xmltodict
+from requests.exceptions import RequestException
 
-from .settings import COMPANY_ID_LENGTH, ARES_API_URL
-
-from .helpers import normalize_company_id_length
 from .exceptions import InvalidCompanyIDError, AresNoResponseError, AresConnectionError
+from .helpers import normalize_company_id_length
+from .settings import COMPANY_ID_LENGTH, ARES_API_URL
 
 
 def call_ares(company_id):
@@ -45,8 +36,8 @@ def call_ares(company_id):
         >>> returned_dict['legal']['company_id'] == valid_company_id
         True
 
-    @param company_id: int 8-digit number
-    @return: @raise AresNoResponse:
+    :param company_id: 8-digit number
+    :type company_id: unicode|int
     """
     try:
         validate_czech_company_id(company_id)
@@ -103,15 +94,24 @@ def call_ares(company_id):
 
 
 def get_text_value(node):
+    """
+    :type node: dict
+    :rtype: unicode
+    """
     return node.get('#text') if node else None
 
 
 def get_czech_zip_code(ares_data, full_text_address):
+    """
+    :type ares_data: unicode
+    :type full_text_address: unicode
+    :rtype: unicode
+    """
     if ares_data and ares_data.isdigit():
         return ares_data.strip()
 
-    p = re.compile(ur'PS[CČ]?\s+(?P<zip_code>\d+)', re.IGNORECASE | re.UNICODE)
-    search = re.search(p, full_text_address)
+    zip_code_regex = re.compile(r'PS[CČ]?\s+(?P<zip_code>\d+)', re.IGNORECASE | re.UNICODE)
+    search = re.search(zip_code_regex, full_text_address)
 
     if search:
         return search.groupdict()["zip_code"].strip()
@@ -125,8 +125,15 @@ def get_czech_zip_code(ares_data, full_text_address):
 def build_czech_street(street_name, city_name, neighborhood, house_number, orientation_number, full_text_address):
     """
     https://cs.wikipedia.org/wiki/Ozna%C4%8Dov%C3%A1n%C3%AD_dom%C5%AF
-
     číslo popisné/číslo orientační
+
+    :type street_name: unicode|None
+    :type city_name: unicode|None
+    :type neighborhood: unicode|None
+    :type house_number: int|None
+    :type orientation_number: int|None
+    :type full_text_address: unicode
+    :rtype: unicode
     """
     street_name = street_name or neighborhood or city_name  # Fallback in case of a small village
 
@@ -140,6 +147,10 @@ def build_czech_street(street_name, city_name, neighborhood, house_number, orien
 
 
 def guess_czech_street_from_full_text_address(full_text_address):
+    """
+    :type full_text_address: unicode
+    :rtype: unicode
+    """
     address_parts = full_text_address.split(',')
 
     # Examples:
@@ -164,6 +175,11 @@ def guess_czech_street_from_full_text_address(full_text_address):
 
 
 def build_city(city, address):
+    """
+    :type city: unicode
+    :type address: unicode
+    :rtype: unicode
+    """
     return city or address.split(',')[0].strip()
 
 
@@ -171,8 +187,8 @@ def get_legal_form(legal_form):
     """
     http://wwwinfo.mfcr.cz/ares/aresPrFor.html.cz
 
-    @param legal_form:
-    @return:
+    :type legal_form: dict
+    :rtype: unicode
     """
     if legal_form:
         return legal_form.get('D:KPF', None)
@@ -185,8 +201,8 @@ def validate_czech_company_id(business_id):
     http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic
     http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
 
-    @param business_id: str
-    @raise ValidationError:
+    :type business_id: unicode
+    :rtype: bool
     """
 
     if isinstance(business_id, int):

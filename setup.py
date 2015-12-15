@@ -5,11 +5,13 @@ from setuptools import setup
 try:
     from pypandoc import convert
 
+
     def read_md(file_name):
         # http://stackoverflow.com/a/23265673/752142
         return convert(file_name, 'rst')
 except ImportError:
     print("warning: pypandoc module not found, could not convert Markdown to RST")
+
 
     def read_md(file_name):
         try:
@@ -20,7 +22,7 @@ except ImportError:
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='ares_util',
-    version='0.1.9',
+    version='0.1.10',
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
@@ -48,13 +50,13 @@ setup(
     # find_packages(exclude=['tests*'])
     packages=['ares_util'],
 
-
     install_requires=['xmltodict', 'future', 'requests'],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'License :: OSI Approved :: MIT License',
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',

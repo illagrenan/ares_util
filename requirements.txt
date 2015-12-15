@@ -1,22 +1,10 @@
 ################################
-# Development requirements
+# ares_util requirements
 ################################
-django>=1.8.6,<1.9
-Fabric
-coverage
-ecdsa
-nose
-paramiko
-pycrypto
-wheel
-wsgiref
+Django
 xmltodict
-colorama
-future
+coverage
+nose
 six
--e git+git://github.com/illagrenan/color-printer.git#egg=color-printer
-pypandoc
-tox
-flake8
-requests[security]
-twine
+requests
+future
