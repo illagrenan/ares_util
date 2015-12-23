@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from builtins import open, bytes
+from builtins import open
 
 from setuptools import setup
 
