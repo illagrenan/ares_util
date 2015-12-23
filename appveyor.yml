@@ -77,8 +77,8 @@ after_test:
   - "%CMD_IN_ENV% python setup.py build"
   - "%CMD_IN_ENV% python setup.py sdist"
   - "%CMD_IN_ENV% python setup.py bdist_wheel"
-  - "%CMD_IN_ENV% python setup.py bdist_wininst"
   - ps: "ls dist"
+  # - "%CMD_IN_ENV% python setup.py bdist_wininst"
 
 artifacts:
   # Archive the generated wheel package in the ci.appveyor.com build report.
