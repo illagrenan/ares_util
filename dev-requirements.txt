@@ -5,6 +5,9 @@ django
 xmltodict
 Fabric
 colorama
+docutils
+pypandoc
+pygments
 coveralls
 wheel
 nose

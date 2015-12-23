@@ -102,6 +102,29 @@ def publish():
 
 
 @task()
+def test_rst():
+    local('pandoc --from=markdown --to=rst --output=README.rst README.md')
+    local('python -m rst2html --output-encoding=\'UTF-8\' README.rst README.html')
+
+    green("OK.")
+
+
+@task()
+def publish_test():
+    if confirm(u'Really publish?', default=False):
+        local('python setup.py bdist_wheel upload -r https://testpypi.python.org/pypi')
+
+        green("Published.")
+
+
+@task()
+def install_test():
+    local('pip install -i https://testpypi.python.org/pypi ares_util')
+
+    green("OK.")
+
+
+@task()
 def publish_insecure():
     if confirm(u'Really publish?', default=False):
         local('python setup.py sdist upload -r pypi')
