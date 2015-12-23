@@ -1,5 +1,7 @@
 # coding=utf-8
 
+from builtins import open, bytes
+
 from setuptools import setup
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
@@ -20,7 +22,7 @@ setup(
     #
     # $ fab build
     # ########################################################################
-    long_description=open("README.rst", 'r').read(),
+    long_description=open("README.rst", 'r', encoding="utf8").read(),
 
     url='https://github.com/illagrenan/ares_util',
     license='MIT',
