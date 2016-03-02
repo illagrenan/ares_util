@@ -162,16 +162,16 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 .. |PackageVersion| image:: https://badge.fury.io/py/ares_util.png
-:target: http://badge.fury.io/py/ares_util
+    :target: http://badge.fury.io/py/ares_util
 .. |License| image:: https://img.shields.io/badge/license-MIT-blue.svg
-:target: https://pypi.python.org/pypi/ares_util/
+    :target: https://pypi.python.org/pypi/ares_util/
 .. |RequirementsStatus| image:: https://requires.io/github/illagrenan/ares_util/requirements.svg?branch=master
-:target: https://requires.io/github/illagrenan/ares_util/requirements/?branch=master
+    :target: https://requires.io/github/illagrenan/ares_util/requirements/?branch=master
 .. |TravisCiBadge| image:: https://api.travis-ci.org/illagrenan/ares_util.png
-:target: https://travis-ci.org/illagrenan/ares_util
+    :target: https://travis-ci.org/illagrenan/ares_util
 .. |BuildStatus| image:: https://ci.appveyor.com/api/projects/status/8ui732iutoe9r0vj?svg=true
-:target: https://ci.appveyor.com/project/illagrenan/ares-util
+    :target: https://ci.appveyor.com/project/illagrenan/ares-util
 .. |CoverageStatus| image:: https://coveralls.io/repos/illagrenan/ares_util/badge.png
-:target: https://coveralls.io/r/illagrenan/ares_util
+    :target: https://coveralls.io/r/illagrenan/ares_util
 .. |CodeIssues| image:: http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg
-:target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca
+    :target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca
