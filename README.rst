@@ -1,3 +1,5 @@
+# coding=utf-8
+
 Ares\_util
 ==========
 
@@ -12,29 +14,17 @@ Ares\_util
 Představení
 -----------
 
-Jednoduchý nástroj pro validaci1 českého IČ. U předaného čísla je
-nejdříve ověřen jeho kontrolní součet (viz
-`Reference <https://github.com/illagrenan/ares_util/master/README.md#reference>`__)
-a dle výsledku se následně zasílá požadavek na `ARES XML
+Jednoduchý nástroj pro validaci\ :sup:`1` českého IČ. U předaného čísla je nejdříve ověřen jeho kontrolní součet (viz `Reference <https://github.com/illagrenan/ares_util/master/README.md#reference>`__) a dle výsledku se následně zasílá požadavek na `ARES XML
 API <http://wwwinfo.mfcr.cz/ares/ares_xml.html.cz>`__.
 
-Pokud je IČ validní, vrací nástroj ``dict`` se základními údaji o firmě
-(obchodní název, adresa).
+Pokud je IČ validní, vrací nástroj ``dict`` se základními údaji o firmě (obchodní název, adresa).
 
-    Doporučuji prostudovat `Podmínky provozu ARES
-    API <http://wwwinfo.mfcr.cz/ares/ares_podminky.html.cz>`__, zejména
-    pak:
+Podmínky provozu ARES API
+-------------------------
 
-    Ministerstvo financí vyhrazuje právo omezit nebo znemožnit přístup k
-    www aplikaci ARES uživatelům, kteří: \* odešlou k vyřízení více než
-    1000 dotazů v době od 8:00 hod. do 18:00 hod., \* odešlou k vyřízení
-    více než 5000 dotazů v době od 18:00 hod. do 8:00 hod. rána
-    následujícího dne, \* opakovaně posílají nesprávně vyplněné dotazy,
-    \* opakovaně posílají stejné dotazy, \* mají větší počet současně
-    zadaných dotazů (pro automatizované XML dotazy), \* obcházejí
-    povolené limity využíváním dotazování z většího množství IP adres,
-    \* automatizovaně propátrávají databázi náhodnými údaji nebo
-    generují většinu nesprávných dotazů.
+Ministerstvo financí vyhrazuje právo omezit nebo znemožnit přístup k www aplikaci ARES uživatelům, kteří: \* odešlou k vyřízení více než 1000 dotazů v době od 8:00 hod. do 18:00 hod., \* odešlou k vyřízení více než 5000 dotazů v době od 18:00 hod. do 8:00 hod. rána následujícího dne, \* opakovaně posílají nesprávně vyplněné dotazy, \* opakovaně posílají stejné dotazy, \* mají větší počet současně zadaných dotazů (pro automatizované XML dotazy), \* obcházejí povolené limity využíváním dotazování z většího množství IP adres, \* automatizovaně propátrávají databázi náhodnými údaji nebo generují většinu nesprávných dotazů.
+
+Zdroj: `Podmínky provozu ARES API <http://wwwinfo.mfcr.cz/ares/ares_podminky.html.cz>`__.
 
 Instalace
 ---------
@@ -54,8 +44,7 @@ Instalace
 Použití
 -------
 
-    Doplněk podporuje Python ``2.7``, ``3.3`` a ``3.4``. TravisCI
-    testuje i oproti ``pypy``.
+Podporované verze Pythonu jsou ``2.7``, ``3.3``, ``3.4`` a ``3.5``.
 
 .. code:: shell
 
@@ -83,7 +72,7 @@ Použití
 Django podpora
 ~~~~~~~~~~~~~~
 
-    Testováno pro Django ``>=1.5.*,<1.9.*``.
+Podporované verze Djanga jsou ``>=1.5.*,=<1.9.*``.
 
 K dispozi jsou dva `Django
 validátory <https://docs.djangoproject.com/en/dev/ref/validators/>`__
@@ -175,16 +164,16 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 .. |PackageVersion| image:: https://badge.fury.io/py/ares_util.png
-   :target: http://badge.fury.io/py/ares_util
+:target: http://badge.fury.io/py/ares_util
 .. |License| image:: https://img.shields.io/badge/license-MIT-blue.svg
-   :target: https://pypi.python.org/pypi/ares_util/
+:target: https://pypi.python.org/pypi/ares_util/
 .. |RequirementsStatus| image:: https://requires.io/github/illagrenan/ares_util/requirements.svg?branch=master
-   :target: https://requires.io/github/illagrenan/ares_util/requirements/?branch=master
+:target: https://requires.io/github/illagrenan/ares_util/requirements/?branch=master
 .. |TravisCiBadge| image:: https://api.travis-ci.org/illagrenan/ares_util.png
-   :target: https://travis-ci.org/illagrenan/ares_util
+:target: https://travis-ci.org/illagrenan/ares_util
 .. |BuildStatus| image:: https://ci.appveyor.com/api/projects/status/8ui732iutoe9r0vj?svg=true
-   :target: https://ci.appveyor.com/project/illagrenan/ares-util
+:target: https://ci.appveyor.com/project/illagrenan/ares-util
 .. |CoverageStatus| image:: https://coveralls.io/repos/illagrenan/ares_util/badge.png
-   :target: https://coveralls.io/r/illagrenan/ares_util
+:target: https://coveralls.io/r/illagrenan/ares_util
 .. |CodeIssues| image:: http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg
-   :target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca
+:target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca
