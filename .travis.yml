@@ -14,8 +14,8 @@ env:
   - DJANGO=1.6.11
   - DJANGO=1.7.0
   - DJANGO=1.7.11
-  - DJANGO=1.8.8
-  - DJANGO=1.9.1
+  - DJANGO=1.8.10
+  - DJANGO=1.9.3
 install:
     - easy_install -U pip & pip install setuptools wheel --upgrade
     - pip install -q Django==$DJANGO
