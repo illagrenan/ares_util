@@ -1,5 +1,3 @@
-# coding=utf-8
-
 Ares\_util
 ==========
 
@@ -14,8 +12,7 @@ Ares\_util
 Představení
 -----------
 
-Jednoduchý nástroj pro validaci\ :sup:`1` českého IČ. U předaného čísla je nejdříve ověřen jeho kontrolní součet (viz `Reference <https://github.com/illagrenan/ares_util/master/README.md#reference>`__) a dle výsledku se následně zasílá požadavek na `ARES XML
-API <http://wwwinfo.mfcr.cz/ares/ares_xml.html.cz>`__.
+Jednoduchý nástroj pro validaci\ :sup:`1` českého IČ. U předaného IČ je nejdříve ověřen jeho kontrolní součet (viz `Reference <https://github.com/illagrenan/ares_util/master/README.md#reference>`__) a dle výsledku se následně zasílá požadavek na `ARES XML API <http://wwwinfo.mfcr.cz/ares/ares_xml.html.cz>`__.
 
 Pokud je IČ validní, vrací nástroj ``dict`` se základními údaji o firmě (obchodní název, adresa).
 
@@ -70,13 +67,11 @@ Podporované verze Pythonu jsou ``2.7``, ``3.3``, ``3.4`` a ``3.5``.
     }
 
 Django podpora
-~~~~~~~~~~~~~~
+--------------
 
 Podporované verze Djanga jsou ``>=1.5.*,=<1.9.*``.
 
-K dispozi jsou dva `Django
-validátory <https://docs.djangoproject.com/en/dev/ref/validators/>`__
-formulářových polí:
+K dispozi jsou dva `Django validátory <https://docs.djangoproject.com/en/dev/ref/validators/>`__ formulářových polí:
 
 -  ``czech_company_id_numeric_validator`` - Ověřuje, zda IČ splňuje
    statické parametry, tj. 7 nebo 8 číslic a kontrolní součet.
@@ -84,6 +79,9 @@ formulářových polí:
    ARES API. Tento validátor před ARES požadavkem rovněž ověřuje
    statické parametry, proto by **neměly být použity oba validátory
    zároveň**.
+
+Instalace
+~~~~~~~~~
 
 .. code:: python
 
