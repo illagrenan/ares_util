@@ -7,7 +7,6 @@ import logging
 import re
 import sys
 import warnings
-from builtins import (int, list, range, str, map)
 
 import requests
 import xmltodict
@@ -206,10 +205,7 @@ def validate_czech_company_id(business_id):
         warnings.warn("In version 0.1.5 integer parameter will be invalid. "
                       "Use string instead.", DeprecationWarning, stacklevel=2)
 
-    business_id = str(business_id)
-
-    # if len(business_id) != 8:
-    # raise InvalidCompanyIDError("Company ID must be 8 digits long")
+    business_id = "%s" % business_id
 
     try:
         digits = list(map(int, list(normalize_company_id_length(business_id))))

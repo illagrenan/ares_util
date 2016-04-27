@@ -3,11 +3,7 @@
 
 from __future__ import (absolute_import, division, print_function, unicode_literals)
 
-from builtins import (str)
-
 from django.core.exceptions import ValidationError
-# TODO Add support for Django translations
-# from django.utils.translation import ugettext as _
 
 from .ares import call_ares, validate_czech_company_id
 from .exceptions import InvalidCompanyIDError
@@ -21,7 +17,7 @@ def czech_company_id_numeric_validator(business_id):
     try:
         validate_czech_company_id(business_id)
     except InvalidCompanyIDError as e:
-        raise ValidationError(str(e))
+        raise ValidationError("{0}".format(e))
 
 
 def czech_company_id_ares_api_validator(business_id):
