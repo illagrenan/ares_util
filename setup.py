@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='ares_util',
-    version='0.1.10.1',
+    version='0.1.11',
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
@@ -16,7 +16,7 @@ setup(
     author='Vasek Dohnal',
     author_email='vaclav.dohnal@gmail.com',
     packages=['ares_util'],
-    install_requires=['xmltodict', 'future', 'requests'],
+    install_requires=['xmltodict', 'requests'],
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 2",
