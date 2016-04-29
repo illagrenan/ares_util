@@ -68,7 +68,7 @@ def test_install():
 
 @task()
 def test():
-    local("nosetests --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest")
+    local("nosetests --with-coverage --cover-package=ares_util --cover-erase --with-doctest")
 
     green("Test OK.")
 
