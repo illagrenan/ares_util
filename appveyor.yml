@@ -68,22 +68,7 @@ build: false  # Not a C# project, build stuff at the test step instead.
 
 test_script:
   # Build the compiled extension and run the project tests
-  - del fabfile.py server.py
-  - "%CMD_IN_ENV% python setup.py nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest"
-
-after_test:
-  # If tests are successful, create a whl package for the project.
-  - "%CMD_IN_ENV% pip install wheel setuptools --upgrade"
-  - "%CMD_IN_ENV% python setup.py build"
-  - "%CMD_IN_ENV% python setup.py sdist"
-  - "%CMD_IN_ENV% python setup.py bdist_wheel"
-  - ps: "ls dist"
-  # - "%CMD_IN_ENV% python setup.py bdist_wininst"
-
-artifacts:
-  # Archive the generated wheel package in the ci.appveyor.com build report.
-  - path: dist\*
-
-#on_success:
-#  - TODO: upload the content of dist/*.whl to a public wheelhouse
-#
+#  - del fabfile.py server.py
+  - "%CMD_IN_ENV% inv test
+  - "%CMD_IN_ENV% inv build
+  - "%CMD_IN_ENV% inv test_install
