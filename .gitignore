@@ -50,3 +50,4 @@ nosetests.xml
 /activate3.ps1
 /htmlcov
 /.cache
+/.eggs

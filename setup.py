@@ -32,5 +32,7 @@ setup(
         'Intended Audience :: Developers'
     ],
     test_suite='tests',
-    tests_require=[]
+    tests_require=[
+        'responses'
+    ]
 )
