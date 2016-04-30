@@ -46,6 +46,7 @@ class CallARESTestCase(TestCase):
 
         self.assertEqual(ares_response['legal']['company_name'], "České vysoké učení technické v Praze")
         self.assertEqual(ares_response['address']['street'], "Zikova 1903/4")
+        self.assertEqual(1, len(responses.calls))
 
     @responses.activate
     def test_special_case_for_issue9(self):
@@ -58,6 +59,7 @@ class CallARESTestCase(TestCase):
         self.assertEqual(ares_response['address']['street'], "Družstevní 338/16")
         self.assertEqual(ares_response['address']['city'], "Mohelnice")
         self.assertEqual(ares_response['address']['zip_code'], "78985")
+        self.assertEqual(1, len(responses.calls))
 
     @responses.activate
     def test_valid_values(self):
@@ -72,6 +74,8 @@ class CallARESTestCase(TestCase):
                 self.assertEqual(normalize_company_id_length(one_id), ares_data['legal']['company_id'])
         except KeyError as error:
             self.fail(error)
+
+        self.assertEqual(len(other_valid_company_ids), len(responses.calls))
 
     def test_raises_ares_connection_exception(self):
         correct_url = ares.ARES_API_URL
