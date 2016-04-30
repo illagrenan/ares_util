@@ -69,6 +69,6 @@ build: false  # Not a C# project, build stuff at the test step instead.
 test_script:
   # Build the compiled extension and run the project tests
 #  - del fabfile.py server.py
-  - "%CMD_IN_ENV% inv test
-  - "%CMD_IN_ENV% inv build
-  - "%CMD_IN_ENV% inv test_install
+  - "%CMD_IN_ENV% inv test"
+  - "%CMD_IN_ENV% inv build"
+  - "%CMD_IN_ENV% inv test_install"
