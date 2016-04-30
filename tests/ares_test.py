@@ -5,10 +5,10 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 
 from unittest import TestCase
 
-from .. import ares
-from ..ares import call_ares, get_legal_form
-from ..exceptions import AresConnectionError
-from ..helpers import normalize_company_id_length
+from ares_util import ares
+from ares_util.ares import call_ares, get_legal_form
+from ares_util.exceptions import AresConnectionError
+from ares_util.helpers import normalize_company_id_length
 
 
 class CallARESTestCase(TestCase):

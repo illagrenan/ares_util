@@ -6,7 +6,7 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 import unittest
 from unittest import TestCase
 
-from ..ares import get_czech_zip_code, guess_czech_street_from_full_text_address, build_city
+from ares_util.ares import get_czech_zip_code, guess_czech_street_from_full_text_address, build_city
 
 
 class ZIPCodeTestCase(TestCase):
