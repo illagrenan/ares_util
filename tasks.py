@@ -62,7 +62,7 @@ def install_requirements():
 def test_install():
     run("pip uninstall ares_util --yes", warn=True)
 
-    run("pip install --use-wheel --no-index --find-links dist ares_util")
+    run("pip install --use-wheel --no-index --find-links=file:./dist ares_util")
     run("pip uninstall ares_util --yes")
 
 
