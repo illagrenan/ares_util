@@ -31,4 +31,6 @@ setup(
         'Environment :: Console',
         'Intended Audience :: Developers'
     ],
+    test_suite='tests',
+    tests_require=[]
 )

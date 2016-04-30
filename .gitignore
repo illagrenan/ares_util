@@ -48,3 +48,4 @@ nosetests.xml
 /activate.ps1
 /.env3
 /activate3.ps1
+/htmlcov

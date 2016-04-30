@@ -74,8 +74,8 @@ K dispozi jsou dva `Django validátory <https://docs.djangoproject.com/en/dev/re
    statické parametry, proto by **neměly být použity oba validátory
    zároveň**.
 
-Instalace
-~~~~~~~~~
+Instalace do Django projektu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: python
 

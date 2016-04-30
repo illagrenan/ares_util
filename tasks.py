@@ -69,7 +69,6 @@ def test_install():
 @task
 def build():
     run("python setup.py check --verbose --strict --restructuredtext")
-
     run("python setup.py build")
     run("python setup.py sdist")
     run("python setup.py bdist_wheel")
