@@ -1,44 +1,27 @@
 # coding=utf-8
 
-from builtins import open
+import io
 
 from setuptools import setup
 
-# https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='ares_util',
-    version='0.1.10.1',
+    version='0.1.11',
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
-
-    # ########################################################################
-    #
-    # README.rst is generated from README.md:
-    #
-    # $ pandoc --from=markdown --to=rst README.md -o README.rst
-    #
-    # ~ OR ~
-    #
-    # $ fab build
-    # ########################################################################
-    long_description=open("README.rst", 'r', encoding="utf8").read(),
-
+    long_description=io.open("README.rst", 'r', encoding="utf-8").read(),
     url='https://github.com/illagrenan/ares_util',
     license='MIT',
     author='Vasek Dohnal',
     author_email='vaclav.dohnal@gmail.com',
-
-    # The exclude makes sure that a top-level tests package doesn’t get
-    # installed (it’s still part of the source distribution)
-    # since that would wreak havoc.
-    # find_packages(exclude=['tests*'])
     packages=['ares_util'],
-
-    install_requires=['xmltodict', 'future', 'requests'],
+    install_requires=['xmltodict', 'requests'],
     include_package_data=True,
     classifiers=[
+        "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
@@ -48,4 +31,8 @@ setup(
         'Environment :: Console',
         'Intended Audience :: Developers'
     ],
+    test_suite='tests',
+    tests_require=[
+        'responses'
+    ]
 )

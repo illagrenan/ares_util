@@ -5,8 +5,7 @@ python:
   - 3.3
   - 3.4
   - 3.5
-# - pypy
-# - nightly
+  - pypy
 env:
   - DJANGO=1.5.0
   - DJANGO=1.5.12
@@ -14,33 +13,24 @@ env:
   - DJANGO=1.6.11
   - DJANGO=1.7.0
   - DJANGO=1.7.11
-  - DJANGO=1.8.10
-  - DJANGO=1.9.3
+  - DJANGO=1.8.12
+  - DJANGO=1.9.5
 install:
-    - easy_install -U pip & pip install setuptools wheel --upgrade
-    - pip install -q Django==$DJANGO
-    - pip install xmltodict
     - pip install coveralls
-    - pip install nose
-    - pip install six
-    - pip install requests
-    - pip install travis
-    - pip install flask
-    - pip install future
+    - pip install -q Django==$DJANGO
+    - pip install -r requirements.txt
+    - pip install -q Django==$DJANGO
 script:
-    - rm -f fabfile.py
-    - python setup.py build
-    - python setup.py sdist
-    - python setup.py bdist_wheel
-    - python setup.py nosetests -v --with-coverage --cover-package=ares_util --cover-tests --cover-erase --with-doctest
+    - inv test
+    - inv build
+    - inv test_install
+    - inv coverage
 after_success:
     - coveralls
 notifications:
     email: false
 matrix:
   exclude:
-    # Taken from: https://github.com/darklow/django-suit/blob/develop/.travis.yml
-    # Django doesn't support following combinations
     - python: 3.3
       env: DJANGO=1.4.0
     - python: 3.3
@@ -49,8 +39,6 @@ matrix:
       env: DJANGO=1.4.0
     - python: 3.4
       env: DJANGO=1.4.20
-    # Fails. Django issue #19944
-    # https://code.djangoproject.com/ticket/19944
     - python: pypy
       env: DJANGO=1.5
     - python: pypy

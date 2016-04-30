@@ -1,14 +1,12 @@
-# -*- encoding: utf-8 -*-
-# ! python2
+# !/usr/bin/python
+# coding=utf-8
 
-from __future__ import unicode_literals
-from __future__ import print_function
-from __future__ import absolute_import
+from __future__ import (absolute_import, division, print_function, unicode_literals)
 
 import json
 
-from flask import Flask
 import flask
+from flask import Flask
 
 from ares_util.ares import call_ares
 

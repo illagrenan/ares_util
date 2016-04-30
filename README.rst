@@ -26,22 +26,16 @@ Zdroj: `Podmínky provozu ARES API <http://wwwinfo.mfcr.cz/ares/ares_podminky.ht
 Instalace
 ---------
 
-**A)** Stabilní verze (doporučeno)
+Podporované verze Pythonu jsou ``2.7``, ``3.3``, ``3.4`` a ``3.5``.
 
 .. code:: shell
 
     pip install --upgrade ares-util
 
-**B)** Vývojová verze
-
-.. code:: shell
-
-    pip install --upgrade git+git://github.com/illagrenan/ares_util.git
-
 Použití
 -------
 
-Podporované verze Pythonu jsou ``2.7``, ``3.3``, ``3.4`` a ``3.5``.
+
 
 .. code:: shell
 
@@ -69,7 +63,7 @@ Podporované verze Pythonu jsou ``2.7``, ``3.3``, ``3.4`` a ``3.5``.
 Django podpora
 --------------
 
-Podporované verze Djanga jsou ``>=1.5.*,=<1.9.*``.
+Podporované verze Djanga jsou ``>=1.5.0, <1.10.0``.
 
 K dispozi jsou dva `Django validátory <https://docs.djangoproject.com/en/dev/ref/validators/>`__ formulářových polí:
 
@@ -80,8 +74,8 @@ K dispozi jsou dva `Django validátory <https://docs.djangoproject.com/en/dev/re
    statické parametry, proto by **neměly být použity oba validátory
    zároveň**.
 
-Instalace
-~~~~~~~~~
+Instalace do Django projektu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: python
 

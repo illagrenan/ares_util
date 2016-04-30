@@ -7,9 +7,9 @@ from unittest import TestCase
 
 from django.core.exceptions import ValidationError
 
-from ..ares import validate_czech_company_id
-from ..exceptions import InvalidCompanyIDError
-from ..validators import czech_company_id_numeric_validator, czech_company_id_ares_api_validator
+from ares_util.ares import validate_czech_company_id
+from ares_util.exceptions import InvalidCompanyIDError
+from ares_util.validators import czech_company_id_numeric_validator, czech_company_id_ares_api_validator
 
 
 class ValidateCzechBusinessIdTestCase(TestCase):

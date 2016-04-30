@@ -3,12 +3,23 @@
 
 from __future__ import (absolute_import, division, print_function, unicode_literals)
 
+import io
+import os
 from unittest import TestCase
 
-from .. import ares
-from ..ares import call_ares, get_legal_form
-from ..exceptions import AresConnectionError
-from ..helpers import normalize_company_id_length
+import responses
+
+from ares_util import ares
+from ares_util.ares import call_ares, get_legal_form
+from ares_util.exceptions import AresConnectionError
+from ares_util.helpers import normalize_company_id_length
+from ares_util.settings import ARES_API_URL
+
+
+def _read_mock_response(filename):
+    _this_dir = os.path.dirname(os.path.realpath(__file__))
+
+    return io.open(os.path.join(_this_dir, "responses", filename), mode='r', encoding='utf-8').read()
 
 
 class CallARESTestCase(TestCase):
@@ -18,28 +29,44 @@ class CallARESTestCase(TestCase):
         for invalid_value in invalid_values:
             self.assertFalse(call_ares(invalid_value))
 
+    @responses.activate
     def test_numerically_valid(self):
-        # IČ 25596641 je numericky platné, není však zaregistrované
-        # Viz http://phpfashion.com/jak-overit-platne-ic-a-rodne-cislo
-        self.assertFalse(call_ares(company_id=25596641), dict)
+        company_id = 25596641
+        responses.add(responses.GET, '{0}?ico={1}'.format(ARES_API_URL, company_id), match_querystring=True, body=_read_mock_response('{}.xml'.format(company_id)))
 
+        self.assertFalse(call_ares(company_id=company_id))
+        self.assertEqual(1, len(responses.calls))
+
+    @responses.activate
     def test_encoding(self):
-        ares_response = call_ares(company_id=68407700)
+        company_id = 68407700
+        responses.add(responses.GET, '{0}?ico={1}'.format(ARES_API_URL, company_id), match_querystring=True, body=_read_mock_response('{}.xml'.format(company_id)))
+
+        ares_response = call_ares(company_id=company_id)
 
         self.assertEqual(ares_response['legal']['company_name'], "České vysoké učení technické v Praze")
         self.assertEqual(ares_response['address']['street'], "Zikova 1903/4")
+        self.assertEqual(1, len(responses.calls))
 
+    @responses.activate
     def test_special_case_for_issue9(self):
-        # See: http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi?ico=25834151
-        ares_response = call_ares(company_id=25834151)
+        company_id = 25834151
+        responses.add(responses.GET, '{0}?ico={1}'.format(ARES_API_URL, company_id), match_querystring=True, body=_read_mock_response('{}.xml'.format(company_id)))
+
+        ares_response = call_ares(company_id=company_id)
 
         self.assertEqual(ares_response['legal']['company_name'], "HELLA AUTOTECHNIK NOVA, s.r.o.")
         self.assertEqual(ares_response['address']['street'], "Družstevní 338/16")
         self.assertEqual(ares_response['address']['city'], "Mohelnice")
         self.assertEqual(ares_response['address']['zip_code'], "78985")
+        self.assertEqual(1, len(responses.calls))
 
+    @responses.activate
     def test_valid_values(self):
         other_valid_company_ids = ('25063677', '1603094', '01603094', '27074358')
+
+        for one_id in other_valid_company_ids:
+            responses.add(responses.GET, '{0}?ico={1}'.format(ARES_API_URL, one_id), match_querystring=True, body=_read_mock_response('{}.xml'.format(one_id)))
 
         try:
             for one_id in other_valid_company_ids:
@@ -47,6 +74,8 @@ class CallARESTestCase(TestCase):
                 self.assertEqual(normalize_company_id_length(one_id), ares_data['legal']['company_id'])
         except KeyError as error:
             self.fail(error)
+
+        self.assertEqual(len(other_valid_company_ids), len(responses.calls))
 
     def test_raises_ares_connection_exception(self):
         correct_url = ares.ARES_API_URL

@@ -5,7 +5,7 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 
 from unittest import TestCase
 
-from ..ares import build_czech_street
+from ares_util.ares import build_czech_street
 
 
 class AddressTestCase(TestCase):
