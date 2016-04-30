@@ -49,3 +49,4 @@ nosetests.xml
 /.env3
 /activate3.ps1
 /htmlcov
+/.cache

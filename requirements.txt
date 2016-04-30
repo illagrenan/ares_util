@@ -10,6 +10,7 @@ wheel>=0.29.0
 setuptools>=20.10.1
 pygments
 docutils
+responses
 
 # - - - - - - - - - - - - - - - -
 # Package requirements
