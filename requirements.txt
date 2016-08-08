@@ -2,7 +2,7 @@
 # Development requirements
 # - - - - - - - - - - - - - - - -
 Django==1.10.0
-invoke # On Windows use invoke==0.12.2
+invoke==0.12.2 # There is an issue on Windows: https://github.com/pyinvoke/invoke/issues/345
 coverage
 pytest==2.9.2
 pytest-cov
