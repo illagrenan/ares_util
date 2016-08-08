@@ -1,8 +1,8 @@
 # - - - - - - - - - - - - - - - -
 # Development requirements
 # - - - - - - - - - - - - - - - -
-Django==1.9.5
-invoke
+Django==1.10.0
+invoke==0.12.2
 coverage
 pytest==2.9.1
 pytest-cov

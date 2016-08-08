@@ -63,7 +63,7 @@ Použití
 Django podpora
 --------------
 
-Podporované verze Djanga jsou ``>=1.5.0, <1.10.0``.
+Podporované verze Djanga jsou ``>=1.5.0, =<1.10.0``.
 
 K dispozi jsou dva `Django validátory <https://docs.djangoproject.com/en/dev/ref/validators/>`__ formulářových polí:
 
@@ -74,16 +74,8 @@ K dispozi jsou dva `Django validátory <https://docs.djangoproject.com/en/dev/re
    statické parametry, proto by **neměly být použity oba validátory
    zároveň**.
 
-Instalace do Django projektu
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: python
-
-    # settings.py
-    INSTALLED_APPS = (
-        # ...
-        'ares_util',
-    )
+Použití ve formuláři
+~~~~~~~~~~~~~~~~~~~~
 
 .. code:: python
 
@@ -134,7 +126,7 @@ Licence
 
 The MIT License (MIT)
 
-Copyright (c) 2013–2015 Vašek Dohnal
+Copyright (c) 2013–2016 Vašek Dohnal
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
