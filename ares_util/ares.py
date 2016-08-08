@@ -27,7 +27,7 @@ def call_ares(company_id):
         >>> call_ares(invalid_company_id)
         False
 
-        >>> valid_company_id = "27074358"
+        >>> valid_company_id = u"27074358"
         >>> returned_dict = call_ares(valid_company_id)
         >>> returned_dict['legal']['company_id'] == valid_company_id
         True
