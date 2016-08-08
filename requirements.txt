@@ -2,9 +2,9 @@
 # Development requirements
 # - - - - - - - - - - - - - - - -
 Django==1.10.0
-invoke==0.12.2
+invoke # On Windows use invoke==0.12.2
 coverage
-pytest==2.9.1
+pytest==2.9.2
 pytest-cov
 wheel>=0.29.0
 setuptools>=20.10.1
