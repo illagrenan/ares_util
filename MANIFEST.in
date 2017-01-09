@@ -1,4 +1,4 @@
-include *.md
-include *.rst
-include README.md LICENSE
-recursive-include docs *.md
+include LICENSE
+include README.rst
+global-exclude __pycache__
+global-exclude *.py[co]

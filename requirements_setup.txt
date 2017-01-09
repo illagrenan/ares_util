@@ -1,0 +1,4 @@
+# Requirements required by this package:
+
+xmltodict==0.10.1
+requests
