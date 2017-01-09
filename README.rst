@@ -26,7 +26,7 @@ Zdroj: `Podmínky provozu ARES API <http://wwwinfo.mfcr.cz/ares/ares_podminky.ht
 Instalace
 ---------
 
-Podporované verze Pythonu jsou ``2.7``, ``3.3``, ``3.4`` a ``3.5``.
+Podporované verze Pythonu jsou ``2.7``, ``3.4``, ``3.5``, ``3.6`` a ``3.7-dev``.
 
 .. code:: shell
 
@@ -34,8 +34,6 @@ Podporované verze Pythonu jsou ``2.7``, ``3.3``, ``3.4`` a ``3.5``.
 
 Použití
 -------
-
-
 
 .. code:: shell
 
@@ -63,7 +61,7 @@ Použití
 Django podpora
 --------------
 
-Podporované verze Djanga jsou ``>=1.5.0, =<1.10.0``.
+Podporované verze Djanga jsou ``1.8.x``, ``1.9.x`` a ``1.10.x``.
 
 K dispozi jsou dva `Django validátory <https://docs.djangoproject.com/en/dev/ref/validators/>`__ formulářových polí:
 
@@ -126,7 +124,7 @@ Licence
 
 The MIT License (MIT)
 
-Copyright (c) 2013–2016 Vašek Dohnal
+Copyright (c) 2013–2017 Vašek Dohnal
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
