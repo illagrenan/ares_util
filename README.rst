@@ -1,13 +1,46 @@
 Ares\_util
 ==========
 
-|PackageVersion|
-|License|
-|RequirementsStatus|
-|TravisCiBadge|
-|BuildStatus|
-|CoverageStatus|
-|CodeIssues|
++----------------+-----------------------------------------------------------------------------------------------------------------+
+| Latest release | .. image:: https://img.shields.io/pypi/v/ares-util.svg                                                          |
+|                |    :target: https://pypi.python.org/pypi/ares-util                                                              |
+|                |    :alt: PyPi                                                                                                   | 
+|                |                                                                                                                 | 
+|                | .. image:: https://img.shields.io/badge/license-MIT-blue.svg                                                    |     
+|                |    :target: https://pypi.python.org/pypi/ares-util/                                                             | 
+|                |    :alt: MIT License                                                                                            |             
+|                |                                                                                                                 |     
+|                | .. image:: https://img.shields.io/pypi/implementation/ares-util.svg                                             | 
+|                |    :target: https://pypi.python.org/pypi/ares-util/                                                             |         
+|                |    :alt: Supported Python implementations                                                                       | 
+|                |                                                                                                                 |     
+|                | .. image:: https://img.shields.io/pypi/pyversions/ares-util.svg                                                 | 
+|                |    :target: https://pypi.python.org/pypi/ares-util/                                                             | 
+|                |    :alt: Supported Python versions                                                                              | 
++----------------+-----------------------------------------------------------------------------------------------------------------+
+| CI             | .. image:: https://img.shields.io/travis/illagrenan/ares_util.svg                                               |
+|                |    :target: https://travis-ci.org/illagrenan/ares_util                                                          | 
+|                |    :alt: TravisCI                                                                                               | 
+|                |                                                                                                                 |                                      
+|                | .. image:: https://ci.appveyor.com/api/projects/status/8ui732iutoe9r0vj?svg=true                                |
+|                |    :target: https://ci.appveyor.com/project/illagrenan/ares-util                                                |
+|                |    :alt: AppVeyor                                                                                               |
+|                |                                                                                                                 | 
+|                | .. image:: https://img.shields.io/coveralls/illagrenan/ares_util.svg                                            | 
+|                |    :target: https://coveralls.io/github/illagrenan/ares_util?branch=master                                      | 
+|                |    :alt: Coverage                                                                                               | 
+|                |                                                                                                                 |     
+|                | .. image:: http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg              |
+|                |    :target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca                          | 
+|                |    :alt: CodeIssues                                                                                             | 
++----------------+-----------------------------------------------------------------------------------------------------------------+
+| Dependencies   | .. image:: https://pyup.io/repos/github/illagrenan/ares-util/shield.svg                                         |
+|                |     :target: https://pyup.io/repos/github/illagrenan/ares-util/                                                 |     
+|                |     :alt: Updates                                                                                               |
++----------------+-----------------------------------------------------------------------------------------------------------------+
+
+
+
 
 Představení
 -----------
@@ -144,18 +177,3 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-.. |PackageVersion| image:: https://badge.fury.io/py/ares_util.png
-    :target: http://badge.fury.io/py/ares_util
-.. |License| image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :target: https://pypi.python.org/pypi/ares_util/
-.. |RequirementsStatus| image:: https://requires.io/github/illagrenan/ares_util/requirements.svg?branch=master
-    :target: https://requires.io/github/illagrenan/ares_util/requirements/?branch=master
-.. |TravisCiBadge| image:: https://api.travis-ci.org/illagrenan/ares_util.png
-    :target: https://travis-ci.org/illagrenan/ares_util
-.. |BuildStatus| image:: https://ci.appveyor.com/api/projects/status/8ui732iutoe9r0vj?svg=true
-    :target: https://ci.appveyor.com/project/illagrenan/ares-util
-.. |CoverageStatus| image:: https://coveralls.io/repos/illagrenan/ares_util/badge.png
-    :target: https://coveralls.io/r/illagrenan/ares_util
-.. |CodeIssues| image:: http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg
-    :target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca
