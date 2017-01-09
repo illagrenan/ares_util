@@ -1,74 +1,69 @@
 # -*- encoding: utf-8 -*-
-# ! python2
+# ! python3
 
-from __future__ import (absolute_import, division, print_function, unicode_literals)
-
+import os
 import shutil
+import webbrowser
 
 from invoke import run, task
 
+PROJECT_NAME = 'ares_util'
+
 
 @task
-def clean_build():
-    shutil.rmtree('ares_util.egg-info', ignore_errors=True)
+def clean():
+    """remove build artifacts"""
+    shutil.rmtree('{PROJECT_NAME}.egg-info'.format(PROJECT_NAME=PROJECT_NAME), ignore_errors=True)
     shutil.rmtree('build', ignore_errors=True)
     shutil.rmtree('dist', ignore_errors=True)
+    shutil.rmtree('htmlcov', ignore_errors=True)
     shutil.rmtree('__pycache__', ignore_errors=True)
 
 
 @task
 def lint():
-    run("flake8 ares_util tests")
+    """check style with flake8"""
+    run("flake8 {PROJECT_NAME}/ tests/".format(PROJECT_NAME=PROJECT_NAME))
 
 
 @task
 def test():
-    run("py.test --verbose --showlocals tests/")
+    run("py.test")
 
 
 @task
 def test_all():
+    """run tests on every Python version with tox"""
     run("tox")
 
 
 @task
-def test_cov():
-    run("py.test --verbose --showlocals --cov=ares_util tests/")
-
-
-@task
-def test_setuptools():
-    run("python setup.py test")
-
-
-@task
-def test_nosetests():
-    run("python setup.py nosetests -v --with-doctest")
+def check():
+    """Check setup"""
+    run("python setup.py --no-user-cfg --verbose check --metadata --restructuredtext --strict")
 
 
 @task
 def coverage():
-    run("coverage run --source ares_util setup.py test")
+    """check code coverage quickly with the default Python"""
+    run("coverage run --source {PROJECT_NAME} -m py.test".format(PROJECT_NAME=PROJECT_NAME))
     run("coverage report -m")
     run("coverage html")
 
-
-@task
-def install_requirements():
-    run("pip install -r requirements.txt --upgrade --use-wheel")
+    webbrowser.open('file://' + os.path.realpath("htmlcov/index.html"), new=2)
 
 
 @task
 def test_install():
-    run("pip uninstall ares_util --yes", warn=True)
-
-    run("pip install --use-wheel --no-index --find-links=file:./dist ares_util")
-    run("pip uninstall ares_util --yes")
+    """try to install built package"""
+    run("pip uninstall {PROJECT_NAME} --yes".format(PROJECT_NAME=PROJECT_NAME), warn=True)
+    run("pip install --use-wheel --no-cache-dir --no-index --find-links=file:./dist {PROJECT_NAME}".format(PROJECT_NAME=PROJECT_NAME))
+    run("pip uninstall {PROJECT_NAME} --yes".format(PROJECT_NAME=PROJECT_NAME))
 
 
 @task
 def build():
-    run("python setup.py check --verbose --metadata --restructuredtext")
+    """build package"""
     run("python setup.py build")
     run("python setup.py sdist")
     run("python setup.py bdist_wheel")
@@ -76,5 +71,15 @@ def build():
 
 @task
 def publish():
-    run('python setup.py sdist upload -r pypi')
+    """publish package"""
+    check()
+    run('python setup.py sdist upload -r pypi')  # Use python setup.py REGISTER
     run('python setup.py bdist_wheel upload -r pypi')
+
+
+@task
+def publish_test():
+    """publish package"""
+    check()
+    run('python setup.py sdist upload -r https://testpypi.python.org/pypi')  # Use python setup.py REGISTER
+    run('python setup.py bdist_wheel upload -r https://testpypi.python.org/pypi')

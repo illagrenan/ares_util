@@ -4,8 +4,9 @@ python:
   - 2.7
   - 3.3
   - 3.4
-  - 3.5
-  - 3.6
+  - "3.5-dev" # 3.5 development branch
+  - "3.6-dev" # 3.6 development branch
+  - "nightly" # currently points to 3.7-dev
   - pypy
 env:
   - DJANGO=1.5.0
@@ -18,10 +19,9 @@ env:
   - DJANGO=1.9.9
   - DJANGO=1.10.0
 install:
-    - pip install coveralls
-    - pip install -q Django==$DJANGO
-    - pip install -r requirements.txt
-    - pip install -q Django==$DJANGO
+    - pip install --quiet --upgrade -r requirements.txt
+    - pip install --quiet --upgrade setuptools wheel
+    - pip install --quiet --upgrade "$DJANGO"
 script:
     - inv test
     - inv build
