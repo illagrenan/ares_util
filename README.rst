@@ -4,38 +4,38 @@ Ares\_util
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 | Latest release | .. image:: https://img.shields.io/pypi/v/ares-util.svg                                                          |
 |                |    :target: https://pypi.python.org/pypi/ares-util                                                              |
-|                |    :alt: PyPi                                                                                                   | 
-|                |                                                                                                                 | 
-|                | .. image:: https://img.shields.io/badge/license-MIT-blue.svg                                                    |     
-|                |    :target: https://pypi.python.org/pypi/ares-util/                                                             | 
-|                |    :alt: MIT License                                                                                            |             
-|                |                                                                                                                 |     
-|                | .. image:: https://img.shields.io/pypi/implementation/ares-util.svg                                             | 
-|                |    :target: https://pypi.python.org/pypi/ares-util/                                                             |         
-|                |    :alt: Supported Python implementations                                                                       | 
-|                |                                                                                                                 |     
-|                | .. image:: https://img.shields.io/pypi/pyversions/ares-util.svg                                                 | 
-|                |    :target: https://pypi.python.org/pypi/ares-util/                                                             | 
-|                |    :alt: Supported Python versions                                                                              | 
+|                |    :alt: PyPi                                                                                                   |
+|                |                                                                                                                 |
+|                | .. image:: https://img.shields.io/badge/license-MIT-blue.svg                                                    |
+|                |    :target: https://pypi.python.org/pypi/ares-util/                                                             |
+|                |    :alt: MIT License                                                                                            |
+|                |                                                                                                                 |
+|                | .. image:: https://img.shields.io/pypi/implementation/ares-util.svg                                             |
+|                |    :target: https://pypi.python.org/pypi/ares-util/                                                             |
+|                |    :alt: Supported Python implementations                                                                       |
+|                |                                                                                                                 |
+|                | .. image:: https://img.shields.io/pypi/pyversions/ares-util.svg                                                 |
+|                |    :target: https://pypi.python.org/pypi/ares-util/                                                             |
+|                |    :alt: Supported Python versions                                                                              |
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 | CI             | .. image:: https://img.shields.io/travis/illagrenan/ares_util.svg                                               |
-|                |    :target: https://travis-ci.org/illagrenan/ares_util                                                          | 
-|                |    :alt: TravisCI                                                                                               | 
-|                |                                                                                                                 |                                      
+|                |    :target: https://travis-ci.org/illagrenan/ares_util                                                          |
+|                |    :alt: TravisCI                                                                                               |
+|                |                                                                                                                 |
 |                | .. image:: https://ci.appveyor.com/api/projects/status/8ui732iutoe9r0vj?svg=true                                |
 |                |    :target: https://ci.appveyor.com/project/illagrenan/ares-util                                                |
 |                |    :alt: AppVeyor                                                                                               |
-|                |                                                                                                                 | 
-|                | .. image:: https://img.shields.io/coveralls/illagrenan/ares_util.svg                                            | 
-|                |    :target: https://coveralls.io/github/illagrenan/ares_util?branch=master                                      | 
-|                |    :alt: Coverage                                                                                               | 
-|                |                                                                                                                 |     
+|                |                                                                                                                 |
+|                | .. image:: https://img.shields.io/coveralls/illagrenan/ares_util.svg                                            |
+|                |    :target: https://coveralls.io/github/illagrenan/ares_util?branch=master                                      |
+|                |    :alt: Coverage                                                                                               |
+|                |                                                                                                                 |
 |                | .. image:: http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg              |
-|                |    :target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca                          | 
-|                |    :alt: CodeIssues                                                                                             | 
+|                |    :target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca                          |
+|                |    :alt: CodeIssues                                                                                             |
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 | Dependencies   | .. image:: https://pyup.io/repos/github/illagrenan/ares_util/shield.svg                                         |
-|                |     :target: https://pyup.io/repos/github/illagrenan/ares_util/                                                 |     
+|                |     :target: https://pyup.io/repos/github/illagrenan/ares_util/                                                 |
 |                |     :alt: Updates                                                                                               |
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 
@@ -123,17 +123,13 @@ Reference
 Lokální vývoj
 =============
 
-Chcete-li upravit doplněk lokálně, jednoduše stáhněte zdrojové kódy a
-nainstalujte závislosti:
+Chcete-li upravit doplněk lokálně, jednoduše stáhněte zdrojové kódy a nainstalujte závislosti:
 
 .. code:: shell
 
     pip install -r requirements.txt --upgrade
 
-Testy spustíte pomocí ``tox`` anebo ``fab test`` máte-li Fabric.
-
-Využít můžete i přibalený Flask server pro lokální testování. Stačí
-spustit:
+Testy spustíte pomocí ``tox`` nebo ``inv test``. Využít můžete i přibalený Flask server pro lokální testování. Stačí spustit:
 
 .. code:: shell
 
