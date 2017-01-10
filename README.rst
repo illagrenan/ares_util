@@ -34,13 +34,10 @@ Ares\_util
 |                |    :target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca                          | 
 |                |    :alt: CodeIssues                                                                                             | 
 +----------------+-----------------------------------------------------------------------------------------------------------------+
-| Dependencies   | .. image:: https://pyup.io/repos/github/illagrenan/ares-util/shield.svg                                         |
-|                |     :target: https://pyup.io/repos/github/illagrenan/ares-util/                                                 |     
+| Dependencies   | .. image:: https://pyup.io/repos/github/illagrenan/ares_util/shield.svg                                         |
+|                |     :target: https://pyup.io/repos/github/illagrenan/ares_util/                                                 |     
 |                |     :alt: Updates                                                                                               |
 +----------------+-----------------------------------------------------------------------------------------------------------------+
-
-
-
 
 Představení
 -----------
