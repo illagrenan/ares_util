@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='ares_util',
-    version='0.1.11',
+    version='0.1.12',
     description='A tool for information system allowing a retrieval '
                 'of information on economic entities registered in '
                 'the Czech Republic (ARES - Access to Registers of Economic Subjects / Entities).',
@@ -29,7 +29,9 @@ setup(
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
         'Environment :: Console',
-        'Intended Audience :: Developers'
+        'Intended Audience :: Developers',
+        'Programming Language :: Python :: Implementation :: CPython',
+        'Programming Language :: Python :: Implementation :: PyPy'
     ],
     test_suite='tests',
     tests_require=[
