@@ -2,7 +2,7 @@
 -r requirements_setup.txt
 
 # Requirements needed for development & build & testing
-Django==1.10.5
+Django==1.10.6
 invoke==0.12.2 # pyup: ignore
 coverage==4.3.4
 coveralls==1.1
