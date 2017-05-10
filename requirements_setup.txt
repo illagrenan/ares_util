@@ -1,4 +1,4 @@
 # Requirements required by this package:
 
 xmltodict==0.10.2
-requests==2.13.0
+requests==2.14.2
