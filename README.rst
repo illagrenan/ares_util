@@ -49,9 +49,17 @@ Pokud je IČ validní, vrací nástroj ``dict`` se základními údaji o firmě 
 Podmínky provozu ARES API
 -------------------------
 
-Ministerstvo financí vyhrazuje právo omezit nebo znemožnit přístup k www aplikaci ARES uživatelům, kteří: \* odešlou k vyřízení více než 1000 dotazů v době od 8:00 hod. do 18:00 hod., \* odešlou k vyřízení více než 5000 dotazů v době od 18:00 hod. do 8:00 hod. rána následujícího dne, \* opakovaně posílají nesprávně vyplněné dotazy, \* opakovaně posílají stejné dotazy, \* mají větší počet současně zadaných dotazů (pro automatizované XML dotazy), \* obcházejí povolené limity využíváním dotazování z většího množství IP adres, \* automatizovaně propátrávají databázi náhodnými údaji nebo generují většinu nesprávných dotazů.
+  Ministerstvo financí vyhrazuje právo omezit nebo znemožnit přístup k www aplikaci ARES uživatelům, kteří: 
 
-Zdroj: `Podmínky provozu ARES API <http://wwwinfo.mfcr.cz/ares/ares_podminky.html.cz>`__.
+  - odešlou k vyřízení více než 1000 dotazů v době od 8:00 hod. do 18:00 hod.,
+  - odešlou k vyřízení více než 5000 dotazů v době od 18:00 hod. do 8:00 hod. rána následujícího dne,
+  - opakovaně posílají nesprávně vyplněné dotazy, 
+  - opakovaně posílají stejné dotazy,
+  - mají větší počet současně zadaných dotazů (pro automatizované XML dotazy), 
+  - obcházejí povolené limity využíváním dotazování z většího množství IP adres, - 
+  - automatizovaně propátrávají databázi náhodnými údaji nebo generují většinu nesprávných dotazů.
+
+  -- Zdroj: `Podmínky provozu ARES API <http://wwwinfo.mfcr.cz/ares/ares_podminky.html.cz>`__.
 
 Instalace
 ---------
