@@ -6,7 +6,7 @@ Django~=1.10.6 # pyup: ignore
 invoke==0.12.2 # pyup: ignore
 coverage~=4.3.4 # pyup: ignore
 coveralls==1.1 # pyup: ignore
-pytest==3.1.0
+pytest==3.1.1
 wheel~=0.29.0 # pyup: ignore
 setuptools~=34.3.3 # pyup: ignore
 docutils==0.13.1 # pyup: ignore
