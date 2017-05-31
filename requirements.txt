@@ -5,7 +5,7 @@
 
 # Requirements needed for development & build & testing
 Django>=1.10.6
-invoke>=0.12.2
+invoke==0.12.2
 coverage>=4.3.4
 coveralls>=1.1
 pytest>=3.1.0
