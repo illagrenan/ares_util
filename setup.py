@@ -18,6 +18,7 @@ setup(
     packages=['ares_util'],
     install_requires=['xmltodict', 'requests'],
     include_package_data=True,
+    zip_safe=True,
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Development Status :: 3 - Alpha',
