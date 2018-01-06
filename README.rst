@@ -60,7 +60,7 @@ Podmínky provozu ARES API
 Instalace
 ---------
 
-Podporované verze Pythonu jsou ``2.7``, ``3.4``, ``3.5``, ``3.6`` a ``3.7-dev``.
+Podporované verze Pythonu jsou ``pypy``, ``pypy3``, ``2.7``, ``3.4``, ``3.5``, ``3.6`` a ``3.7-dev``.
 
 .. code:: shell
 
