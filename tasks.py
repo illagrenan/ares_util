@@ -1,10 +1,11 @@
 # -*- encoding: utf-8 -*-
 # ! python3
 
+import sys
+
 import os
 import shutil
 import webbrowser
-
 from invoke import run, task
 
 PROJECT_NAME = 'ares_util'
@@ -50,7 +51,9 @@ def coverage():
     run("coverage report -m")
     run("coverage html")
 
-    webbrowser.open('file://' + os.path.realpath("htmlcov/index.html"), new=2)
+    if sys.stdout.isatty():
+        # Running in a real terminal
+        webbrowser.open('file://' + os.path.realpath("htmlcov/index.html"), new=2)
 
 
 @task
