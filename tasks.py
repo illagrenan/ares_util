@@ -52,7 +52,7 @@ def coverage():
     run("coverage report -m")
     run("coverage html")
 
-    if sys.stdout.isatty():
+    if sys.stdout.isatty() and sys.stdin.isatty():
         # Running in a real terminal
         webbrowser.open('file://' + os.path.realpath("htmlcov/index.html"), new=2)
 
