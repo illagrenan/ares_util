@@ -49,14 +49,14 @@ Pokud je IČ validní, vrací nástroj ``dict`` se základními údaji o firmě 
 Podmínky provozu ARES API
 -------------------------
 
-  Ministerstvo financí vyhrazuje právo omezit nebo znemožnit přístup k www aplikaci ARES uživatelům, kteří: 
+  Ministerstvo financí vyhrazuje právo omezit nebo znemožnit přístup k www aplikaci ARES uživatelům, kteří:
 
   - odešlou k vyřízení více než 1000 dotazů v době od 8:00 hod. do 18:00 hod.,
   - odešlou k vyřízení více než 5000 dotazů v době od 18:00 hod. do 8:00 hod. rána následujícího dne,
-  - opakovaně posílají nesprávně vyplněné dotazy, 
+  - opakovaně posílají nesprávně vyplněné dotazy,
   - opakovaně posílají stejné dotazy,
-  - mají větší počet současně zadaných dotazů (pro automatizované XML dotazy), 
-  - obcházejí povolené limity využíváním dotazování z většího množství IP adres, - 
+  - mají větší počet současně zadaných dotazů (pro automatizované XML dotazy),
+  - obcházejí povolené limity využíváním dotazování z většího množství IP adres, -
   - automatizovaně propátrávají databázi náhodnými údaji nebo generují většinu nesprávných dotazů.
 
   -- Zdroj: `Podmínky provozu ARES API <http://wwwinfo.mfcr.cz/ares/ares_podminky.html.cz>`__.
@@ -99,7 +99,7 @@ Použití
 Django podpora
 --------------
 
-Podporované verze Djanga jsou ``1.8.x``, ``1.9.x`` a ``1.10.x``.
+Podporované verze Djanga jsou ``1.8.x`` (LTS), ``1.11.x`` (LTS) a ``2.0.x``.
 
 K dispozi jsou dva `Django validátory <https://docs.djangoproject.com/en/dev/ref/validators/>`__ formulářových polí:
 
@@ -158,7 +158,7 @@ Licence
 
 The MIT License (MIT)
 
-Copyright (c) 2013–2017 Vašek Dohnal
+Copyright (c) 2013–2018 Vašek Dohnal
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
