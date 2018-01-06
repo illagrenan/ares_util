@@ -12,7 +12,7 @@ import requests
 import xmltodict
 from requests.exceptions import RequestException
 
-from .exceptions import InvalidCompanyIDError, AresNoResponseError, AresConnectionError
+from .exceptions import InvalidCompanyIDError, AresNoResponseError, AresConnectionError, AresServerError
 from .helpers import normalize_company_id_length
 from .settings import COMPANY_ID_LENGTH, ARES_API_URL
 
@@ -58,7 +58,13 @@ def call_ares(company_id):
     response.encoding = 'utf-8'
     ares_data = xmltodict.parse(response.text)
 
-    response_root = ares_data['are:Ares_odpovedi']['are:Odpoved']
+    response_root_wrapper = ares_data['are:Ares_odpovedi']
+
+    ares_fault = response_root_wrapper.get('are:Fault')
+    if ares_fault is not None:
+        raise AresServerError(ares_fault['faultcode'], ares_fault['faultstring'])
+
+    response_root = response_root_wrapper['are:Odpoved']
     number_of_results = response_root['D:PZA']
 
     if int(number_of_results) == 0:

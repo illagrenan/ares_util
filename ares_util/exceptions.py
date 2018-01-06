@@ -14,3 +14,13 @@ class AresNoResponseError(Exception):
 
 class AresConnectionError(Exception):
     pass
+
+
+class AresServerError(Exception):
+    def __init__(self, fault_code, fault_message):
+        super(AresServerError, self).__init__(fault_code, fault_message)
+        self.fault_code = fault_code
+        self.fault_message = fault_message
+
+    def __repr__(self):
+        return 'AresServerError, {}, {}'.format(self.fault_code, self.fault_message)

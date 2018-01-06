@@ -11,7 +11,7 @@ import responses
 
 from ares_util import ares
 from ares_util.ares import call_ares, get_legal_form
-from ares_util.exceptions import AresConnectionError
+from ares_util.exceptions import AresConnectionError, AresServerError
 from ares_util.helpers import normalize_company_id_length
 from ares_util.settings import ARES_API_URL
 
@@ -82,6 +82,17 @@ class CallARESTestCase(TestCase):
         ares.ARES_API_URL = 'http://nonsenseurl.nonsence'
         self.assertRaises(AresConnectionError, call_ares, company_id='62739913')
         ares.ARES_API_URL = correct_url
+
+    @responses.activate
+    def test_raises_ares_server_error(self):
+        company_id = 60159014
+        responses.add(responses.GET, '{0}?ico={1}'.format(ARES_API_URL, company_id), match_querystring=True, body=_read_mock_response('server_fault.xml'))
+
+        with self.assertRaises(AresServerError) as context:
+            call_ares(company_id=company_id)
+
+        self.assertEqual(context.exception.fault_code, u'Server.Service')
+        self.assertEqual(context.exception.fault_message, u'obecná chyba serverové služby')
 
 
 class LegalFormTest(TestCase):
