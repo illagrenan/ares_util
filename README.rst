@@ -29,10 +29,6 @@ Ares\_util
 |                | .. image:: https://img.shields.io/coveralls/illagrenan/ares_util.svg                                            |
 |                |    :target: https://coveralls.io/github/illagrenan/ares_util?branch=master                                      |
 |                |    :alt: Coverage                                                                                               |
-|                |                                                                                                                 |
-|                | .. image:: http://www.quantifiedcode.com/api/v1/project/81deabb48fbd45cfb9b4d83f0a8d2cca/badge.svg              |
-|                |    :target: http://www.quantifiedcode.com/app/project/81deabb48fbd45cfb9b4d83f0a8d2cca                          |
-|                |    :alt: CodeIssues                                                                                             |
 +----------------+-----------------------------------------------------------------------------------------------------------------+
 | Dependencies   | .. image:: https://pyup.io/repos/github/illagrenan/ares_util/shield.svg                                         |
 |                |     :target: https://pyup.io/repos/github/illagrenan/ares_util/                                                 |
