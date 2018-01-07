@@ -52,7 +52,7 @@ def coverage():
     run("coverage report -m")
     run("coverage html")
 
-    if sys.stdout.isatty() and sys.stdin.isatty():
+    if not os.getenv('TRAVIS') and (sys.stdout.isatty() and sys.stdin.isatty() and sys.stderr.isatty()):
         # Running in a real terminal
         webbrowser.open('file://' + os.path.realpath("htmlcov/index.html"), new=2)
 
