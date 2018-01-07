@@ -1,12 +1,12 @@
 # -*- encoding: utf-8 -*-
 # ! python3
 
-import sys
-
 import os
 import shutil
+import sys
 import warnings
 import webbrowser
+
 from invoke import task
 
 PROJECT_NAME = 'ares_util'
@@ -78,7 +78,7 @@ def publish(ctx):
     """publish package"""
     warnings.warn("Deprecated", DeprecationWarning, stacklevel=2)
 
-    check()
+    check(ctx)
     ctx.run('python setup.py sdist upload -r pypi')  # Use python setup.py REGISTER
     ctx.run('python setup.py bdist_wheel upload -r pypi')
 
@@ -86,13 +86,13 @@ def publish(ctx):
 @task
 def publish_twine(ctx):
     """publish package"""
-    check()
+    check(ctx)
     ctx.run('twine upload dist/* --skip-existing')
 
 
 @task
 def publish_test(ctx):
     """publish package"""
-    check()
+    check(ctx)
     ctx.run('python setup.py sdist upload -r https://testpypi.python.org/pypi')  # Use python setup.py REGISTER
     ctx.run('python setup.py bdist_wheel upload -r https://testpypi.python.org/pypi')
