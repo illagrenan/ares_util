@@ -94,5 +94,5 @@ def publish_twine(ctx):
 def publish_test(ctx):
     """publish package"""
     check(ctx)
-    ctx.run('python setup.py sdist upload -r https://testpypi.python.org/pypi')  # Use python setup.py REGISTER
-    ctx.run('python setup.py bdist_wheel upload -r https://testpypi.python.org/pypi')
+    ctx.run('python setup.py sdist upload -r https://test.pypi.org/legacy/')  # Use python setup.py REGISTER
+    ctx.run('python setup.py bdist_wheel upload -r https://test.pypi.org/legacy/')
