@@ -22,10 +22,6 @@ Ares\_util
 |                |    :target: https://travis-ci.org/illagrenan/ares_util                                                          |
 |                |    :alt: TravisCI                                                                                               |
 |                |                                                                                                                 |
-|                | .. image:: https://ci.appveyor.com/api/projects/status/8ui732iutoe9r0vj?svg=true                                |
-|                |    :target: https://ci.appveyor.com/project/illagrenan/ares-util                                                |
-|                |    :alt: AppVeyor                                                                                               |
-|                |                                                                                                                 |
 |                | .. image:: https://img.shields.io/coveralls/illagrenan/ares_util.svg                                            |
 |                |    :target: https://coveralls.io/github/illagrenan/ares_util?branch=master                                      |
 |                |    :alt: Coverage                                                                                               |
