@@ -16,7 +16,7 @@ env:
   - DJANGO="Django~=2.0"
   - DJANGO="Django~=2.1"
 install:
-  - pip install --quiet --upgrade setuptools wheel
+  - pip install --quiet --upgrade setuptools wheel pip
   - pip install --quiet --upgrade -r requirements.txt
   - pip install --quiet --upgrade "$DJANGO"
 matrix:
