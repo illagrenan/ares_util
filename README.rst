@@ -56,7 +56,7 @@ Podmínky provozu ARES API
 Instalace
 ---------
 
-Podporované verze Pythonu jsou ``pypy``, ``pypy3``, ``2.7``, ``3.4``, ``3.5``, ``3.6`` a ``3.7-dev``.
+Podporované verze Pythonu jsou ``pypy``, ``pypy3``, ``2.7``, ``3.5``, ``3.6`` a ``3.7``.
 
 .. code:: shell
 
@@ -91,7 +91,7 @@ Použití
 Django podpora
 --------------
 
-Podporované verze Djanga jsou ``1.8.x`` (LTS), ``1.11.x`` (LTS) a ``2.0.x``.
+Podporované verze Djanga jsou ``1.11.x`` (LTS), ``2.0.x`` a ``2.1.x``.
 
 K dispozi jsou dva `Django validátory <https://docs.djangoproject.com/en/dev/ref/validators/>`__ formulářových polí:
 
