@@ -10,8 +10,7 @@ python:
   - "3.7"
   - "3.7-dev"
   - "nightly"
-  - "pypy2.7-6.0"
-  - "pypy3.5-6.0"
+  - "pypy3.5"
 env:
   - DJANGO="Django~=1.11"
   - DJANGO="Django~=2.0"
