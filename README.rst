@@ -150,4 +150,4 @@ Licence
 
 The MIT License (MIT)
 
-Copyright (c) 2013–2019 Vašek Dohnal
+Copyright (c) 2013–2019 Vašek Dohnal (@illagrenan)
