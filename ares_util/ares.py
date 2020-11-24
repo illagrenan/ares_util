@@ -62,7 +62,7 @@ def call_ares(company_id):
 
     ares_fault = response_root_wrapper.get('are:Fault')
     if ares_fault is not None:
-        raise AresServerError(ares_fault['faultcode'], ares_fault['faultstring'])
+        raise AresServerError(ares_fault['dtt:faultcode'], ares_fault['dtt:faultstring'])
 
     response_root = response_root_wrapper['are:Odpoved']
     number_of_results = response_root['D:PZA']
