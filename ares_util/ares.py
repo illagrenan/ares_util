@@ -72,7 +72,7 @@ def call_ares(company_id):
 
     company_record = response_root['D:VBAS']
     address = company_record['D:AA']
-    full_text_address = address.get('D:AT', '')
+    full_text_address = address.get('D:AT','')
 
     result_company_info = {
         'legal': {
@@ -85,6 +85,7 @@ def call_ares(company_id):
             'region': address.get('D:NOK'),
             'city': build_city(address.get('D:N'), full_text_address),
             'city_part': address.get('D:NCO'),
+            'city_town_part': address.get('D:NMC'),
             'street': build_czech_street(address.get('D:NU', str()), address.get('D:N'),
                                          address.get('D:NCO'),
                                          address.get('D:CD') or address.get('D:CA'),
