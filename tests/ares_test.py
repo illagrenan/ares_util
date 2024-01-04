@@ -10,7 +10,7 @@ from unittest import TestCase
 import responses
 
 from ares_util import ares
-from ares_util.ares import call_ares, get_legal_form
+from ares_util.ares import call_ares
 from ares_util.exceptions import AresConnectionError, AresServerError
 from ares_util.helpers import normalize_company_id_length
 from ares_util.settings import ARES_API_URL
@@ -93,20 +93,3 @@ class CallARESTestCase(TestCase):
 
         self.assertEqual(context.exception.fault_code, u'Server.Service')
         self.assertEqual(context.exception.fault_message, u'obecná chyba serverové služby')
-
-
-class LegalFormTest(TestCase):
-    def test_get_legal_form_if_present(self):
-        valid_legal_form = "121"
-
-        valid_partial_ares_api_response = {
-            'D:KPF': valid_legal_form
-        }
-
-        actual_legal_form = get_legal_form(valid_partial_ares_api_response)
-        self.assertEqual(valid_legal_form, actual_legal_form)
-
-    def test_get_none_if_legal_form_not_present(self):
-        empty_ares_api_call_response = {}
-
-        self.assertIsNone(get_legal_form(empty_ares_api_call_response))

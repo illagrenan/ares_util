@@ -16,7 +16,7 @@ setup(
     author='Vasek Dohnal',
     author_email='vaclav.dohnal@gmail.com',
     packages=['ares_util'],
-    install_requires=['xmltodict', 'requests'],
+    install_requires=['requests'],
     include_package_data=True,
     zip_safe=True,
     classifiers=[

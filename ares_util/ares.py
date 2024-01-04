@@ -7,12 +7,13 @@ import logging
 import re
 import sys
 import warnings
+from urllib.parse import urljoin
 
 import requests
-import xmltodict
+from requests.status_codes import codes
 from requests.exceptions import RequestException
 
-from .exceptions import InvalidCompanyIDError, AresNoResponseError, AresConnectionError, AresServerError
+from .exceptions import InvalidCompanyIDError, AresConnectionError, AresServerError
 from .helpers import normalize_company_id_length
 from .settings import COMPANY_ID_LENGTH, ARES_API_URL
 
@@ -40,68 +41,41 @@ def call_ares(company_id):
     except InvalidCompanyIDError:
         return False
 
-    params = {'ico': company_id}
-
     try:
-        response = requests.get(ARES_API_URL, params=params)
+        url = urljoin(ARES_API_URL, f'ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/{company_id}')
+        response = requests.get(url)
     except RequestException as e:
         raise AresConnectionError('Exception, ' + str(e))
 
-    if response.status_code != 200:
-        raise AresNoResponseError()
-
-    # See: http://docs.python-requests.org/en/latest/user/quickstart/#response-content
-    # If you change the encoding, Requests will use the new value of r.encoding whenever you
-    # call r.text. You might want to do this in any situation where you can apply special logic
-    # to work out what the encoding of the content will be. For example, HTTP and XML have
-    # the ability to specify their encoding in their body.
-    response.encoding = 'utf-8'
-    ares_data = xmltodict.parse(response.text)
-
-    response_root_wrapper = ares_data['are:Ares_odpovedi']
-
-    ares_fault = response_root_wrapper.get('are:Fault')
-    if ares_fault is not None:
-        raise AresServerError(ares_fault['dtt:faultcode'], ares_fault['dtt:faultstring'])
-
-    response_root = response_root_wrapper['are:Odpoved']
-    number_of_results = response_root['D:PZA']
-
-    if int(number_of_results) == 0:
+    if response.status_code == codes.bad_request:
         return False
 
-    company_record = response_root['D:VBAS']
-    address = company_record['D:AA']
-    full_text_address = address.get('D:AT','')
+    response_json = response.json()
+    if response.status_code != codes.ok:
+        raise AresServerError(response_json["kod"], response_json["popis"])
+
+    address = response_json["sidlo"]
+    full_text_address = address.get("textovaAdresa",'')
 
     result_company_info = {
         'legal': {
-            'company_name': get_text_value(company_record.get('D:OF')),
-            'company_id': get_text_value(company_record.get('D:ICO')),
-            'company_vat_id': get_text_value(company_record.get('D:DIC')),
-            'legal_form': get_legal_form(company_record.get('D:PF'))
+            'company_name': response_json.get("obchodniJmeno"),
+            'company_id': response_json.get("ico"),
+            'company_vat_id': response_json.get("dic"),
+            'legal_form': response_json.get("pravniForma"),
         },
         'address': {
-            'region': address.get('D:NOK'),
-            'city': build_city(address.get('D:N'), full_text_address),
-            'city_part': address.get('D:NCO'),
-            'city_town_part': address.get('D:NMC'),
-            'street': build_czech_street(address.get('D:NU', str()), address.get('D:N'),
-                                         address.get('D:NCO'),
-                                         address.get('D:CD') or address.get('D:CA'),
-                                         address.get('D:CO'), full_text_address),
-            'zip_code': get_czech_zip_code(address.get('D:PSC'), full_text_address)
+            'region': address.get('nazevOkresu'),
+            'city': build_city(address.get('nazevObce'), full_text_address),
+            'city_part': address.get('nazevCastiObce'),
+            'street': build_czech_street(address.get('nazevUlice', str()), address.get('nazevObce'),
+                                         address.get('nazevCastiObce'),
+                                         address.get('cisloDomovni'),
+                                         address.get('cisloOrientacni'), full_text_address),
+            'zip_code': get_czech_zip_code(address.get('psc'), full_text_address)
         }
     }
     return result_company_info
-
-
-def get_text_value(node):
-    """
-    :type node: dict
-    :rtype: unicode
-    """
-    return node.get('#text') if node else None
 
 
 def get_czech_zip_code(ares_data, full_text_address):
@@ -110,6 +84,8 @@ def get_czech_zip_code(ares_data, full_text_address):
     :type full_text_address: unicode
     :rtype: unicode
     """
+    if isinstance(ares_data, int):
+        return ares_data
     if ares_data and ares_data.isdigit():
         return ares_data.strip()
 
@@ -184,19 +160,6 @@ def build_city(city, address):
     :rtype: unicode
     """
     return city or address.split(',')[0].strip()
-
-
-def get_legal_form(legal_form):
-    """
-    http://wwwinfo.mfcr.cz/ares/aresPrFor.html.cz
-
-    :type legal_form: dict
-    :rtype: unicode
-    """
-    if legal_form:
-        return legal_form.get('D:KPF', None)
-
-    return None
 
 
 def validate_czech_company_id(business_id):

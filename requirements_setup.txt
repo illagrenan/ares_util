@@ -1,4 +1,3 @@
 # Requirements required by this package:
 
-xmltodict==0.11.0
 requests # pyup: ignore
