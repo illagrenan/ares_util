@@ -1,3 +1,5 @@
+📢 This package started in 2013 but is still working. In early 2024 it got an update (https://github.com/illagrenan/ares_util/releases/tag/v0.3.0) to work with the new API. At the moment, neither CI nor tests are working, I know that. I will set aside time this year for a bigger update (Github actions, pyproject.toml, ...).
+
 Ares\_util
 ==========
 
