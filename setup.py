@@ -40,7 +40,7 @@ setup(
         'Programming Language :: Python :: Implementation :: PyPy',
         'Framework :: Django',
         'Framework :: Django :: 4',
-        'Framework :: Django :: 5',
+        'Framework :: Django :: 5.0',
     ],
     test_suite='tests',
     tests_require=['responses']
