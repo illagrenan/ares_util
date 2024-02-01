@@ -55,7 +55,7 @@ def call_ares(company_id):
         raise AresServerError(response_json["kod"], response_json["popis"])
 
     address = response_json["sidlo"]
-    full_text_address = address.get("textovaAdresa",'')
+    full_text_address = address.get("textovaAdresa", '')
 
     result_company_info = {
         'legal': {
@@ -63,12 +63,34 @@ def call_ares(company_id):
             'company_id': response_json.get("ico"),
             'company_vat_id': response_json.get("dic"),
             'legal_form': response_json.get("pravniForma"),
+            'tax_office': response_json.get("financniUrad"),
+            'creation_date': response_json.get('datumVzniku'),
+            'update_date': response_json.get('datumAktualizace'),
+            'source': response_json.get('primarniZdroj'),
+            'sub_register': response_json.get('subRegistrSzr'),
         },
         'address': {
+            'state_code': address.get('kodStatu'),
+            'state': address.get('nazevStatu'),
+            'county_code': address.get('kodKraje'),
+            'county': address.get('nazevKraje'),
+            'region_code': address.get('kodOkresu'),
+            'city_district_part_code': address.get('kodMestskeCastiObvodu'),
+            'street_code': address.get('kodUlice'),
+            'city_district_part': address.get('nazevMestskeCastiObvodu'),
+            'street_name': address.get('nazevUlice'),
+            'house_number': address.get('cisloDomovni'),
+            'city_part_code': address.get('kodCastiObce'),
+            'orientation_number': address.get('cisloOrientacni'),
+            'address_id': address.get('kodAdresnihoMista'),
+            'full_text_address': full_text_address,
+            'address_type': address.get('typCisloDomovni'),
+            'standardized_address': address.get('standardizaceAdresy'),
             'region': address.get('nazevOkresu'),
             'city': build_city(address.get('nazevObce'), full_text_address),
+            'city_code': address.get('kodObce'),
             'city_part': address.get('nazevCastiObce'),
-            'street': build_czech_street(address.get('nazevUlice', str()), address.get('nazevObce'),
+            'street': build_czech_street(address.get('nazevUlice', ''), address.get('nazevObce'),
                                          address.get('nazevCastiObce'),
                                          address.get('cisloDomovni'),
                                          address.get('cisloOrientacni'), full_text_address),
