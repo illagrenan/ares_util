@@ -1,0 +1,60 @@
+{
+  "ico": "68407700",
+  "obchodniJmeno": "České vysoké učení technické v Praze",
+  "sidlo": {
+    "kodStatu": "CZ",
+    "nazevStatu": "Česká republika",
+    "kodObce": 554782,
+    "nazevObce": "Praha",
+    "kodSpravnihoObvodu": 60,
+    "nazevSpravnihoObvodu": "Praha 6",
+    "kodMestskehoObvodu": 60,
+    "nazevMestskehoObvodu": "Praha 6",
+    "kodMestskeCastiObvodu": 500178,
+    "kodUlice": 450545,
+    "nazevMestskeCastiObvodu": "Praha 6",
+    "nazevUlice": "Jugoslávských partyzánů",
+    "cisloDomovni": 1580,
+    "kodCastiObce": 400459,
+    "cisloOrientacni": 3,
+    "nazevCastiObce": "Dejvice",
+    "kodAdresnihoMista": 22203699,
+    "psc": 16000,
+    "textovaAdresa": "Jugoslávských partyzánů 1580/3, Dejvice, 16000 Praha 6",
+    "typCisloDomovni": "1",
+    "standardizaceAdresy": true
+  },
+  "pravniForma": "601",
+  "financniUrad": "006",
+  "datumVzniku": "1999-01-01",
+  "datumAktualizace": "2024-01-26",
+  "dic": "CZ68407700",
+  "icoId": "68407700",
+  "adresaDorucovaci": {
+    "radekAdresy1": "Jugoslávských partyzánů 1580/3",
+    "radekAdresy2": "Dejvice",
+    "radekAdresy3": "16000 Praha 6"
+  },
+  "seznamRegistraci": {
+    "stavZdrojeVr": "NEEXISTUJICI",
+    "stavZdrojeRes": "AKTIVNI",
+    "stavZdrojeRzp": "AKTIVNI",
+    "stavZdrojeNrpzs": "NEEXISTUJICI",
+    "stavZdrojeRpsh": "NEEXISTUJICI",
+    "stavZdrojeRcns": "NEEXISTUJICI",
+    "stavZdrojeSzr": "NEEXISTUJICI",
+    "stavZdrojeDph": "AKTIVNI",
+    "stavZdrojeSd": "NEEXISTUJICI",
+    "stavZdrojeIr": "NEEXISTUJICI",
+    "stavZdrojeCeu": "NEEXISTUJICI",
+    "stavZdrojeRs": "NEEXISTUJICI",
+    "stavZdrojeRed": "NEEXISTUJICI"
+  },
+  "primarniZdroj": "res",
+  "czNace": [
+    "55902",
+    "7219",
+    "85420"
+  ],
+  "subRegistrSzr": "szr"
+}

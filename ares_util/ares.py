@@ -6,7 +6,6 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 import logging
 import re
 import sys
-import warnings
 from urllib.parse import urljoin
 
 import requests
@@ -34,20 +33,20 @@ def call_ares(company_id):
         True
 
     :param company_id: 8-digit number
-    :type company_id: unicode|int
+    :type company_id: str|int
     """
     try:
-        validate_czech_company_id(company_id)
+        company_id = validate_czech_company_id(company_id)
     except InvalidCompanyIDError:
         return False
 
     try:
-        url = urljoin(ARES_API_URL, f'ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/{company_id}')
+        url = urljoin(ARES_API_URL, company_id)
         response = requests.get(url)
     except RequestException as e:
         raise AresConnectionError('Exception, ' + str(e))
 
-    if response.status_code == codes.bad_request:
+    if response.status_code in (codes.bad_request, codes.not_found):
         return False
 
     response_json = response.json()
@@ -162,23 +161,19 @@ def build_city(city, address):
     return city or address.split(',')[0].strip()
 
 
-def validate_czech_company_id(business_id):
+def validate_czech_company_id(business_id: str) -> str:
     """
-    http://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic
-    http://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
+    https://www.abclinuxu.cz/blog/bloK/2008/10/kontrola-ic
+    https://latrine.dgx.cz/jak-overit-platne-ic-a-rodne-cislo
 
-    :type business_id: unicode
-    :rtype: bool
+    :type business_id: str
+    :rtype: str
     """
 
-    if isinstance(business_id, int):
-        warnings.warn("In version 0.1.5 integer parameter will be invalid. "
-                      "Use string instead.", DeprecationWarning, stacklevel=2)
-
-    business_id = "%s" % business_id
+    business_id = normalize_company_id_length(business_id)
 
     try:
-        digits = list(map(int, list(normalize_company_id_length(business_id))))
+        digits = list(map(int, list(business_id)))
     except ValueError:
         raise InvalidCompanyIDError("Company ID must be a number")
 
@@ -187,7 +182,7 @@ def validate_czech_company_id(business_id):
     if digits[7] != cksum:
         raise InvalidCompanyIDError("Wrong Company ID checksum")
 
-    return True
+    return business_id
 
 
 if __name__ == "__main__":

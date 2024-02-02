@@ -1,0 +1,63 @@
+{
+    "ico": "01603094",
+    "obchodniJmeno": "Bc. Kristýna Vokálová",
+    "sidlo": {
+        "kodStatu": "CZ",
+        "nazevStatu": "Česká republika",
+        "kodKraje": 86,
+        "nazevKraje": "Královéhradecký kraj",
+        "kodOkresu": 3602,
+        "nazevOkresu": "Hradec Králové",
+        "kodObce": 570508,
+        "nazevObce": "Nový Bydžov",
+        "cisloDomovni": 89,
+        "kodCastiObce": 107212,
+        "nazevCastiObce": "Zábědov",
+        "kodAdresnihoMista": 20320566,
+        "psc": 50401,
+        "textovaAdresa": "Zábědov 89, 50401 Nový Bydžov",
+        "typCisloDomovni": "1",
+        "standardizaceAdresy": true
+    },
+    "pravniForma": "101",
+    "financniUrad": "228",
+    "datumVzniku": "2013-04-15",
+    "datumAktualizace": "2023-08-09",
+    "icoId": "01603094",
+    "adresaDorucovaci": {
+        "radekAdresy1": "Zábědov 89",
+        "radekAdresy2": "50401 Nový Bydžov"
+    },
+    "seznamRegistraci": {
+        "stavZdrojeVr": "NEEXISTUJICI",
+        "stavZdrojeRes": "AKTIVNI",
+        "stavZdrojeRzp": "AKTIVNI",
+        "stavZdrojeNrpzs": "NEEXISTUJICI",
+        "stavZdrojeRpsh": "NEEXISTUJICI",
+        "stavZdrojeRcns": "NEEXISTUJICI",
+        "stavZdrojeSzr": "NEEXISTUJICI",
+        "stavZdrojeDph": "NEEXISTUJICI",
+        "stavZdrojeSd": "NEEXISTUJICI",
+        "stavZdrojeIr": "NEEXISTUJICI",
+        "stavZdrojeCeu": "NEEXISTUJICI",
+        "stavZdrojeRs": "NEEXISTUJICI",
+        "stavZdrojeRed": "NEEXISTUJICI"
+    },
+    "primarniZdroj": "rzp",
+    "czNace": [
+        "461",
+        "63910",
+        "683",
+        "73110",
+        "7490",
+        "77290",
+        "82110",
+        "855",
+        "90020",
+        "93190",
+        "96040",
+        "96090",
+        "G",
+        "J"
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "ico": "25063677",
+    "obchodniJmeno": "SAD s.r.o.",
+    "sidlo": {
+        "kodStatu": "CZ",
+        "nazevStatu": "Česká republika",
+        "kodKraje": 27,
+        "nazevKraje": "Středočeský kraj",
+        "kodOkresu": 3206,
+        "nazevOkresu": "Mělník",
+        "kodObce": 534731,
+        "nazevObce": "Cítov",
+        "cisloDomovni": 35,
+        "kodCastiObce": 16471,
+        "nazevCastiObce": "Daminěves",
+        "kodAdresnihoMista": 6113257,
+        "psc": 27704,
+        "textovaAdresa": "Daminěves 35, 27704 Cítov",
+        "typCisloDomovni": "1",
+        "standardizaceAdresy": true
+    },
+    "pravniForma": "112",
+    "financniUrad": "043",
+    "datumVzniku": "1996-07-08",
+    "datumAktualizace": "2023-11-04",
+    "dic": "CZ25063677",
+    "icoId": "25063677",
+    "adresaDorucovaci": {
+        "radekAdresy1": "Daminěves 35",
+        "radekAdresy2": "27704 Cítov"
+    },
+    "seznamRegistraci": {
+        "stavZdrojeVr": "AKTIVNI",
+        "stavZdrojeRes": "AKTIVNI",
+        "stavZdrojeRzp": "AKTIVNI",
+        "stavZdrojeNrpzs": "NEEXISTUJICI",
+        "stavZdrojeRpsh": "NEEXISTUJICI",
+        "stavZdrojeRcns": "NEEXISTUJICI",
+        "stavZdrojeSzr": "AKTIVNI",
+        "stavZdrojeDph": "AKTIVNI",
+        "stavZdrojeSd": "NEEXISTUJICI",
+        "stavZdrojeIr": "NEEXISTUJICI",
+        "stavZdrojeCeu": "NEEXISTUJICI",
+        "stavZdrojeRs": "NEEXISTUJICI",
+        "stavZdrojeRed": "NEEXISTUJICI"
+    },
+    "primarniZdroj": "vr",
+    "czNace": [
+        "471",
+        "5590",
+        "00",
+        "01",
+        "011",
+        "10390"
+    ],
+    "subRegistrSzr": "ezp"
+}
