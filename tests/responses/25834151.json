@@ -1,0 +1,61 @@
+{
+    "ico": "25834151",
+    "obchodniJmeno": "HELLA AUTOTECHNIK NOVA, s.r.o.",
+    "sidlo": {
+        "kodStatu": "CZ",
+        "nazevStatu": "Česká republika",
+        "kodKraje": 124,
+        "nazevKraje": "Olomoucký kraj",
+        "kodOkresu": 3809,
+        "nazevOkresu": "Šumperk",
+        "kodObce": 540471,
+        "nazevObce": "Mohelnice",
+        "kodUlice": 566209,
+        "nazevUlice": "Družstevní",
+        "cisloDomovni": 338,
+        "kodCastiObce": 414689,
+        "cisloOrientacni": 16,
+        "nazevCastiObce": "Mohelnice",
+        "kodAdresnihoMista": 8125635,
+        "psc": 78985,
+        "textovaAdresa": "Družstevní 338/16, 78985 Mohelnice",
+        "typCisloDomovni": "1",
+        "standardizaceAdresy": true
+    },
+    "pravniForma": "112",
+    "financniUrad": "013",
+    "datumVzniku": "1999-03-22",
+    "datumAktualizace": "2023-12-19",
+    "dic": "CZ25834151",
+    "icoId": "25834151",
+    "adresaDorucovaci": {
+        "radekAdresy1": "Družstevní 338/16",
+        "radekAdresy2": "78985 Mohelnice"
+    },
+    "seznamRegistraci": {
+        "stavZdrojeVr": "AKTIVNI",
+        "stavZdrojeRes": "AKTIVNI",
+        "stavZdrojeRzp": "AKTIVNI",
+        "stavZdrojeNrpzs": "NEEXISTUJICI",
+        "stavZdrojeRpsh": "NEEXISTUJICI",
+        "stavZdrojeRcns": "NEEXISTUJICI",
+        "stavZdrojeSzr": "NEEXISTUJICI",
+        "stavZdrojeDph": "AKTIVNI",
+        "stavZdrojeSd": "NEEXISTUJICI",
+        "stavZdrojeIr": "NEEXISTUJICI",
+        "stavZdrojeCeu": "NEEXISTUJICI",
+        "stavZdrojeRs": "NEEXISTUJICI",
+        "stavZdrojeRed": "NEEXISTUJICI"
+    },
+    "primarniZdroj": "vr",
+    "czNace": [
+        "2740",
+        "2812",
+        "28220",
+        "28290",
+        "2932",
+        "8559",
+        "952"
+    ],
+    "subRegistrSzr": "szr"
+}

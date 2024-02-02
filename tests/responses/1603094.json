@@ -1,0 +1,6 @@
+{
+    "kod": "CHYBA_VSTUPU",
+    "popis": "Položka 'ico' : nesplňuje regulární výraz [0-9]{8}|Není vyplněn správný formát IČO. Upravte parametry vyhledávání.|Chyba vstupu",
+    "subKod": "VSTUP_NEVALIDNI_FORMAT_ICO"
+}
+

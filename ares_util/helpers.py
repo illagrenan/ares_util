@@ -6,7 +6,7 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 from .settings import COMPANY_ID_LENGTH
 
 
-def normalize_company_id_length(business_id):
+def normalize_company_id_length(business_id: str) -> str:
     """
     Normalize given Company ID to 8-digits format.
 
@@ -21,8 +21,8 @@ def normalize_company_id_length(business_id):
         True
 
 
-    :type business_id: unicode
-    :rtype: unicode
+    :type business_id: str
+    :rtype: str
     """
 
-    return business_id.rjust(COMPANY_ID_LENGTH, "0")
+    return str(business_id).zfill(COMPANY_ID_LENGTH)
