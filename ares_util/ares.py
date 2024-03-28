@@ -287,11 +287,17 @@ def build_engagement_person(person_data):
 
     individual_entity_data = person_data.get('fyzickaOsoba', {})
     legal_entity_data = person_data.get('pravnickaOsoba', {})
-    entity_data = individual_entity_data or legal_entity_data
+    if individual_entity_data:
+        entity_data = individual_entity_data
+        entity_type = "F"
+    else:
+        entity_data = legal_entity_data
+        entity_type = "P"
     address = entity_data.get('adresa', {})
 
     return {
         'registration_date': person_data.get('datumZapisu'),
+        'entity_type': entity_type,
         'first_name': entity_data.get('jmeno'),
         'last_name': entity_data.get('prijmeni'),
         'company_name': entity_data.get('obchodniJmeno'),
