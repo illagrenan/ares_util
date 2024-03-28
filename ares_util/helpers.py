@@ -45,10 +45,10 @@ def is_record_active(record: dict):
     :type record: dict
     :rtype: bool
     """
-    return "datumVymazu" not in record
+    return "datumVymazu" not in record and bool(record.get("delete_date"))
 
 
-def filter_active_records(records: list):
+def filter_active_records(records: list, allow_deleted: bool = False):
     """
     Filter out invalid records.
 
@@ -59,7 +59,12 @@ def filter_active_records(records: list):
         >>> filter_active_records(data)
         [{'datumZapisu': '2020-01-01'}]
 
+    :param records: List of records
     :type records: list
+    :param allow_deleted: Allow deleted records
+    :type allow_deleted: bool
     :rtype: list
     """
+    if allow_deleted:
+        return records
     return [record for record in records if is_record_active(record)]

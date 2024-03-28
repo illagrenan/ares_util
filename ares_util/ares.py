@@ -99,7 +99,7 @@ def call_ares(company_id):
     return result_company_info
 
 
-def call_ares_vr(company_id):
+def call_ares_vr(company_id, allow_deleted=False):
     """
     Validate given company_id and fetch data from ARES VR.
 
@@ -115,6 +115,7 @@ def call_ares_vr(company_id):
         True
 
     :param company_id: 8-digit number
+    :param allow_deleted: Allow deleted records
     :type company_id: str|int
     """
     try:
@@ -145,7 +146,7 @@ def call_ares_vr(company_id):
     statutory_authority_data = record_data.get('statutarniOrgany', [])  # Jednatelé
     share_holder_data = record_data.get('spolecnici', [])
 
-    for data in filter_active_records(file_mark_data):
+    for data in filter_active_records(file_mark_data, allow_deleted=allow_deleted):
         file_mark.append({
             'registration_date': data.get('datumZapisu'),
             'delete_date': data.get('datumVymazu'),
@@ -154,20 +155,20 @@ def call_ares_vr(company_id):
             'insert': int(data.get('vlozka')),
         })
 
-    for data in filter_active_records(company_name_data):
+    for data in filter_active_records(company_name_data, allow_deleted=allow_deleted):
         company_name.append({
             'registration_date': data.get('datumZapisu'),
             'delete_date': data.get('datumVymazu'),
             'value': data.get('hodnota'),
         })
 
-    for data in filter_active_records(statutory_authority_data):
-        members_data = filter_active_records(data.get('clenoveOrganu', []))
+    for data in filter_active_records(statutory_authority_data, allow_deleted=allow_deleted):
+        members_data = filter_active_records(data.get('clenoveOrganu', []), allow_deleted=allow_deleted)
         for member in members_data:
             statutory_authorities.append(build_engagement_person(member))
 
-    for data in filter_active_records(share_holder_data):
-        member_data = filter_active_records(data.get('spolecnik', []))
+    for data in filter_active_records(share_holder_data, allow_deleted=allow_deleted):
+        member_data = filter_active_records(data.get('spolecnik', []), allow_deleted=allow_deleted)
         for member in member_data:
             share_holder = build_engagement_person(member.get("osoba", {}))
             percentage_share = member.get("podil", {}).get("velikostPodilu")
@@ -297,6 +298,7 @@ def build_engagement_person(person_data):
 
     return {
         'registration_date': person_data.get('datumZapisu'),
+        'delete_date': person_data.get('datumVymazu'),
         'entity_type': entity_type,
         'first_name': entity_data.get('jmeno'),
         'last_name': entity_data.get('prijmeni'),
