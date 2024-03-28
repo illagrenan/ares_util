@@ -1,0 +1,1152 @@
+{
+  "icoId": "25834151",
+  "zaznamy": [
+    {
+      "rejstrik": "OR",
+      "primarniZaznam": true,
+      "spisovaZnacka": [
+        {
+          "datumZapisu": "1999-03-22",
+          "soud": "KSOS",
+          "oddil": "C",
+          "vlozka": 20350
+        }
+      ],
+      "ico": [
+        {
+          "datumZapisu": "1999-03-22",
+          "hodnota": "25834151"
+        }
+      ],
+      "obchodniJmeno": [
+        {
+          "datumZapisu": "1999-03-22",
+          "hodnota": "HELLA AUTOTECHNIK NOVA, s.r.o."
+        }
+      ],
+      "zakladniKapital": [
+        {
+          "datumZapisu": "1999-03-22",
+          "datumVymazu": "2000-04-18",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "100000;00"
+          }
+        },
+        {
+          "datumZapisu": "2000-04-18",
+          "datumVymazu": "2000-04-26",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "219600000;00"
+          }
+        },
+        {
+          "datumZapisu": "2000-04-26",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "469600000;00"
+          }
+        }
+      ],
+      "pravniForma": [
+        {
+          "datumZapisu": "1999-03-22",
+          "hodnota": "112"
+        }
+      ],
+      "financniUrad": "013",
+      "adresy": [
+        {
+          "datumZapisu": "1999-03-22",
+          "datumVymazu": "2003-05-10",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 124,
+            "nazevKraje": "Olomoucký kraj",
+            "kodOkresu": 3809,
+            "nazevOkresu": "Šumperk",
+            "kodObce": 540471,
+            "nazevObce": "Mohelnice",
+            "kodUlice": 566209,
+            "nazevUlice": "Družstevní",
+            "cisloDomovni": 338,
+            "kodCastiObce": 414689,
+            "cisloOrientacni": 16,
+            "nazevCastiObce": "Mohelnice",
+            "kodAdresnihoMista": 8125635,
+            "psc": 78985,
+            "textovaAdresa": "Družstevní 338/16, 78985 Mohelnice",
+            "typCisloDomovni": "1",
+            "standardizaceAdresy": true
+          },
+          "typAdresy": "SIDLO"
+        },
+        {
+          "datumZapisu": "2003-05-10",
+          "datumVymazu": "2016-12-01",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 124,
+            "nazevKraje": "Olomoucký kraj",
+            "kodOkresu": 3809,
+            "nazevOkresu": "Šumperk",
+            "kodObce": 540471,
+            "nazevObce": "Mohelnice",
+            "kodUlice": 566209,
+            "nazevUlice": "Družstevní",
+            "cisloDomovni": 338,
+            "kodCastiObce": 414689,
+            "cisloOrientacni": 16,
+            "nazevCastiObce": "Mohelnice",
+            "kodAdresnihoMista": 8125635,
+            "psc": 78985,
+            "textovaAdresa": "Družstevní 338/16, 78985 Mohelnice",
+            "typCisloDomovni": "1",
+            "standardizaceAdresy": true
+          },
+          "typAdresy": "SIDLO"
+        },
+        {
+          "datumZapisu": "2016-12-01",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 124,
+            "nazevKraje": "Olomoucký kraj",
+            "kodOkresu": 3809,
+            "nazevOkresu": "Šumperk",
+            "kodObce": 540471,
+            "nazevObce": "Mohelnice",
+            "kodUlice": 566209,
+            "nazevUlice": "Družstevní",
+            "cisloDomovni": 338,
+            "kodCastiObce": 414689,
+            "cisloOrientacni": 16,
+            "nazevCastiObce": "Mohelnice",
+            "kodAdresnihoMista": 8125635,
+            "psc": 78985,
+            "textovaAdresa": "Družstevní 338/16, 78985 Mohelnice",
+            "typCisloDomovni": "1",
+            "standardizaceAdresy": true
+          },
+          "typAdresy": "SIDLO"
+        }
+      ],
+      "ostatniSkutecnosti": [
+        {
+          "datumZapisu": "2011-12-30",
+          "hodnota": "Na základě Projektu vnitrostátní fúze sloučením společnosti s ručením omezeným ze dne 27.10.2011, došlo k zániku společnosti Logistické centrum Hella, s.r.o., IČ: 264 70 373, se sídlem Mohelnice, Družstevní 338/16, PSČ 789 85, jemuž předcházelo její zrušení bez likvidace, a jejímu sloučení s nástupnickou společností HELLA AUTOTECHNIK NOVA, s.r.o., IČ 258 34 151, se sídlem Mohelnice, Družstevní 338/16, PSČ 789 85, když jmění zanikající společnosti Logistické centrum Hella, s.r.o. přešlo na nástupnickou společnost HELLA AUTOTECHNIK NOVA, s.r.o.\nSpolečnost Hella Corporate Center Central & Eastern Europe, s.r.o., IČ 483 99 167, se sídlem Mohelnice, Družstevní 338/16, PSČ 789 85, jako jediný společník výše uvedených společností, při výkonu působnosti valné hromady u obou těchto společností schválila citovanou fúzi dne 12.12.2011.\nRozhodný den fúze je 1.6.2011."
+        },
+        {
+          "datumZapisu": "2014-03-01",
+          "hodnota": "V důsledku vnitrostátní fúze sloučením společnosti HELLA AUTOTECHNIK NOVA, s.r.o., IČ 258 34 151, se sídlem Mohelnice, Družstevní 338/16, PSČ 789 85, zapsané v obchodním rejstříku vedeném Krajským soudem v Ostravě, oddíl C, vložka 20350, společnosti HELLAAUTOTECHNIK, s.r.o., IČ 471 54 888, se sídlem Mohelnice, Družstevní 338/16, PSČ 789 85, zapsané v obchodním rejstříku vedeném Krajským soudem v Ostravě, oddíl C, vložka 4137, a společnosti Hella Corporate Center Central & Eastern Europe, s.r.o., IČ 483 99 167, se sídlem Mohelnice, Družstevní 338/16, PSČ 789 85, zapsané v obchodním rejstříku vedeném Krajským soudem v Ostravě, oddíl C, vložka 10425, došlo k zániku společnosti HELLA AUTOTECHNIK, s.r.o. a společnosti Hella Corporate Center Central & EasternEurope, s.r.o. a k přechodu jmění těchto zanikajících společností na společnost HELLA AUTOTECHNIK NOVA, s.r.o. jakožto nástupnickou společnost.\nRozhodný den 1.6.2013."
+        },
+        {
+          "datumZapisu": "2014-08-05",
+          "datumVymazu": "2016-12-01",
+          "hodnota": "Počet členů statutárního orgánu: 1"
+        },
+        {
+          "datumZapisu": "2014-08-05",
+          "hodnota": "Obchodní korporace se podřídila zákonu jako celku postupem podle § 777 odst. 5 zákona č. 90/2012 Sb., o obchodních společnostech a družstvech."
+        },
+        {
+          "datumZapisu": "2021-10-01",
+          "hodnota": "Na společnost přešlo v důsledku fúze sloučením jmění zanikající společnosti HELLA CZ, s.r.o., se sídlem Revoluční 785, 285 22 Zruč nad Sázavou, identifikační číslo: 475 49 084, a to dle projektu fúze sloučením ze dne 18.8.2021."
+        }
+      ],
+      "datumAktualizace": "2022-05-21",
+      "stavSubjektu": "AKTIVNI",
+      "datumZapisu": "1999-03-22",
+      "cinnosti": {
+        "predmetPodnikani": [
+          {
+            "datumZapisu": "1999-03-22",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "výroba, instalace a opravy elektrických strojů a přístrojů"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "velkoobchod"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "maloobchod motorovými vozidly a jejich příslušenstvím"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "zprostředkování obchodu a služeb"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "testování, měření, analýzy a kontroly"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "činnost technických poradců v oblasti automobilového průmyslu"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "příprava a vypracování technických návrhů"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "projektování elektrických zařízení"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "výroba strojů a zařízení pro využití mechanické energie"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "pronájem a půjčování věcí movitých"
+          },
+          {
+            "datumZapisu": "2005-11-02",
+            "datumVymazu": "2010-12-09",
+            "hodnota": "realitní činnost"
+          },
+          {
+            "datumZapisu": "2010-12-09",
+            "datumVymazu": "2021-10-01",
+            "hodnota": "výroba, instalace, opravy elektrických strojů a přístrojů, elektronických a telekomunikačních zařízení"
+          },
+          {
+            "datumZapisu": "2021-10-01",
+            "hodnota": "Výroba, instalace, opravy elektrických strojů a přístrojů, elektronických a telekomunikačních zařízení"
+          },
+          {
+            "datumZapisu": "2021-10-01",
+            "hodnota": "Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona\nobory činnosti:\n- Výroba strojů a zařízení\n- Nakládání s odpady (vyjma nebezpečných)\n- Zprostředkování obchodu a služeb\n- Velkoobchod a maloobchod\n- Zasilatelství a zastupování v celním řízení\n- Poskytování software, poradenství v oblasti informačních technologií, zpracování dat, hostingové a související činnosti a webové portály\n- Nákup, prodej, správa a údržba nemovitostí\n- Pronájem a půjčování věcí movitých\n- Poradenská a konzultační činnost, zpracování odborných studií a posudků\n- Příprava a vypracování technických návrhů, grafické a kresličské práce\n- Projektování elektrických zařízení\n- Testování, měření, analýzy a kontroly\n- Služby v oblasti administrativní správy a služby organizačně hospodářské povahy\n- Mimoškolní výchova a vzdělávání, pořádání kurzů, školení, včetně lektorské činnosti"
+          },
+          {
+            "datumZapisu": "2010-12-09",
+            "datumVymazu": "2021-10-01",
+            "hodnota": "výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona"
+          },
+          {
+            "datumZapisu": "2014-08-05",
+            "hodnota": "Činnost účetních poradců, vedení účetnictví, vedení daňové evidence"
+          },
+          {
+            "datumZapisu": "2014-08-05",
+            "hodnota": "Poskytování služeb v oblasti bezpečnosti a ochrany zdraví při práci"
+          }
+        ]
+      },
+      "statutarniOrgany": [
+        {
+          "datumZapisu": "1999-03-22",
+          "nazevOrganu": "Statutární orgán",
+          "pocetClenu": [
+            {
+              "datumZapisu": "2016-12-01",
+              "pocetClenu": 1
+            }
+          ],
+          "clenoveOrganu": [
+            {
+              "datumZapisu": "2015-06-10",
+              "datumVymazu": "2016-06-07",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "2015-04-09",
+                  "zanikFunkce": "2016-04-30",
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "DE",
+                  "nazevStatu": "Německo",
+                  "nazevObce": "Lippstadt",
+                  "nazevUlice": "Bruchbäumer Weg 18a",
+                  "textovaAdresa": "Bruchbäumer Weg 18a, 19555 Lippstadt, Německo",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "19555"
+                },
+                "datumNarozeni": "1973-01-27",
+                "jmeno": "MATTHIAS",
+                "prijmeni": "WIEHEN",
+                "statniObcanstvi": "DE"
+              }
+            },
+            {
+              "datumZapisu": "2016-06-07",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "2016-05-01",
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 78,
+                  "nazevKraje": "Liberecký kraj",
+                  "kodOkresu": 3505,
+                  "nazevOkresu": "Liberec",
+                  "kodObce": 563889,
+                  "nazevObce": "Liberec",
+                  "kodMestskeCastiObvodu": 556891,
+                  "kodUlice": 260797,
+                  "nazevMestskeCastiObvodu": "Liberec-Vratislavice nad Nisou",
+                  "nazevUlice": "Leknínová",
+                  "cisloDomovni": 1194,
+                  "kodCastiObce": 408913,
+                  "nazevCastiObce": "Liberec XXX-Vratislavice nad Nisou",
+                  "kodAdresnihoMista": 26444798,
+                  "psc": 46311,
+                  "textovaAdresa": "Leknínová 1194, Liberec XXX-Vratislavice nad Nisou, 46311 Liberec",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1966-12-12",
+                "jmeno": "PETR",
+                "prijmeni": "NOVOTNÝ",
+                "statniObcanstvi": "CZ",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "1999-03-22",
+              "datumVymazu": "2000-12-01",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "nazevObce": "Nový Jičín-Libhošť",
+                  "textovaAdresa": "Nový Jičín-Libhošť čp. 450, Česká republika",
+                  "cisloDoAdresy": "čp. 450",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1949-08-11",
+                "jmeno": "Oldřich",
+                "prijmeni": "Svoboda",
+                "statniObcanstvi": "CZ",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2000-12-01",
+              "datumVymazu": "2011-01-01",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "1999-03-22",
+                  "zanikFunkce": "2010-12-31",
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3809,
+                  "nazevOkresu": "Šumperk",
+                  "kodObce": 540471,
+                  "nazevObce": "Mohelnice",
+                  "kodUlice": 566675,
+                  "nazevUlice": "Staškova",
+                  "cisloDomovni": 167,
+                  "kodCastiObce": 414689,
+                  "cisloOrientacni": 65,
+                  "nazevCastiObce": "Mohelnice",
+                  "kodAdresnihoMista": 8124345,
+                  "psc": 78985,
+                  "textovaAdresa": "Staškova 167/65, 78985 Mohelnice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1949-08-11",
+                "jmeno": "Oldřich",
+                "prijmeni": "Svoboda",
+                "statniObcanstvi": "CZ",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2009-08-14",
+              "datumVymazu": "2014-06-13",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "2009-07-07",
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3805,
+                  "nazevOkresu": "Olomouc",
+                  "kodObce": 500496,
+                  "nazevObce": "Olomouc",
+                  "kodUlice": 329096,
+                  "nazevUlice": "Kyselovská",
+                  "cisloDomovni": 71,
+                  "kodCastiObce": 150380,
+                  "cisloOrientacni": 39,
+                  "nazevCastiObce": "Slavonín",
+                  "kodAdresnihoMista": 23286148,
+                  "psc": 78301,
+                  "textovaAdresa": "Kyselovská 71/39, Slavonín, 78301 Olomouc",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1973-03-29",
+                "jmeno": "Marek",
+                "prijmeni": "Ryšavý",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2014-06-13",
+              "datumVymazu": "2015-06-10",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "2009-07-07",
+                  "zanikFunkce": "2015-04-08",
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3805,
+                  "nazevOkresu": "Olomouc",
+                  "kodObce": 500496,
+                  "nazevObce": "Olomouc",
+                  "kodUlice": 329096,
+                  "nazevUlice": "Kyselovská",
+                  "cisloDomovni": 71,
+                  "kodCastiObce": 150380,
+                  "cisloOrientacni": 39,
+                  "nazevCastiObce": "Slavonín",
+                  "kodAdresnihoMista": 23286148,
+                  "psc": 78301,
+                  "textovaAdresa": "Kyselovská 71/39, Slavonín, 78301 Olomouc",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1973-03-29",
+                "jmeno": "MAREK",
+                "prijmeni": "RYŠAVÝ",
+                "titulPredJmenem": "Ing."
+              }
+            }
+          ],
+          "typOrganu": "STATUTARNI_ORGAN",
+          "nazevAngazma": "Statutární orgán",
+          "typAngazma": "STATUTARNI_ORGAN",
+          "zpusobJednani": [
+            {
+              "datumZapisu": "1999-03-22",
+              "datumVymazu": "2009-08-14",
+              "hodnota": "Jednání za společnost: Jednatel jedná jménem společnosti\nsamostatně ve všech věcech společnosti a podepisuje se tak, že k\nobchodnímu jménu společnosti připojí svůj podpis."
+            },
+            {
+              "datumZapisu": "2009-08-14",
+              "datumVymazu": "2011-01-01",
+              "hodnota": "Jednání za společnost:\nKaždý jednatel je oprávněn jednat jménem společnosti samostatně."
+            },
+            {
+              "datumZapisu": "2011-01-01",
+              "datumVymazu": "2014-08-05",
+              "hodnota": "Jednatel je oprávněn jednat jménem společnosti ve všech věcech samostatně."
+            },
+            {
+              "datumZapisu": "2014-08-05",
+              "hodnota": "Jednatel je oprávněn jednat jménem společnosti samostatně."
+            }
+          ]
+        },
+        {
+          "datumZapisu": "2008-08-29",
+          "nazevOrganu": "Prokura",
+          "clenoveOrganu": [
+            {
+              "datumZapisu": "2022-05-20",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {},
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3805,
+                  "nazevOkresu": "Olomouc",
+                  "kodObce": 500496,
+                  "nazevObce": "Olomouc",
+                  "kodUlice": 328545,
+                  "nazevUlice": "Jarmily Glazarové",
+                  "cisloDomovni": 408,
+                  "kodCastiObce": 110612,
+                  "cisloOrientacni": 19,
+                  "nazevCastiObce": "Hejčín",
+                  "kodAdresnihoMista": 28183401,
+                  "psc": 77900,
+                  "textovaAdresa": "Jarmily Glazarové 408/19, Hejčín, 77900 Olomouc",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1959-10-07",
+                "jmeno": "KAREL",
+                "prijmeni": "BILL",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2008-08-29",
+              "datumVymazu": "2009-08-14",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {},
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3805,
+                  "nazevOkresu": "Olomouc",
+                  "kodObce": 500496,
+                  "nazevObce": "Olomouc",
+                  "kodUlice": 329096,
+                  "nazevUlice": "Kyselovská",
+                  "cisloDomovni": 71,
+                  "kodCastiObce": 150380,
+                  "cisloOrientacni": 39,
+                  "nazevCastiObce": "Slavonín",
+                  "kodAdresnihoMista": 23286148,
+                  "psc": 78301,
+                  "textovaAdresa": "Kyselovská 71/39, Slavonín, 78301 Olomouc",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1973-03-29",
+                "jmeno": "Marek",
+                "prijmeni": "Ryšavý",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2014-08-05",
+              "datumVymazu": "2022-05-20",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {},
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 132,
+                  "nazevKraje": "Moravskoslezský kraj",
+                  "kodOkresu": 3804,
+                  "nazevOkresu": "Nový Jičín",
+                  "kodObce": 568481,
+                  "nazevObce": "Bernartice nad Odrou",
+                  "cisloDomovni": 246,
+                  "kodCastiObce": 2852,
+                  "nazevCastiObce": "Bernartice nad Odrou",
+                  "kodAdresnihoMista": 25572075,
+                  "psc": 74101,
+                  "textovaAdresa": "č.p. 246, 74101 Bernartice nad Odrou",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1959-10-07",
+                "jmeno": "KAREL",
+                "prijmeni": "BILL",
+                "statniObcanstvi": "CZ"
+              }
+            }
+          ],
+          "typOrganu": "PROKURA",
+          "nazevAngazma": "Prokura",
+          "typAngazma": "PROKURA",
+          "zpusobJednani": [
+            {
+              "datumZapisu": "2008-08-29",
+              "datumVymazu": "2009-08-14",
+              "hodnota": "Prokurista jedná za společnost samostatně a podepisuje tím způsobem, že k obchodní firmě společnosti připojí svůj podpis s dodatkem \"prokurista\""
+            },
+            {
+              "datumZapisu": "2014-08-05",
+              "hodnota": "Prokurista není oprávněn přenést prokuru na někoho jiného ani udělit další prokuru.\nProkurista není oprávněn zcizit nebo zatížit nemovitou věc."
+            }
+          ]
+        }
+      ],
+      "spolecnici": [
+        {
+          "datumZapisu": "1999-03-22",
+          "nazevOrganu": "Společníci",
+          "spolecnik": [
+            {
+              "datumZapisu": "2000-04-26",
+              "datumVymazu": "2003-05-10",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "469600000;00"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2000-04-26",
+                "datumVymazu": "2003-05-10",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 124,
+                    "kodOkresu": 3809,
+                    "kodObce": 540471,
+                    "nazevObce": "Mohelnice",
+                    "kodUlice": 566209,
+                    "nazevUlice": "Družstevní",
+                    "kodCastiObce": 414689,
+                    "textovaAdresa": "Družstevní, Mohelnice, Česká republika",
+                    "standardizaceAdresy": false
+                  },
+                  "ico": "47154888",
+                  "obchodniJmeno": "HELLA AUTOTECHNIK, s.r.o.",
+                  "pravniForma": "112"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2003-05-10",
+              "datumVymazu": "2005-06-29",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "469600000;00"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "100 %"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2003-05-10",
+                "datumVymazu": "2005-06-29",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 124,
+                    "nazevKraje": "Olomoucký kraj",
+                    "kodOkresu": 3809,
+                    "nazevOkresu": "Šumperk",
+                    "kodObce": 540471,
+                    "nazevObce": "Mohelnice",
+                    "kodUlice": 566209,
+                    "nazevUlice": "Družstevní",
+                    "cisloDomovni": 338,
+                    "kodCastiObce": 414689,
+                    "cisloOrientacni": 16,
+                    "nazevCastiObce": "Mohelnice",
+                    "kodAdresnihoMista": 8125635,
+                    "psc": 78985,
+                    "textovaAdresa": "Družstevní 338/16, 78985 Mohelnice",
+                    "typCisloDomovni": "1",
+                    "standardizaceAdresy": true
+                  },
+                  "ico": "47154888",
+                  "obchodniJmeno": "HELLA AUTOTECHNIK, s.r.o.",
+                  "pravniForma": "112"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2005-06-29",
+              "datumVymazu": "2009-06-22",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "469580000;00"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "23479/23480"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2005-06-29",
+                "datumVymazu": "2009-06-22",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 124,
+                    "nazevKraje": "Olomoucký kraj",
+                    "kodOkresu": 3809,
+                    "nazevOkresu": "Šumperk",
+                    "kodObce": 540471,
+                    "nazevObce": "Mohelnice",
+                    "kodUlice": 566209,
+                    "nazevUlice": "Družstevní",
+                    "cisloDomovni": 338,
+                    "kodCastiObce": 414689,
+                    "cisloOrientacni": 16,
+                    "nazevCastiObce": "Mohelnice",
+                    "kodAdresnihoMista": 8125635,
+                    "psc": 78985,
+                    "textovaAdresa": "Družstevní 338/16, 78985 Mohelnice",
+                    "typCisloDomovni": "1",
+                    "standardizaceAdresy": true
+                  },
+                  "ico": "47154888",
+                  "obchodniJmeno": "HELLA AUTOTECHNIK, s.r.o.",
+                  "pravniForma": "112"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2014-03-01",
+              "datumVymazu": "2014-08-05",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "469578000"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "20967/20968"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2014-03-01",
+                "datumVymazu": "2014-08-05",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "DE",
+                    "nazevStatu": "Německo",
+                    "nazevObce": "Lippstadt",
+                    "nazevUlice": "Rixbecker Str. 75",
+                    "textovaAdresa": "Rixbecker Str. 75, 59557 Lippstadt, Německo",
+                    "standardizaceAdresy": false,
+                    "pscTxt": "59557"
+                  },
+                  "obchodniJmeno": "Hella Holding International GmbH"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2005-06-29",
+              "datumVymazu": "2008-06-23",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "20000;00"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "1/23480"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2005-06-29",
+                "datumVymazu": "2008-06-23",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 124,
+                    "nazevKraje": "Olomoucký kraj",
+                    "kodOkresu": 3809,
+                    "nazevOkresu": "Šumperk",
+                    "kodObce": 540471,
+                    "nazevObce": "Mohelnice",
+                    "kodUlice": 566209,
+                    "nazevUlice": "Družstevní",
+                    "cisloDomovni": 338,
+                    "kodCastiObce": 414689,
+                    "cisloOrientacni": 16,
+                    "nazevCastiObce": "Mohelnice",
+                    "kodAdresnihoMista": 8125635,
+                    "psc": 78985,
+                    "textovaAdresa": "Družstevní 338/16, 78985 Mohelnice",
+                    "typCisloDomovni": "1",
+                    "standardizaceAdresy": true
+                  },
+                  "ico": "48399167",
+                  "obchodniJmeno": "HELLA - účastenská společnost s ručením omezeným (s.r.o.)",
+                  "pravniForma": "112"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2008-06-23",
+              "datumVymazu": "2009-06-22",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "20000;00"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "1/23480"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2008-06-23",
+                "datumVymazu": "2009-06-22",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 124,
+                    "nazevKraje": "Olomoucký kraj",
+                    "kodOkresu": 3809,
+                    "nazevOkresu": "Šumperk",
+                    "kodObce": 540471,
+                    "nazevObce": "Mohelnice",
+                    "kodUlice": 566209,
+                    "nazevUlice": "Družstevní",
+                    "cisloDomovni": 338,
+                    "kodCastiObce": 414689,
+                    "cisloOrientacni": 16,
+                    "nazevCastiObce": "Mohelnice",
+                    "kodAdresnihoMista": 8125635,
+                    "psc": 78985,
+                    "textovaAdresa": "Družstevní 338/16, 78985 Mohelnice",
+                    "typCisloDomovni": "1",
+                    "standardizaceAdresy": true
+                  },
+                  "ico": "48399167",
+                  "obchodniJmeno": "Hella Corporate Center Central & Eastern Europe, s.r.o.",
+                  "pravniForma": "112"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2009-06-22",
+              "datumVymazu": "2014-03-01",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "469600000;00"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "100 %"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2009-06-22",
+                "datumVymazu": "2014-03-01",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 124,
+                    "nazevKraje": "Olomoucký kraj",
+                    "kodOkresu": 3809,
+                    "nazevOkresu": "Šumperk",
+                    "kodObce": 540471,
+                    "nazevObce": "Mohelnice",
+                    "kodUlice": 566209,
+                    "nazevUlice": "Družstevní",
+                    "cisloDomovni": 338,
+                    "kodCastiObce": 414689,
+                    "cisloOrientacni": 16,
+                    "nazevCastiObce": "Mohelnice",
+                    "kodAdresnihoMista": 8125635,
+                    "psc": 78985,
+                    "textovaAdresa": "Družstevní 338/16, 78985 Mohelnice",
+                    "typCisloDomovni": "1",
+                    "standardizaceAdresy": true
+                  },
+                  "ico": "48399167",
+                  "obchodniJmeno": "Hella Corporate Center Central & Eastern Europe, s.r.o.",
+                  "pravniForma": "112"
+                }
+              }
+            },
+            {
+              "datumZapisu": "1999-03-22",
+              "datumVymazu": "2000-04-18",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "100000;00"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "1999-03-22",
+                "datumVymazu": "2000-04-18",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 124,
+                    "kodOkresu": 3809,
+                    "kodObce": 540471,
+                    "nazevObce": "Mohelnice",
+                    "kodUlice": 566209,
+                    "nazevUlice": "Družstevní",
+                    "kodCastiObce": 414689,
+                    "textovaAdresa": "Družstevní, Mohelnice, Česká republika",
+                    "standardizaceAdresy": false
+                  },
+                  "ico": "47154888",
+                  "obchodniJmeno": "HELLA AUTOTECHNIK, s.r.o.",
+                  "pravniForma": "112"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2000-04-18",
+              "datumVymazu": "2000-04-26",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "219600000;00"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2000-04-18",
+                "datumVymazu": "2000-04-26",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 124,
+                    "kodOkresu": 3809,
+                    "kodObce": 540471,
+                    "nazevObce": "Mohelnice",
+                    "kodUlice": 566209,
+                    "nazevUlice": "Družstevní",
+                    "kodCastiObce": 414689,
+                    "textovaAdresa": "Družstevní, Mohelnice, Česká republika",
+                    "standardizaceAdresy": false
+                  },
+                  "ico": "47154888",
+                  "obchodniJmeno": "HELLA AUTOTECHNIK, s.r.o.",
+                  "pravniForma": "112"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2014-08-05",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "469578000"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "20967/20968"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2014-08-05",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "DE",
+                    "nazevStatu": "Německo",
+                    "nazevObce": "Lippstadt",
+                    "nazevUlice": "Rixbecker Str. 75",
+                    "textovaAdresa": "Rixbecker Str. 75, 59557 Lippstadt, Německo",
+                    "standardizaceAdresy": false,
+                    "pscTxt": "59557"
+                  },
+                  "obchodniJmeno": "Hella Holding International GmbH"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2014-03-01",
+              "datumVymazu": "2014-08-05",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "22000"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "1/20968"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2014-03-01",
+                "datumVymazu": "2014-08-05",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "DE",
+                    "nazevStatu": "Německo",
+                    "nazevObce": "Lippstadt",
+                    "nazevUlice": "Rixbecker Str. 75",
+                    "textovaAdresa": "Rixbecker Str. 75, 59552 Lippstadt, Německo",
+                    "standardizaceAdresy": false,
+                    "pscTxt": "59552"
+                  },
+                  "obchodniJmeno": "Hella Corporate Center GmbH"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2014-08-05",
+              "datumVymazu": "2021-06-21",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "22000"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "1/20968"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2014-08-05",
+                "datumVymazu": "2021-06-21",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "DE",
+                    "nazevStatu": "Německo",
+                    "nazevObce": "Lippstadt",
+                    "nazevUlice": "Rixbecker Str. 75",
+                    "textovaAdresa": "Rixbecker Str. 75, 59552 Lippstadt, Německo",
+                    "standardizaceAdresy": false,
+                    "pscTxt": "59552"
+                  },
+                  "obchodniJmeno": "Hella Corporate Center GmbH"
+                }
+              }
+            }
+          ],
+          "typOrganu": "SPOLECNIK",
+          "nazev": "Společníci"
+        }
+      ]
+    }
+  ]
+}

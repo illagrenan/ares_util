@@ -1,0 +1,4 @@
+{
+    "kod": "OBECNA_CHYBA",
+    "popis": "JSON parse error: Unrecognized character escape ''' (code 39); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unrecognized character escape ''' (code 39)\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 8, column: 8] (through reference chain: com.asseco.mfcr.ares.common.restapi.dto.EkonomickeSubjektyKomplexFiltrType[\"ico\"]->java.util.ArrayList[0])|Unrecognized character escape ''' (code 39)\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 8, column: 8] (through reference chain: com.asseco.mfcr.ares.common.restapi.dto.EkonomickeSubjektyKomplexFiltrType[\"ico\"]->java.util.ArrayList[0])|Unrecognized character escape ''' (code 39)\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 8, column: 8]"
+}

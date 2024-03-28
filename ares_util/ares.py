@@ -9,12 +9,12 @@ import sys
 from urllib.parse import urljoin
 
 import requests
-from requests.status_codes import codes
 from requests.exceptions import RequestException
+from requests.status_codes import codes
 
 from .exceptions import InvalidCompanyIDError, AresConnectionError, AresServerError
-from .helpers import normalize_company_id_length
-from .settings import COMPANY_ID_LENGTH, ARES_API_URL
+from .helpers import normalize_company_id_length, filter_active_records
+from .settings import COMPANY_ID_LENGTH, ARES_API_URL, ARES_VR_API_URL
 
 
 def call_ares(company_id):
@@ -99,6 +99,102 @@ def call_ares(company_id):
     return result_company_info
 
 
+def call_ares_vr(company_id):
+    """
+    Validate given company_id and fetch data from ARES VR.
+
+    Example:
+    ========
+        >>> invalid_company_id = 42
+        >>> call_ares_vr(invalid_company_id)
+        False
+
+        >>> valid_company_id = "27074358"
+        >>> returned_dict = call_ares_vr(valid_company_id)
+        >>> returned_dict['company_id'] == valid_company_id
+        True
+
+    :param company_id: 8-digit number
+    :type company_id: str|int
+    """
+    try:
+        company_id = validate_czech_company_id(company_id)
+    except InvalidCompanyIDError:
+        return False
+
+    try:
+        url = urljoin(ARES_VR_API_URL, company_id)
+        response = requests.get(url)
+    except RequestException as e:
+        raise AresConnectionError('Exception, ' + str(e))
+
+    if response.status_code in (codes.bad_request, codes.not_found):
+        return False
+
+    response_json = response.json()
+    if response.status_code != codes.ok:
+        raise AresServerError(response_json['kod'], response_json['popis'])
+
+    file_mark, company_name = [], []
+    statutory_authorities = []
+    share_holders = []
+
+    record_data = response_json.get('zaznamy', [])[0]
+    file_mark_data = record_data.get('spisovaZnacka', [])
+    company_name_data = record_data.get('obchodniJmeno', [])
+    statutory_authority_data = record_data.get('statutarniOrgany', [])  # Jednatelé
+    share_holder_data = record_data.get('spolecnici', [])
+
+    for data in filter_active_records(file_mark_data):
+        file_mark.append({
+            'registration_date': data.get('datumZapisu'),
+            'delete_date': data.get('datumVymazu'),
+            'court': data.get('soud'),
+            'section': data.get('oddil'),
+            'insert': int(data.get('vlozka')),
+        })
+
+    for data in filter_active_records(company_name_data):
+        company_name.append({
+            'registration_date': data.get('datumZapisu'),
+            'delete_date': data.get('datumVymazu'),
+            'value': data.get('hodnota'),
+        })
+
+    for data in filter_active_records(statutory_authority_data):
+        members_data = filter_active_records(data.get('clenoveOrganu', []))
+        for member in members_data:
+            statutory_authorities.append(build_engagement_person(member))
+
+    for data in filter_active_records(share_holder_data):
+        member_data = filter_active_records(data.get('spolecnik', []))
+        for member in member_data:
+            share_holder = build_engagement_person(member.get("osoba", {}))
+            percentage_share = member.get("podil", {}).get("velikostPodilu")
+            share = member.get("podil", {}).get("vklad")
+            share_holder["percentage_share"] = build_amount(percentage_share)
+            share_holder["share"] = build_amount(share)
+            share_holders.append(share_holder)
+
+    record = {
+        'company_id': response_json.get('icoId'),
+        'register': record_data.get('rejstrik'),
+        'primary_record': record_data.get('primarniZaznam'),
+        'tax_office': record_data.get('financniUrad'),
+        'update_date': record_data.get('datumAktualizace'),
+        'status': record_data.get('stavSubjektu'),
+        'registration_date': record_data.get('datumZapisu'),
+
+        # Lists
+        'file_mark': file_mark,
+        'company_name': company_name,
+        'statutory_authorities': statutory_authorities,
+        'share_holders': share_holders,
+    }
+
+    return record
+
+
 def get_czech_zip_code(ares_data, full_text_address):
     """
     :type ares_data: unicode
@@ -181,6 +277,40 @@ def build_city(city, address):
     :rtype: unicode
     """
     return city or address.split(',')[0].strip()
+
+
+def build_engagement_person(person_data):
+    """
+    :type person_data: dict
+    :rtype: dict
+    """
+
+    individual_entity_data = person_data.get('fyzickaOsoba', {})
+    legal_entity_data = person_data.get('pravnickaOsoba', {})
+    entity_data = individual_entity_data or legal_entity_data
+    address = entity_data.get('adresa', {})
+
+    return {
+        'registration_date': person_data.get('datumZapisu'),
+        'first_name': entity_data.get('jmeno'),
+        'last_name': entity_data.get('prijmeni'),
+        'company_name': entity_data.get('obchodniJmeno'),
+        'birth_date': entity_data.get('datumNarozeni'),
+        'company_id': entity_data.get('ico'),
+        'nationality': entity_data.get('statniObcanstvi'),
+        'address': address.get('textovaAdresa'),
+    }
+
+
+def build_amount(amount: dict) -> dict:
+    """
+    :type amount: dict
+    :rtype: dict
+    """
+    return {
+        'value': amount.get('hodnota'),
+        'type': amount.get('typObnos'),
+    }
 
 
 def validate_czech_company_id(business_id: str) -> str:
