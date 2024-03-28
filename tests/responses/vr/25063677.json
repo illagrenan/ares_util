@@ -1,0 +1,869 @@
+{
+  "icoId": "25063677",
+  "zaznamy": [
+    {
+      "rejstrik": "OR",
+      "primarniZaznam": true,
+      "spisovaZnacka": [
+        {
+          "datumZapisu": "1996-07-08",
+          "soud": "MSPH",
+          "oddil": "C",
+          "vlozka": 46457
+        }
+      ],
+      "ico": [
+        {
+          "datumZapisu": "1996-07-08",
+          "hodnota": "25063677"
+        }
+      ],
+      "obchodniJmeno": [
+        {
+          "datumZapisu": "1996-07-08",
+          "hodnota": "SAD s.r.o."
+        }
+      ],
+      "zakladniKapital": [
+        {
+          "datumZapisu": "1996-07-08",
+          "datumVymazu": "1997-06-03",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "100000;00"
+          }
+        },
+        {
+          "datumZapisu": "1997-06-03",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "20000000;00"
+          }
+        }
+      ],
+      "pravniForma": [
+        {
+          "datumZapisu": "1996-07-08",
+          "hodnota": "112"
+        }
+      ],
+      "financniUrad": "043",
+      "adresy": [
+        {
+          "datumZapisu": "1996-07-08",
+          "datumVymazu": "2002-06-26",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 27,
+            "nazevKraje": "Středočeský kraj",
+            "kodOkresu": 3206,
+            "nazevOkresu": "Mělník",
+            "kodObce": 534731,
+            "nazevObce": "Cítov",
+            "cisloDomovni": 1,
+            "kodCastiObce": 16471,
+            "nazevCastiObce": "Daminěves",
+            "kodAdresnihoMista": 6112986,
+            "psc": 27704,
+            "textovaAdresa": "Daminěves 1, 27704 Cítov",
+            "typCisloDomovni": "1",
+            "standardizaceAdresy": true
+          },
+          "typAdresy": "SIDLO"
+        },
+        {
+          "datumZapisu": "2002-06-26",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 27,
+            "nazevKraje": "Středočeský kraj",
+            "kodOkresu": 3206,
+            "nazevOkresu": "Mělník",
+            "kodObce": 534731,
+            "nazevObce": "Cítov",
+            "cisloDomovni": 35,
+            "kodCastiObce": 16471,
+            "nazevCastiObce": "Daminěves",
+            "kodAdresnihoMista": 6113257,
+            "psc": 27704,
+            "textovaAdresa": "Daminěves 35, 27704 Cítov",
+            "typCisloDomovni": "1",
+            "standardizaceAdresy": true
+          },
+          "typAdresy": "SIDLO"
+        }
+      ],
+      "ostatniSkutecnosti": [
+        {
+          "datumZapisu": "2005-10-03",
+          "hodnota": "Na společnost přešlo v důsledku fúze sloučením jmění společnosti MPF, s.r.o. se sídlem Cítov, Daminěves 35, okres Mělník, PSČ 277 04, IČ 251 40 485."
+        },
+        {
+          "datumZapisu": "2014-09-04",
+          "hodnota": "Počet členů statutárního orgánu: 1"
+        },
+        {
+          "datumZapisu": "2014-09-04",
+          "hodnota": "Obchodní korporace se podřídila zákonu jako celku postupem podle § 777 odst. 5 zákona č. 90/2012 Sb., o obchodních společnostech a družstvech."
+        }
+      ],
+      "datumAktualizace": "2018-06-12",
+      "stavSubjektu": "AKTIVNI",
+      "datumZapisu": "1996-07-08",
+      "cinnosti": {
+        "predmetPodnikani": [
+          {
+            "datumZapisu": "1996-07-08",
+            "datumVymazu": "2010-10-22",
+            "hodnota": "koupě zboží za účelem jeho dalšího prodeje a prodej, vyjma\nzboží vyznačeného v příloze 1,2,3 živnostenského zákona"
+          },
+          {
+            "datumZapisu": "1996-07-08",
+            "datumVymazu": "2004-10-15",
+            "hodnota": "pekárenská výroba"
+          },
+          {
+            "datumZapisu": "1996-07-08",
+            "datumVymazu": "2010-10-22",
+            "hodnota": "konzervárennská výroba"
+          },
+          {
+            "datumZapisu": "1996-07-08",
+            "hodnota": "zemědělství, včetně prodeje nezpracovaných zemědělských výrobků\nza účelem zpracování nebo dalšího prodeje"
+          },
+          {
+            "datumZapisu": "2010-10-22",
+            "hodnota": "výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona"
+          }
+        ]
+      },
+      "statutarniOrgany": [
+        {
+          "datumZapisu": "2015-05-14",
+          "clenoveOrganu": [
+            {
+              "datumZapisu": "2015-05-14",
+              "datumVymazu": "2018-06-09",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {},
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3206,
+                  "nazevOkresu": "Mělník",
+                  "kodObce": 535338,
+                  "nazevObce": "Vysoká",
+                  "cisloDomovni": 9,
+                  "kodCastiObce": 187968,
+                  "nazevCastiObce": "Střednice",
+                  "kodAdresnihoMista": 11656506,
+                  "psc": 27724,
+                  "textovaAdresa": "Střednice 9, 27724 Vysoká",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1968-07-11",
+                "jmeno": "LENKA",
+                "prijmeni": "KOTRBATÁ",
+                "statniObcanstvi": "CZ",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2018-06-09",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {},
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3206,
+                  "nazevOkresu": "Mělník",
+                  "kodObce": 535338,
+                  "nazevObce": "Vysoká",
+                  "cisloDomovni": 9,
+                  "kodCastiObce": 187968,
+                  "nazevCastiObce": "Střednice",
+                  "kodAdresnihoMista": 11656506,
+                  "psc": 27724,
+                  "textovaAdresa": "Střednice 9, 27724 Vysoká",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1968-07-11",
+                "jmeno": "LENKA",
+                "prijmeni": "KUČEROVÁ",
+                "statniObcanstvi": "CZ",
+                "titulPredJmenem": "Ing."
+              }
+            }
+          ],
+          "typOrganu": "PROKURA",
+          "typAngazma": "PROKURA"
+        },
+        {
+          "datumZapisu": "1996-07-08",
+          "nazevOrganu": "Statutární orgán",
+          "clenoveOrganu": [
+            {
+              "datumZapisu": "1997-06-03",
+              "datumVymazu": "2000-10-19",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "textOsoba": "Anne - Marie Dewinter , nar. 19.9.1933",
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 448486,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Hroznová",
+                  "cisloDomovni": 491,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 21699810,
+                  "psc": 11800,
+                  "textovaAdresa": "Hroznová 491/4, Malá Strana, 11800 Praha 1",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "prijmeni": "Anne - Marie Dewinter , nar. 19.9.1933"
+              }
+            },
+            {
+              "datumZapisu": "1996-07-08",
+              "datumVymazu": "2000-10-19",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 448486,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Hroznová",
+                  "cisloDomovni": 491,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 21699810,
+                  "psc": 11800,
+                  "textovaAdresa": "Hroznová 491/4, Malá Strana, 11800 Praha 1",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "jmeno": "Antonín",
+                "prijmeni": "Štěpán",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2000-10-19",
+              "datumVymazu": "2003-05-15",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "2000-05-29",
+                  "zanikFunkce": "2002-07-25",
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3211,
+                  "nazevOkresu": "Příbram",
+                  "kodObce": 540218,
+                  "nazevObce": "Dublovice",
+                  "cisloDomovni": 174,
+                  "kodCastiObce": 33570,
+                  "nazevCastiObce": "Dublovice",
+                  "kodAdresnihoMista": 22858261,
+                  "psc": 26251,
+                  "textovaAdresa": "č.p. 174, 26251 Dublovice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1973-01-28",
+                "jmeno": "Eva",
+                "prijmeni": "Vyskočilová",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2003-05-15",
+              "datumVymazu": "2010-10-22",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "textZaOsobu": "trvale bytem Rte de la Bruyere 100, Upigny, Belgické\nkrálovství",
+                "funkce": {
+                  "vznikFunkce": "2002-07-25",
+                  "zanikFunkce": "2010-09-15",
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "textOsoba": "Michel Albert Petit",
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3206,
+                  "nazevOkresu": "Mělník",
+                  "kodObce": 534731,
+                  "nazevObce": "Cítov",
+                  "cisloDomovni": 35,
+                  "kodCastiObce": 16471,
+                  "nazevCastiObce": "Daminěves",
+                  "kodAdresnihoMista": 6113257,
+                  "psc": 27704,
+                  "textovaAdresa": "Daminěves 35, 27704 Cítov",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1953-12-24",
+                "prijmeni": "Michel Albert Petit"
+              }
+            },
+            {
+              "datumZapisu": "2010-10-22",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "2010-09-15",
+                  "nazev": "jednatel"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "BE",
+                  "nazevStatu": "Belgie",
+                  "textovaAdresa": "3803 Saint - Trond, Leeuwerweg 138",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1967-09-07",
+                "jmeno": "Koen",
+                "prijmeni": "Quaghebeur"
+              }
+            }
+          ],
+          "typOrganu": "STATUTARNI_ORGAN",
+          "nazevAngazma": "Statutární orgán",
+          "typAngazma": "STATUTARNI_ORGAN",
+          "zpusobJednani": [
+            {
+              "datumZapisu": "1996-07-08",
+              "datumVymazu": "2014-09-04",
+              "hodnota": "Za společnost jednají jednateleé ve všech věcech samostatně.\nJednatelé se za společnost podepisují tak, že k napsanému nebo\nnatištěnému jménu připojí svůj podpis."
+            },
+            {
+              "datumZapisu": "2014-09-04",
+              "hodnota": "Společnost jejím jménem zastupuje jednatel samostatně."
+            }
+          ]
+        }
+      ],
+      "spolecnici": [
+        {
+          "datumZapisu": "1996-07-08",
+          "nazevOrganu": "Společníci",
+          "spolecnik": [
+            {
+              "datumZapisu": "1996-07-08",
+              "datumVymazu": "1997-06-03",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "50000;00"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "1996-07-08",
+                "datumVymazu": "1997-06-03",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "BE",
+                    "nazevStatu": "Belgie",
+                    "nazevObce": "Upigny",
+                    "nazevUlice": "Route de la Bruyére",
+                    "textovaAdresa": "Route de la Bruyére 100, Upigny, Belgie",
+                    "cisloDoAdresy": "100",
+                    "standardizaceAdresy": false
+                  },
+                  "obchodniJmeno": "UPIGNAC, s.a."
+                }
+              }
+            },
+            {
+              "datumZapisu": "1997-06-03",
+              "datumVymazu": "2000-10-19",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "7000000;00"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "1997-06-03",
+                "datumVymazu": "2000-10-19",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 27,
+                    "nazevKraje": "Středočeský kraj",
+                    "kodOkresu": 3206,
+                    "nazevOkresu": "Mělník",
+                    "kodObce": 534731,
+                    "nazevObce": "Cítov",
+                    "cisloDomovni": 1,
+                    "kodCastiObce": 16471,
+                    "nazevCastiObce": "Daminěves",
+                    "kodAdresnihoMista": 6112986,
+                    "psc": 27704,
+                    "textovaAdresa": "Daminěves 1, 27704 Cítov",
+                    "typCisloDomovni": "1",
+                    "standardizaceAdresy": true
+                  },
+                  "ico": "62966855",
+                  "obchodniJmeno": "Štěpánovi, s.r.o.",
+                  "pravniForma": "112"
+                }
+              }
+            },
+            {
+              "datumZapisu": "1997-06-03",
+              "datumVymazu": "2000-10-19",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "3000000;00"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "1997-06-03",
+                "datumVymazu": "2000-10-19",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "fyzickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 19,
+                    "nazevKraje": "Hlavní město Praha",
+                    "kodOkresu": 3100,
+                    "kodObce": 554782,
+                    "nazevObce": "Praha",
+                    "kodMestskehoObvodu": 19,
+                    "nazevMestskehoObvodu": "Praha 1",
+                    "kodMestskeCastiObvodu": 500054,
+                    "kodUlice": 448486,
+                    "nazevMestskeCastiObvodu": "Praha 1",
+                    "nazevUlice": "Hroznová",
+                    "cisloDomovni": 491,
+                    "kodCastiObce": 490121,
+                    "cisloOrientacni": 4,
+                    "nazevCastiObce": "Malá Strana",
+                    "kodAdresnihoMista": 21699810,
+                    "psc": 11800,
+                    "textovaAdresa": "Hroznová 491/4, Malá Strana, 11800 Praha 1",
+                    "typCisloDomovni": "1",
+                    "standardizaceAdresy": true
+                  },
+                  "datumNarozeni": "1914-12-26",
+                  "jmeno": "Antonín",
+                  "prijmeni": "Štěpán",
+                  "statniObcanstvi": "CZ"
+                }
+              }
+            },
+            {
+              "datumZapisu": "1997-06-03",
+              "datumVymazu": "2002-06-26",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "10000000;00"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "1997-06-03",
+                "datumVymazu": "2002-06-26",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "BE",
+                    "nazevStatu": "Belgie",
+                    "nazevObce": "Upigny",
+                    "nazevUlice": "Route de la Bruyére",
+                    "textovaAdresa": "Route de la Bruyére 100, Upigny, Belgie",
+                    "cisloDoAdresy": "100",
+                    "standardizaceAdresy": false
+                  },
+                  "obchodniJmeno": "UPIGNAC, s.a."
+                }
+              }
+            },
+            {
+              "datumZapisu": "2000-10-19",
+              "datumVymazu": "2002-06-26",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "10000000;00"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2000-10-19",
+                "datumVymazu": "2002-06-26",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "BE",
+                    "nazevStatu": "Belgie",
+                    "textovaAdresa": "98 Route de la Bruyere, 5310 Upigny",
+                    "standardizaceAdresy": false
+                  },
+                  "obchodniJmeno": "LA FERME D'EN BAS S.p.r.l."
+                }
+              }
+            },
+            {
+              "datumZapisu": "2002-06-26",
+              "datumVymazu": "2005-01-05",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "10000000;00"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "50 %"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2002-06-26",
+                "datumVymazu": "2005-01-05",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "BE",
+                    "nazevStatu": "Belgie",
+                    "nazevObce": "Upigny",
+                    "nazevUlice": "Route de la Bruyére",
+                    "textovaAdresa": "Route de la Bruyére 100, Upigny, Belgie",
+                    "cisloDoAdresy": "100",
+                    "standardizaceAdresy": false
+                  },
+                  "obchodniJmeno": "UPIGNAC, s.a."
+                }
+              }
+            },
+            {
+              "datumZapisu": "2002-06-26",
+              "datumVymazu": "2005-01-05",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "10000000;00"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "50 %"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2002-06-26",
+                "datumVymazu": "2005-01-05",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "BE",
+                    "nazevStatu": "Belgie",
+                    "textovaAdresa": "98 Route de la Bruyere, 5310 Upigny",
+                    "standardizaceAdresy": false
+                  },
+                  "obchodniJmeno": "LA FERME D'EN BAS SA"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2013-05-21",
+              "datumVymazu": "2014-09-04",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "20000000"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "100 %"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2013-05-21",
+                "datumVymazu": "2014-09-04",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "BE",
+                    "nazevStatu": "Belgie",
+                    "nazevObce": "Sint-Truiden",
+                    "nazevUlice": "Lichtenberglaan 2019",
+                    "textovaAdresa": "Lichtenberglaan 2019, 3800 Sint-Truiden, Belgie",
+                    "standardizaceAdresy": false,
+                    "pscTxt": "3800"
+                  },
+                  "obchodniJmeno": "K & E SPRL"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2014-09-04",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "20000000"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "100%"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2014-09-04",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "BE",
+                    "nazevStatu": "Belgie",
+                    "nazevObce": "Sint-Truiden",
+                    "nazevUlice": "Lichtenberglaan 2019",
+                    "textovaAdresa": "Lichtenberglaan 2019, 3800 Sint-Truiden, Belgie",
+                    "standardizaceAdresy": false,
+                    "pscTxt": "3800"
+                  },
+                  "obchodniJmeno": "K & E SPRL"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2005-01-05",
+              "datumVymazu": "2010-10-22",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "20000000;00"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "100%"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2005-01-05",
+                "datumVymazu": "2010-10-22",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "BE",
+                    "nazevStatu": "Belgie",
+                    "textovaAdresa": "98 Route de la Bruyere, 5310 Upigny",
+                    "standardizaceAdresy": false
+                  },
+                  "obchodniJmeno": "LA FERME D'EN BAS SPRL"
+                }
+              }
+            },
+            {
+              "datumZapisu": "2010-10-22",
+              "datumVymazu": "2013-05-21",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "20000000;00"
+                },
+                "velikostPodilu": {
+                  "typObnos": "TEXT",
+                  "hodnota": "100 %"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "2010-10-22",
+                "datumVymazu": "2013-05-21",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "BE",
+                    "nazevStatu": "Belgie",
+                    "textovaAdresa": "3803 Saint - Trond, Leeuwerweg 138",
+                    "standardizaceAdresy": false
+                  },
+                  "obchodniJmeno": "K & E SPRL"
+                }
+              }
+            },
+            {
+              "datumZapisu": "1996-07-08",
+              "datumVymazu": "1997-06-03",
+              "podil": {
+                "vklad": {
+                  "typObnos": "KORUNY",
+                  "hodnota": "50000;00"
+                },
+                "splaceni": {
+                  "typObnos": "PROCENTA",
+                  "hodnota": "100"
+                }
+              },
+              "osoba": {
+                "datumZapisu": "1996-07-08",
+                "datumVymazu": "1997-06-03",
+                "typAngazma": "SPOLECNIK_OSOBA",
+                "clenstvi": {},
+                "nazevAngazma": "Společník",
+                "pravnickaOsoba": {
+                  "adresa": {
+                    "kodStatu": "CZ",
+                    "nazevStatu": "Česká republika",
+                    "kodKraje": 27,
+                    "nazevKraje": "Středočeský kraj",
+                    "kodOkresu": 3206,
+                    "nazevOkresu": "Mělník",
+                    "kodObce": 534731,
+                    "nazevObce": "Cítov",
+                    "cisloDomovni": 1,
+                    "kodCastiObce": 16471,
+                    "nazevCastiObce": "Daminěves",
+                    "kodAdresnihoMista": 6112986,
+                    "psc": 27704,
+                    "textovaAdresa": "Daminěves 1, 27704 Cítov",
+                    "typCisloDomovni": "1",
+                    "standardizaceAdresy": true
+                  },
+                  "ico": "62966855",
+                  "obchodniJmeno": "Štěpánovi, s.r.o.",
+                  "pravniForma": "112"
+                }
+              }
+            }
+          ],
+          "typOrganu": "SPOLECNIK",
+          "nazev": "Společníci"
+        }
+      ]
+    }
+  ]
+}
