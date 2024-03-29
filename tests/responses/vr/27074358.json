@@ -1,0 +1,4055 @@
+{
+  "icoId": "27074358",
+  "zaznamy": [
+    {
+      "akcie": [
+        {
+          "datumZapisu": "2003-08-06",
+          "datumVymazu": "2004-11-11",
+          "typAkcie": "NA_MAJITELE",
+          "pocet": 20,
+          "text": "v listinné podobě",
+          "hodnota": {
+            "typObnos": "KORUNY",
+            "hodnota": "100000;00"
+          }
+        },
+        {
+          "datumZapisu": "2010-09-08",
+          "datumVymazu": "2016-10-03",
+          "typAkcie": "KMENOVE_NA_JMENO",
+          "podobaAkcie": "LISTINNA",
+          "pocet": 18570000,
+          "hodnota": {
+            "typObnos": "KORUNY",
+            "hodnota": "10;00"
+          }
+        },
+        {
+          "datumZapisu": "2016-10-03",
+          "datumVymazu": "2017-05-23",
+          "typAkcie": "KMENOVE_NA_JMENO",
+          "podobaAkcie": "ZAKNIHOVANA",
+          "pocet": 18570000,
+          "hodnota": {
+            "typObnos": "KORUNY",
+            "hodnota": "10;00"
+          }
+        },
+        {
+          "datumZapisu": "2017-05-23",
+          "datumVymazu": "2020-08-01",
+          "typAkcie": "KMENOVE_NA_JMENO",
+          "podobaAkcie": "ZAKNIHOVANA",
+          "pocet": 18570000,
+          "hodnota": {
+            "typObnos": "KORUNY",
+            "hodnota": "6;00"
+          }
+        },
+        {
+          "datumZapisu": "2020-08-01",
+          "typAkcie": "KMENOVE_NA_JMENO",
+          "podobaAkcie": "ZAKNIHOVANA",
+          "pocet": 18570000,
+          "hodnota": {
+            "typObnos": "KORUNY",
+            "hodnota": "6;10"
+          }
+        },
+        {
+          "datumZapisu": "2007-10-10",
+          "datumVymazu": "2007-11-14",
+          "typAkcie": "KMENOVE_NA_MAJITELE",
+          "podobaAkcie": "LISTINNA",
+          "pocet": 1857,
+          "hodnota": {
+            "typObnos": "KORUNY",
+            "hodnota": "100000;00"
+          }
+        },
+        {
+          "datumZapisu": "2007-11-14",
+          "datumVymazu": "2010-09-08",
+          "typAkcie": "KMENOVE_NA_MAJITELE",
+          "podobaAkcie": "LISTINNA",
+          "pocet": 18570000,
+          "hodnota": {
+            "typObnos": "KORUNY",
+            "hodnota": "10;00"
+          }
+        },
+        {
+          "datumZapisu": "2004-11-11",
+          "datumVymazu": "2006-12-01",
+          "typAkcie": "KMENOVE_NA_MAJITELE",
+          "pocet": 600,
+          "text": "- v listinné podobě",
+          "hodnota": {
+            "typObnos": "KORUNY",
+            "hodnota": "100000;00"
+          }
+        },
+        {
+          "datumZapisu": "2006-12-01",
+          "datumVymazu": "2007-10-10",
+          "typAkcie": "KMENOVE_NA_MAJITELE",
+          "pocet": 1313,
+          "text": "- v listinné podobě",
+          "hodnota": {
+            "typObnos": "KORUNY",
+            "hodnota": "100000;00"
+          }
+        }
+      ],
+      "rejstrik": "OR",
+      "primarniZaznam": true,
+      "spisovaZnacka": [
+        {
+          "datumZapisu": "2003-08-06",
+          "soud": "MSPH",
+          "oddil": "B",
+          "vlozka": 8525
+        }
+      ],
+      "ico": [
+        {
+          "datumZapisu": "2003-08-06",
+          "hodnota": "27074358"
+        }
+      ],
+      "obchodniJmeno": [
+        {
+          "datumZapisu": "2010-05-19",
+          "hodnota": "Asseco Central Europe, a.s."
+        },
+        {
+          "datumZapisu": "2010-05-06",
+          "datumVymazu": "2010-05-19",
+          "hodnota": "Asseco Czech Republic, a.s."
+        },
+        {
+          "datumZapisu": "2007-04-02",
+          "datumVymazu": "2010-05-06",
+          "hodnota": "Asseco Czech Republic, a.s."
+        },
+        {
+          "datumZapisu": "2004-08-09",
+          "datumVymazu": "2007-04-02",
+          "hodnota": "PVT, a.s."
+        },
+        {
+          "datumZapisu": "2004-03-01",
+          "datumVymazu": "2004-08-09",
+          "hodnota": "PVT PROKOM , a.s."
+        },
+        {
+          "datumZapisu": "2003-08-06",
+          "datumVymazu": "2004-03-01",
+          "hodnota": "ST Consulting , a.s."
+        }
+      ],
+      "zakladniKapital": [
+        {
+          "datumZapisu": "2020-08-01",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "113277000;00"
+          },
+          "splaceni": {
+            "typObnos": "PROCENTA",
+            "hodnota": "100"
+          }
+        },
+        {
+          "datumZapisu": "2017-05-23",
+          "datumVymazu": "2020-08-01",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "111420000;00"
+          },
+          "splaceni": {
+            "typObnos": "PROCENTA",
+            "hodnota": "100"
+          }
+        },
+        {
+          "datumZapisu": "2003-08-06",
+          "datumVymazu": "2004-03-01",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "2000000;00"
+          },
+          "splaceni": {
+            "typObnos": "PROCENTA",
+            "hodnota": "30"
+          }
+        },
+        {
+          "datumZapisu": "2004-03-01",
+          "datumVymazu": "2004-11-11",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "2000000;00"
+          },
+          "splaceni": {
+            "typObnos": "PROCENTA",
+            "hodnota": "100"
+          }
+        },
+        {
+          "datumZapisu": "2004-11-11",
+          "datumVymazu": "2006-12-01",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "60000000;00"
+          },
+          "splaceni": {
+            "typObnos": "PROCENTA",
+            "hodnota": "100"
+          }
+        },
+        {
+          "datumZapisu": "2006-12-01",
+          "datumVymazu": "2007-10-10",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "131300000;00"
+          },
+          "splaceni": {
+            "typObnos": "PROCENTA",
+            "hodnota": "100"
+          }
+        },
+        {
+          "datumZapisu": "2007-10-10",
+          "datumVymazu": "2007-11-08",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "185700000;00"
+          },
+          "splaceni": {
+            "typObnos": "KORUNY",
+            "hodnota": "147620000;00"
+          }
+        },
+        {
+          "datumZapisu": "2007-11-08",
+          "datumVymazu": "2017-05-23",
+          "typJmeni": "ZAKLADNI_JMENI",
+          "vklad": {
+            "typObnos": "KORUNY",
+            "hodnota": "185700000;00"
+          },
+          "splaceni": {
+            "typObnos": "PROCENTA",
+            "hodnota": "100"
+          }
+        }
+      ],
+      "pravniForma": [
+        {
+          "datumZapisu": "2003-08-06",
+          "hodnota": "121"
+        }
+      ],
+      "financniUrad": "004",
+      "adresy": [
+        {
+          "datumZapisu": "2003-08-06",
+          "datumVymazu": "2004-03-01",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 19,
+            "nazevKraje": "Hlavní město Praha",
+            "kodObce": 554782,
+            "nazevObce": "Praha",
+            "kodSpravnihoObvodu": 19,
+            "nazevSpravnihoObvodu": "Praha 1",
+            "kodMestskehoObvodu": 19,
+            "nazevMestskehoObvodu": "Praha 1",
+            "kodMestskeCastiObvodu": 500054,
+            "kodUlice": 449300,
+            "nazevMestskeCastiObvodu": "Praha 1",
+            "nazevUlice": "Jakubská",
+            "cisloDomovni": 647,
+            "kodCastiObce": 400017,
+            "cisloOrientacni": 2,
+            "nazevCastiObce": "Staré Město",
+            "kodAdresnihoMista": 21722846,
+            "psc": 11000,
+            "textovaAdresa": "Jakubská 647/2, Staré Město, 11000 Praha 1",
+            "typCisloDomovni": "1",
+            "standardizaceAdresy": true
+          },
+          "typAdresy": "SIDLO"
+        },
+        {
+          "datumZapisu": "2004-03-01",
+          "datumVymazu": "2007-04-02",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 19,
+            "nazevKraje": "Hlavní město Praha",
+            "kodObce": 554782,
+            "nazevObce": "Praha",
+            "kodSpravnihoObvodu": 94,
+            "nazevSpravnihoObvodu": "Praha 9",
+            "kodMestskehoObvodu": 94,
+            "nazevMestskehoObvodu": "Praha 9",
+            "kodMestskeCastiObvodu": 500216,
+            "kodUlice": 506508,
+            "nazevMestskeCastiObvodu": "Praha 9",
+            "nazevUlice": "Kovanecká",
+            "cisloDomovni": 2124,
+            "kodCastiObce": 490105,
+            "cisloOrientacni": 30,
+            "nazevCastiObce": "Libeň",
+            "kodAdresnihoMista": 22698752,
+            "psc": 19000,
+            "textovaAdresa": "Kovanecká 2124/30, Libeň, 19000 Praha 9",
+            "typCisloDomovni": "1",
+            "standardizaceAdresy": true
+          },
+          "typAdresy": "SIDLO"
+        },
+        {
+          "datumZapisu": "2007-04-02",
+          "datumVymazu": "2007-04-02",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 19,
+            "kodObce": 554782,
+            "nazevObce": "Praha 9",
+            "kodSpravnihoObvodu": 94,
+            "kodMestskehoObvodu": 94,
+            "kodMestskeCastiObvodu": 500216,
+            "nazevUlice": "Podivnný mlýn",
+            "textovaAdresa": "Podivnný mlýn 2178/6, 19000 Praha 9, Česká republika",
+            "cisloDoAdresy": "2178/6",
+            "standardizaceAdresy": false,
+            "pscTxt": "19000"
+          },
+          "typAdresy": "SIDLO"
+        },
+        {
+          "datumZapisu": "2013-01-01",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 19,
+            "nazevKraje": "Hlavní město Praha",
+            "kodObce": 554782,
+            "nazevObce": "Praha",
+            "kodSpravnihoObvodu": 43,
+            "nazevSpravnihoObvodu": "Praha 4",
+            "kodMestskehoObvodu": 43,
+            "nazevMestskehoObvodu": "Praha 4",
+            "kodMestskeCastiObvodu": 500119,
+            "kodUlice": 444375,
+            "nazevMestskeCastiObvodu": "Praha 4",
+            "nazevUlice": "Budějovická",
+            "cisloDomovni": 778,
+            "kodCastiObce": 490130,
+            "cisloOrientacni": 3,
+            "cisloOrientacniPismeno": "a",
+            "nazevCastiObce": "Michle",
+            "kodAdresnihoMista": 41405609,
+            "psc": 14000,
+            "textovaAdresa": "Budějovická 778/3a, Michle, 14000 Praha 4",
+            "typCisloDomovni": "1",
+            "standardizaceAdresy": true
+          },
+          "typAdresy": "SIDLO"
+        },
+        {
+          "datumZapisu": "2007-04-02",
+          "datumVymazu": "2013-01-01",
+          "adresa": {
+            "kodStatu": "CZ",
+            "nazevStatu": "Česká republika",
+            "kodKraje": 19,
+            "nazevKraje": "Hlavní město Praha",
+            "kodObce": 554782,
+            "nazevObce": "Praha",
+            "kodSpravnihoObvodu": 94,
+            "nazevSpravnihoObvodu": "Praha 9",
+            "kodMestskehoObvodu": 94,
+            "nazevMestskehoObvodu": "Praha 9",
+            "kodMestskeCastiObvodu": 500216,
+            "kodUlice": 466034,
+            "nazevMestskeCastiObvodu": "Praha 9",
+            "nazevUlice": "Podvinný mlýn",
+            "cisloDomovni": 2178,
+            "kodCastiObce": 490105,
+            "cisloOrientacni": 6,
+            "nazevCastiObce": "Libeň",
+            "kodAdresnihoMista": 22731768,
+            "psc": 19000,
+            "textovaAdresa": "Podvinný mlýn 2178/6, Libeň, 19000 Praha 9",
+            "typCisloDomovni": "1",
+            "standardizaceAdresy": true
+          },
+          "typAdresy": "SIDLO"
+        }
+      ],
+      "ostatniSkutecnosti": [
+        {
+          "datumZapisu": "2020-08-01",
+          "hodnota": "Na společnost Asseco Central Europe, a.s., se sídlem Budějovická 778/3a, Michle, 140 00 Praha 4, IČO: 270 74 358, jako nástupnickou společnost, přešlo v důsledku fúze sloučením jmění zanikající společnosti TurboConsult s.r.o., se sídlem Šumavská 519/35, Veveří, 602 00 Brno, IČO: 136 90 043."
+        },
+        {
+          "datumZapisu": "2015-12-31",
+          "hodnota": "Obchodní korporace se podřídila zákonu č. 90/2012 Sb., o obchodních společnostech a družstvech, jako celku postupem podle § 777 odst. 5 uvedeného zákona."
+        },
+        {
+          "datumZapisu": "2004-09-22",
+          "datumVymazu": "2004-11-11",
+          "hodnota": "Společnost PROKOM SOFTWARE SPÓLKA AKCYJNA jakožto jediný akcionář společnosti PVT, a.s. ( dále jen \"Společnost\") přijala dne 26. srpna 2004 ve smylu ustanovení § 190 a § 187 odst. 1 písm. b) zákona č. 513/1991 Sb., obchodní zákoník, ve znění pozdějších předpisů, následující rozhodnutí jediného akcionáře při výkonu působnosti valné hromady Společnosti o zvýšení základního kapitálu Společnosti:\nZákladní kapitál Společnosti se zvyšuje z hodnoty 2.000.000,- Kč o částku 58.000.000,- Kč na hodnotu 60.000.000,- Kč. Upisování akcií nad částku navrhovaného zvýšení základního kapitálu Společnosti se nepřipouští.\nČástka, o níž je zvyšován základní kapitál Společnosti, je rozvržena na 580 kusů kmenových listinných akcií na majitele o jmenovité hodnotě 100.000,- Kč za jednu akcii s pořadovými čísly 21 až 600 ( společně dále je \"Akcie\").\nPřednostní právo na upsání Akcií je oprávněn vykonat jediný akcionář Společnosti, kterým je společnost PROKOM SOFTWARE SPÓLKA AKCYJNA, společnost založená a existující podle polkého právního řádu, IČ: 012642522, se sídlem na adrese Aleje Jerozolimskie 65/79, 00-697, Varšava, Polsko, uzavřením smlouvy o upsání Akcií se Společností v prostorách advokátní kanceláře WEIL,GOTSHAL & MANGES v.o.s., Křizovnické náměstí 1/193, 110 00 Praha 1, ve lhůtě, která činí dva týdny ode dne droručení návrhu na uzavření smlouvy o upsání Akcií společnosti PROKOM SOFTWARE SPÓLKA AKCYJNA. Počátek běhu lhůty k vykonání přednostního práva bude společnosti PROKOM SOFTWARE SPÓLKA AKCYJNA oznámen v písemném oznámení Společnosti, k němuž bude přiložen návrh na uzavření smlouvy o upsání Akcií.\nNa jednu dosavadní akcii Společnosti o jmenovité hodnotě 100.000,- Kč lze upsat dvacet devět Akcií, tj. nových akcií Společnosti. Upisovat lze pouze celé Akcie. Společnost PROKOM SOFTWARE SPÓLKA AKCYJNA je jakožto jediný akcionář Společnosti oprávněna upsat veškeré Akcie, tj. 580 kusů kmenových listinných akcií na majitele o jmenovité hodnotě 100.000,- Kč za jednu Akcii s pořadovými čísly 21 až 600. Emisní kurs každé z Akcií činí 100.000,- Kč.\nVšechny Akcie, které nebudou upsány s využitím přednostního práva, budou nabídnuty k úpisu předem určenému zájemci, kterým je společnosti PROKOM SOFTWARE SPÓLKA AKCYJNA. Společnost PROKOM SOFTWARE SPÓLKA AKCYJNA bude oprávněna upsat Akcie uzavřením smlouy o upsání Akcií se Společností v prostorách advokátní kanceláře WEIL, GOTSHAL & MANGES v.o.s., Křizovnické náměstí 1/193, 110 00 Praha 1, ve lhůtě, která činí dva týdny ode dne doručení návrhu na uzavření smlouvy o upsání Akcií předem určenému zájemci, společnosti PROKOM SOFTWARE SPÓLKA AKCYJNA. Počátek běhu lhůty k úpisu bude společnosti PROKOM SOFTWARE SPÓLKA AKCYJNA oznámen v písemném oznámení Společnosti, k němuž bude přiložen návrh na uzavření smlouvy o upsání Akcií předem určeným zájemcem. Emisní kurs každé z Akcií činí 100.000,- Kč.\nEmisní kurs Akcií upsaných společností PROKOM SOFTWARE SPÓLKA AKCYJNA bude splacen v plné výši před podáním návrhu na zápis zvýšení základního kapitálu Společnosti do obchodního rejstříku, a to výhradně započtením peněžité pohledávky společnosti PROKOM SOFTWARE SPÓLKA AKCYJNA vůči Společnosti ve výši 58.000.000,- Kč na splacení části jistiny úvěru o celkové výši jistiny 120.423.610,01 Kč poskytnutého Společnosti jako dlužníkovi ze strany společnosti PROKOM SOFTWARE SPÓLKA AKCYJNA jako věřitele na základě Smlouvy o úvěru uzavřené dne 19. května 2004 mezi společností PROKOM SOFTWARE SPÓLKA AKCYJNA jako věřitelem a Společností jako dlužníkem. Smlouva o započtení pohledávek bude uzavřenaa ve lhůtě čtrnácti dnů ode dne doručení jejího návrhu společnosti PROKOM SOFTWARE SPÓLKA AKCYJNA."
+        },
+        {
+          "datumZapisu": "2006-08-01",
+          "hodnota": "Společnost PVT, a.s. převzala jmění zaniklé společnosti PVT ESO, spol. s.r.o., sídlo: Olomouc, Železniční 548/4B, PSČ 77900, IČ: 62362631."
+        },
+        {
+          "datumZapisu": "2006-09-07",
+          "datumVymazu": "2007-03-30",
+          "hodnota": "Jediný akcionář, jímž je Společnost PROKOM SOFTWARE SPOLKA AKCYJNA, se sídlem ul. Aleje Jerozolimskie, č. 65/79, PSČ: 00-697, pošta Varšava, Polská republika, zapsaná v Zemském soudním rejstříku Polské republiky, v působnosti valné hromady rozhodl o zvýšení základního kapitálu společnosti o částku 71,300.000,- Kč ( sedmdesátjedenmiliontřistatisíc korun českých) na celkovou částku 131,300.000,- Kč ( jednostotřicetjeden miliontřistatisíc korun českých). Základní kapitál společnosti byl zcela splacen.\nZvýšení základního kapitálu bude provedeno upsáním nových akcií, přičemž upisování akcií nad částku navrhovaného zvýšení základního kapitálu se nepřipouští.\nNově upisované akcie budou emitovány v počtu 713 ( sedmsettřináct) kusů o jmenovité hodnotě 100.000,- Kč ( jednostotisíc korun českých), kmenové, na majitele v listinné podobě, s pořadovými čísly 601-1313. Emisní kurz nově upisovaných akcií se rovná jejich jmenovité hodnotě.\nPřednostní právo  na upsání akcií je oprávněn vykonat jediný akcionář společnosti tj. společnost PROKOM SOFTWARE SPOLKA AKCYJNA založená a existující podle polského právního řádu, IČO 012642522, uzavřením smlouvy o upsání akcií se společností PVT, a.s. v Praze, ve lhůtě, která činí 2 (dva) týdny ode dne doručení návrhu na uzavření smlouvy o upsání akcií společnosti PROKOM SOFTWARE SPOLKA AKCYJNA v písemném oznámení společnosti PVT, a.s., k němuž bude přiložen návrh smlouvy na uzavření smlouvy o upsání akcií.\nNa jednu dosavadní akcii společnosti PVT, a.s. o jmenovité hodnotě 100.000,- Kč ( jednostotisíc korun českých) lze upsat 713/600 ( sedmsettřináct lomeno šestset) další akcie. Upsat lze pouze celé akcie. Společnost PROKOM SOFTWARE SPÓLKA AKCYJNA je jakožto jediný akcionář společnosti oprávněna upsat veškeré akcie, tj. 713 ( sedmsettřináct) kusů akcií o jmenovité hodnotě 100.000,- Kč ( jednostotisíc korun českých), kmenové, na majitele v listinné podobě, s pořadovými čísly 601-1313. Emisní kurz nově upisovaných akcií se rovná jejich jmenovité hodnotě tj. 100.000,- Kč ( jednostotisíc korun českých).\nVšechny akcie, které nabudou upsány s využitím přednostního práva, budou nabídnuty k úpisu předem určenému zájemci, kterým je společnost PROKOM SOFTWARE SPOLKA AKCYJNA. Společnost PROKOM SOFTWARE SPÓLKA AKCYJNA bude oprávněna upsat akcie uzavřením smlouvy o upsání akcií se společnosti PVT, a.s. v Praze, ve lhůtě, která činí 2 ( dva) týdny ode dne doručení návrhu na uzavření smlouvy o upsání akcií předem určenému zájemci, společnosti PROKOM SOFTWARE SPOLKA AKCYJNA. Počátek běhu lhůty úpisu bude společnosti PROKOM SOFTWARE SPÓLKA AKCYJNA oznámen písemným sdělením společnosti PVT, a.s., k němuž bude přiložen návrh na uzavření smlouvy o upsání akcií předem určeným zájemcem. Emisní kurs každé akcie činí 100.000,- Kč ( jednostotisíc korun českých).\nPřipouští se možnost započtení peněžité pohledávky společnosti PROKOM SOFTWARE SPOLKA AKCYJNA vůči společnosti PVT, a.s. ve výši jistiny 62,423.610,01 Kč ( šedesátdvamilionyčtyřistadvacettřitisícešestsetdeset korun českých a jeden haléř) a úroku z jistiny k 29.8.2006 ( dvacátého devátého srpna roku dva tisíce šest) ve výši 9,951.407,27 Kč ( devětmilionůdevětsetpadesátjedentisícčtyřistasedm korun českých a dvacetsedm haléřů) a to na splacení jistiny a úroku z jistiny o celkové výši jistiny 62,423.610,01 Kč (šedesátdvamilionyčtyřistadvacettřitisícšestsetdeset korun českých a jeden haléř) a úroku z jistiny ve výši 8,876.389,99 Kč ( osmmilionůosmsetsedmdesátšesttisíctřistaosmdesátdevět korun českých a devadesátdevět haléřů), poskytnutého společnosti PVT, a.s. jako dlužníkovi ze strany společnosti PROKOM SOFTWARE SPOLKA AKCYJNA jako věřitele na základě Smlouvy o úvěru uzavřené dne 19.5.2004 ( devatenáctého května roku dva tisíce čtyři) mezi společností PROKOM SOFTWARE SPOLKA AKCYJNA jako věřitelem a společností PVT, a.s. jako dlužníkem. Smlouva o započtení pohledávky budeuzavřena v Praze ve lhůtě čtrnácti dnů ode dne doručení jejího návrhu společnosti PROKOM SOFTWARE SPOLKA AKCYJNA a to před podáním návrhu na zápis zvýšení základního kapitálu společnosti do obchodního rejstříku.\nEmisní kurz akcií, které upíše společnost PROKOM SOFTWARE SPÓLKA AKCYJNA, bude tedy splacen v plné výši před podáním návrhu na zápis zvýšení základního kapitálu společnosti do obchodního rejstříku, a to výhradně započtením pohledávky shora popsané."
+        },
+        {
+          "datumZapisu": "2007-09-14",
+          "datumVymazu": "2007-10-10",
+          "hodnota": "Dne 6.9. 2007 rozhodla mimořádná valná hromada společnosti o zvýšení základního kapitálu, a to takto:\nZákladní kapitál společnosti se zvyšuje o 54.400.000,- Kč (slovy: padesát čtyři miliony čtyři sta tisíc korun českých), tj. z 131.300.000,- Kč (slovy: sto třicet jedna milionů tři sta tisíc korun českých) na 187.700.000,- Kč ( slovy: sto osmdesát pět milionů sedm se tisíc korun českých).\nZvýšení základního kapitálu společnosti se provede upsáním nových akcií společnosti. Emisní kurs upisovaných akcií se splácí výlučeně peněžitými vklady. Upisování akcií nad částku navrhovaného zvýšení základního kapitálu se nepřipouští.\nPočet nově upisovaných akcií společnosti, které budou vydány v souvislosti se zvýšením základního kapitálu společnosti činí 544 (slovy: pět set čtyřicet čtyři) kusů o jmenovité hodnotě 100.000,- Kč (slovy: jedno sto tisíc korun českých). Všechny nově vydávané akcie jsou kmenovými akciemi na majitele v listinné podobě, s pořadovými čísly 1314 - 1857. Emisní kurs každé z nově vydávaných akcií činí 376.520,22 Kč (slovy:tři sta sedmdesát šest tisíc pět set dvacet korun českých a dvacet dva heléře).\nJelikož se všichni akcionáři, jmenovitě Asseco Slovakia, a.s. a Asseco Poland S.A. vzdali svého přednostního práva na upisování akcií budou veškeré akcie upsány na základě dohody akcionářů dle § 205 obchodního zákoníku.\nLhůta k úpisu nově upisovaných akcií, tedy k uzavření uvedené dohody činí 40 kalendářních dnů ode dne zápisu usnesení valné hromady o zvýšení základního kapitálu do obchodního rejstříku. Počátek běhu lhůty bude oznámen akcionářům dopisem představenstva na adresu sídla jejich společnosti. Místem upsání akcií uzavřením dohody bude notářská kancelář JUDr. Ivy Šídové na adrese Praha 1, Platnéřská 6.\nUpisovatelé jsou povinni splatit emisní kurz upsaných akcií, nejméně však 30% jmenovité hodnoty upsaných akcií a emisní ážio, na účet číslo 17848913/0300 (IBAN CZ3503000000000017848913, bankovní identifikační kód CEKOCZPP), vedený u banky Československá obchodní banka, a.s., a to do 90 kalendářních dnů od uzavření dohody akcionářů dle § 205 obchodního zákoníku, nejpozději však do 31.12. 2007.\nZapočtení pohledávek oproti emisnímu kurzu se nepřipouští."
+        },
+        {
+          "datumZapisu": "2007-11-14",
+          "datumVymazu": "2009-05-04",
+          "hodnota": "Valná hromada společnosti přijala dne 9.11.2007 toto usnesení o zvýšení základního kapitálu společnosti:\n?Základní kapitál společnosti se zvyšuje o částku 12 000 000 Kč (slovy dvanáct milionů korun českých) s tím, že upisování nad uvedenou částku se připouští avšak maximálně do výše 55 700 000 Kč (slovy padesát pět milionů sedm set tisíc korun českých). Základní kapitál se tak zvyšuje z částky 185 700 000 Kč (slovy sto osmdesát pět milionů sedm set tisíc korun českých) na částku nejméně 197 700 000 Kč (slovy sto devadesát sedm milionů sedm set tisíc korun českých), přičemž o konečné výši základního kapitálu rozhodne představenstvo společnosti. Konečná výše základního kapitálu nepřesáhne částku 241 400 000 Kč (slovy dvě stě čtyřicet jedna milionů čtyři sta tisíc korun českých).\nPočet nově upisovaných akcií společnosti činí nejméně 1 200 000 (slovy milion dvě stě tisíc) kusů a nejvýše 5 570 000 (pět milionů pět set sedmdesát tisíc) kusů. O konečném počtu akcií rozhodne představenstvo společnosti. Jmenovitá hodnota každé z nově upisovaných akcií činí 10 Kč (slovy deset korun českých). Všechny nově upisované akcie budou kmenovými akciemi na majitele v listinné podobě.\nPřednostní právo na upisování akcií bylo vyloučeno.\nVšechny akcie budou v prvním kole nabídnuty k upsání na základě veřejné nabídky učiněné v Polské republice. Nebude-li v prvním kole upsána maximálně přípustná výše zvýšení základního kapitálu, tj. 55 700 000 Kč (slovy padesát pět milionů sedm set tisíc korun českých), neupsané akcie v rozsahu do této částky, budou nabídnuty v druhém kole k upsání předem určenému zájemci, a to společnosti Bank Austria Creditanstalt, se sídlem Vordere Zollamtsstrasse 13, A-1030 Vídeň, Rakouská republika nebo jí určeným zájemcům.\nMístem pro upisování v obou kolech je sídlo společnosti UniCredit CA IB Polska S.A. na adrese ul. Emilii Plater 53, Varšava, Polská republika. Lhůta pro upsání v prvním kole činí čtrnáct dní a počátek běhu této lhůty bude upisovatelům oznámen ve veřejné nabídce, která bude uveřejněna po schválení prospektu Českou národní bankou a po zápisu tohoto usnesení o zvýšení základního kapitálu do obchodního rejstříku. Veřejná nabídka bude uveřejněna na webových stránkách společnosti a v jednom v Polsku celostátně distribuovaném deníku. Lhůta pro upsání akcií v druhém kole činí čtrnáct dnů ode dne doručení návrhu na uzavření smlouvy o upsání akcií společností předem určenému zájemci.\nPředstavenstvo se pověřuje určením emisního kurzu s tím, že výška emisního kurzu upisovaných akcií společnosti bude představenstvem určena zejména na základě následujících kritérií: (i) cenová poptávka institucionálních investorů, (ii) požadavky společnosti získat dodatečný kapitál na základě veřejné nabídky na upsání akcií společnosti, (iii) aktuální a očekávaná situace na polském kapitálovém trhu a na ostatních zahraničních kapitálových trzích, (iv) zhodnocení možností růstu, rizikových faktorů a ostatních informací obsažených v prospektu společnosti, který bude připravený v souvislosti s veřejnou nabídkou akcií a plánovanou kotací akcií na Burze cenných papírů ve Varšavě. Minimální výše emisního kurzu bude činit 10 Kč za jednu upisovanou akcii. Emisní kurz bude splacen v penězích.\nUpisovatelé jsou povinni splatit celý emisní kurz upsaných akcií, tj. celé emisní ážio a celkovou jmenovitou hodnotu upsaných akcií, na účet č. 17870213/0300 vedený u společnosti Československá obchodní banka, a. s., a to ve lhůtě stanovené pro upsání akcií.?"
+        },
+        {
+          "datumZapisu": "2009-05-01",
+          "hodnota": "Dle Projektu vnitrostátní fúze sloučením na nástupnickou společnost Asseco Czech Republic, a.s., IČ: 27074358, se sídlem Praha 9, Podvinný mlýn 2178/6, PSČ 190 00, zapsanou v obchodním rejstříku vedeném Městským soudem v Praze v oddíle B, vložka 8525, přešlo veškeré jmění včetně práv a povinností z pracovněprávních vztahů následujících zanikajících společností BERIT, a.s., IČ: 25562428, se sídlem Brno, Žarošická 4395/13, PSČ 628 00, zapsané v obchodním rejstříku vedeném Krajským soudem v Brně v oddíle B, vložka 2951; BERIT services, s.r.o., IČ: 27723470, se sídlem Brno, Žarošická 4395/13, PSČ 628 00, zapsané v obchodním rejstříku vedeném Krajským soudem v Brně v oddíle C, vložka 54722."
+        },
+        {
+          "datumZapisu": "2013-11-07",
+          "datumVymazu": "2013-11-13",
+          "hodnota": "Prodej části podniku\n1) Prodávající: Asseco Central Europe, a.s., se sídlem na adrese Praha 4 - Michle, Budějovická 778/3a, PSČ 140 00, IČ: 270 74 358, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl B, vložka 8525\n2) Kupující: arvato services k.s., se sídlem na adrese Praha 5, Plaská 622/3, PSČ 150 00, IČ: 285 11 018, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl A, vložka 64253\n3) Předmět prodeje: vyčleněná část podniku specifikovaná Smlouvou o prodeji části podniku ze dne 30. 9. 2012\n4) Datum účinnosti 1. 10. 2012"
+        },
+        {
+          "datumZapisu": "2013-11-13",
+          "hodnota": "Prodej části podniku\n1) Prodávající: Asseco Central Europe, a.s., se sídlem na adrese Praha 4 - Michle, Budějovická 778/3a, PSČ 140 00, IČ: 270 74 358, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl B, vložka 8525\n2) Kupující: arvato services k.s., se sídlem na adrese Praha 5, Plaská 622/3, PSČ 150 00, IČ: 285 11 018, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl A, vložka 64253\n3) Předmět prodeje: vyčleněná část podniku specifikovaná Smlouvou o prodeji části podniku ze dne 30. 9. 2013\n4) Datum účinnosti 1. 10. 2013"
+        },
+        {
+          "datumZapisu": "2017-01-05",
+          "hodnota": "Dne 5.1.2017 rozhodl jediný akcionář korporace (dále v rozhodnutí jen ASSECO CE) o snížení základního kapitálu takto: \n1. Důvod snížení základního kapitálu\n1.1. Důvodem snížení základního kapitálu ASSECO CE je optimalizace kapitálové vybavenosti ASSECO CE, jejíž rozsah je pro potřeby ASSECO CE nadbytečný, tedy uvolnění prostředků ASSECO CE, vázaných v základním kapitálu, za účelem jejich výplaty akcionářům.\n1.2. Představenstvo ASSECO CE očekává, že toto rozhodnutí nebude mít negativní vliv na budoucí hospodaření ASSECO CE.\n2. Způsob a rozsah snížení základního kapitálu\n2.1. Základní kapitál ASSECO CE bude snížen poměrným snížením jmenovité hodnoty všech akcií ASSECO CE.\n2.2. Základní kapitál ASSECO CE bude snížen o celkovou částku 74.280.000,- Kč, tj. ze 185.700.000,- Kč na 111.420.000,- Kč.\n2.3. Při snížení základního kapitálu ASSECO CE bude jmenovitá hodnota každé z 18 570 000 akcií o dosavadní jmenovité hodnotě 10,- Kč snížena o 4,- Kč, tj. na 6,- Kč.\n3. Vypořádání částky odpovídající snížení základního kapitálu\n3.1. Příslušná částka odpovídající celkové částce snížení základního kapitálu, tedy 74.280.000,- Kč, bude vyplacena akcionářům ASSECO CE.\n3.2. Na každou akcii bude vyplacena částka odpovídající snížení její jmenovité hodnoty, tedy na každou z 18 570 000 akcií o dosavadní jmenovité hodnotě 10,- Kč a jmenovité hodnotě po snížení 6,- Kč bude vyplacena částka 4,- Kč.\n4. Základní pravidla postupu při snížení základního kapitálu\n4.1. Představenstvo bude při snížení základního kapitálu postupovat v souladu se zákonem a zajistí, aby akcionářům byla vyplacena částka odpovídající snížení jmenovité hodnoty akcií po zápisu snížení základního kapitálu do obchodního rejstříku.\n4.2. Výplatu částky odpovídající snížení jmenovité hodnoty akcií bude zajišťovat Společnost sama.\n4.3. Představenstvo zajistí, aby v zákonem stanovené evidenci, kde jsou registrovány akcie ASSECO CE a která nahrazuje seznam akcionářů, byla provedena změna zápisu o výši jmenovité hodnoty akcií ASSECO CE, a to ke dni zápisu snížení základního kapitálu do obchodního rejstříku nebo bez zbytečného odkladu poté. Zároveň bude ke dni zápisu snížení základního kapitálu do obchodního rejstříku vyžádán výpis z uvedené evidence, na základě kterého bude akcionářům počínaje dnem splatnosti vyplácena částka odpovídající snížení jmenovité hodnoty akcií. Pro právo na výplatu bude rozhodný den zápisu snížení základního kapitálu do obchodního rejstříku. Společnost poukáže příslušnou částku (eventuálně její kladný zůstatek po případném započtení) na účet akcionáře uvedený ve výpisu z evidence pro účely výplaty podílu na zisku, a to nejdříve ve lhůtě podle ustanovení § 520 ZOK (zák. č. 90/2012 Sb.).\n4.4. Snížením základního kapitálu nedojde ke změně vzájemných poměrů podílů jednotlivých akcionářů ve ASSECO CE. Vedle práva na výplatu částky odpovídající snížení jmenovité hodnoty akcií nebude mít rozhodnutí o snížení základního kapitálu dopad na práva akcionářů."
+        }
+      ],
+      "datumAktualizace": "2024-01-26",
+      "stavSubjektu": "AKTIVNI",
+      "datumZapisu": "2003-08-06",
+      "zpusobRizeni": [
+        {
+          "datumZapisu": "2003-08-06",
+          "typ": "DUAL"
+        }
+      ],
+      "cinnosti": {
+        "predmetPodnikani": [
+          {
+            "datumZapisu": "2004-04-30",
+            "hodnota": "Činnost účetních poradců, vedení účetnictví, vedení daňové evidence"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Ubytovací služby"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Zasilatelství"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Polygrafická výroba"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Kopírovací práce"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Pořádání odborných kurzů, školení a jiných vzdělávacích akcí včetně lektorské činnosti"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Služby v oblasti administrativní správy a služby organizačně hospodářské povahy u fyzických a právnických osob"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Testování, měření a analýzy"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Projektování elektrických zařízení"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Reklamní činnost a marketing"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Montáž, údržba a servis telekomunikačních zařízení"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Poskytování telekomunikačních služeb"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Zprostředkování služeb"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Zprostředkování obchodu"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Specializovaný maloobchod"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Velkoobchod"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Montáž, opravy, revize a zkoušky vyhrazených elektrických zařízení"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Výroba, instalace a opravy elektronických zařízení"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Výroba, instalace a opravy elektrických strojů a přístrojů"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Poskytování software a poradenství v oblasti hardware a software"
+          },
+          {
+            "datumZapisu": "2004-04-30",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "Zpracování dat, služby databank, správa sítí"
+          },
+          {
+            "datumZapisu": "2003-08-06",
+            "hodnota": "pronájem nemovitostí, bytů a nebytových prostor s poskytováním jen základních služeb zajišťujících řádný provoz nemovitostí, bytů a nebytových prostor"
+          },
+          {
+            "datumZapisu": "2006-04-04",
+            "datumVymazu": "2009-05-04",
+            "hodnota": "poskytování technických služeb k ochraně majetku a osob"
+          },
+          {
+            "datumZapisu": "2009-05-04",
+            "hodnota": "Montáž, opravy, revize a zkoušky elektrických zařízení"
+          },
+          {
+            "datumZapisu": "2009-05-04",
+            "hodnota": "Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona"
+          },
+          {
+            "datumZapisu": "2009-05-04",
+            "hodnota": "Výroba, instalace, opravy elektrických strojů a přístrojů, elektronických a telekomunikačních zařízení"
+          },
+          {
+            "datumZapisu": "2011-08-03",
+            "hodnota": "poskytování technických služeb k ochraně majetku a osob"
+          }
+        ]
+      },
+      "ostatniOrgany": [
+        {
+          "datumZapisu": "2003-08-06",
+          "nazevOrganu": "Jediný akcionář",
+          "clenoveOrganu": [
+            {
+              "datumZapisu": "2003-08-06",
+              "datumVymazu": "2004-03-01",
+              "typAngazma": "AKCIONAR",
+              "clenstvi": {},
+              "nazevAngazma": "Akcionář",
+              "pravnickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 449300,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Jakubská",
+                  "cisloDomovni": 647,
+                  "kodCastiObce": 400017,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Staré Město",
+                  "kodAdresnihoMista": 21722846,
+                  "psc": 11000,
+                  "textovaAdresa": "Jakubská 647/2, Staré Město, 11000 Praha 1",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "ico": "63998581",
+                "obchodniJmeno": "TACOMA Consulting, a.s.",
+                "pravniForma": "121"
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2007-02-06",
+              "typAngazma": "AKCIONAR",
+              "clenstvi": {
+                "textZaOsobu": "IČ: 012642522"
+              },
+              "nazevAngazma": "Akcionář",
+              "pravnickaOsoba": {
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "textovaAdresa": "00-697,Varšava, Aleje Jerozolimskie 65/79",
+                  "standardizaceAdresy": false
+                },
+                "obchodniJmeno": "PROKOM SOFTWARE SPÓLKA  AKCYJNA"
+              }
+            },
+            {
+              "datumZapisu": "2007-02-06",
+              "datumVymazu": "2007-05-18",
+              "typAngazma": "AKCIONAR",
+              "clenstvi": {
+                "textZaOsobu": "IČ: 010334578"
+              },
+              "nazevAngazma": "Akcionář",
+              "pravnickaOsoba": {
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "textovaAdresa": "Rzeszów, Al.Armii Krajowej 80, 35307",
+                  "standardizaceAdresy": false
+                },
+                "obchodniJmeno": "ASSECO POLAND SPÓŁKA AKCYJNA"
+              }
+            },
+            {
+              "datumZapisu": "2008-03-20",
+              "datumVymazu": "2010-09-08",
+              "typAngazma": "AKCIONAR",
+              "clenstvi": {},
+              "nazevAngazma": "Akcionář",
+              "pravnickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Trenčianska",
+                  "textovaAdresa": "Trenčianska 56/A, 82109 Bratislava, Slovensko",
+                  "cisloDoAdresy": "56/A",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "82109"
+                },
+                "obchodniJmeno": "Asseco Slovakia, a.s."
+              }
+            },
+            {
+              "datumZapisu": "2010-09-08",
+              "typAngazma": "AKCIONAR",
+              "clenstvi": {},
+              "nazevAngazma": "Akcionář",
+              "pravnickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Trenčianska",
+                  "textovaAdresa": "Trenčianska 56/A, 82109 Bratislava, Slovensko",
+                  "cisloDoAdresy": "56/A",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "82109"
+                },
+                "obchodniJmeno": "Asseco Central Europe, a.s."
+              }
+            }
+          ],
+          "typOrganu": "AKCIONAR_SEKCE",
+          "nazevAngazma": "Jediný akcionář",
+          "typAngazma": "AKCIONAR_SEKCE"
+        },
+        {
+          "datumZapisu": "2003-08-06",
+          "nazevOrganu": "Dozorčí rada",
+          "clenoveOrganu": [
+            {
+              "datumZapisu": "2015-02-17",
+              "datumVymazu": "2020-04-01",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2014-11-25",
+                  "zanikClenstvi": "2019-11-24"
+                },
+                "funkce": {
+                  "vznikFunkce": "2014-12-11",
+                  "zanikFunkce": "2019-11-24",
+                  "nazev": "Předseda dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Adam Tadeusz Góral",
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Rzeszów",
+                  "nazevUlice": "Strzyzowska 36",
+                  "textovaAdresa": "Strzyzowska 36, 35307 Rzeszów, Polsko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "35307"
+                },
+                "datumNarozeni": "1955-10-27",
+                "jmeno": "ADAM TADEUSZ",
+                "prijmeni": "GÓRAL",
+                "statniObcanstvi": "PL"
+              }
+            },
+            {
+              "datumZapisu": "2019-05-25",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2019-03-13"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Sopot",
+                  "nazevUlice": "Zeromskiego 4",
+                  "textovaAdresa": "Zeromskiego 4, 81826 Sopot, Polsko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "81826"
+                },
+                "datumNarozeni": "1969-03-08",
+                "jmeno": "PRZEMYSLAW PIOTR",
+                "prijmeni": "SECZKOWSKI",
+                "statniObcanstvi": "PL"
+              }
+            },
+            {
+              "datumZapisu": "2014-09-30",
+              "datumVymazu": "2019-05-25",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2014-03-13",
+                  "zanikClenstvi": "2019-03-12"
+                },
+                "funkce": {
+                  "vznikFunkce": "2014-03-13",
+                  "zanikFunkce": "2019-03-12",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Sopot",
+                  "nazevUlice": "Zeromskiego 4",
+                  "textovaAdresa": "Zeromskiego 4, 81826 Sopot, Polsko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "81826"
+                },
+                "datumNarozeni": "1969-03-08",
+                "jmeno": "PRZEMYSLAW PIOTR",
+                "prijmeni": "SECZKOWSKI",
+                "statniObcanstvi": "PL"
+              }
+            },
+            {
+              "datumZapisu": "2005-02-02",
+              "datumVymazu": "2008-05-26",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2004-07-21",
+                  "zanikClenstvi": "2008-03-31"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Jacek Józef Duch",
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "textovaAdresa": "ul. Profesorska 3, 00-433, Varšava",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1947-08-14",
+                "prijmeni": "Jacek Józef Duch"
+              }
+            },
+            {
+              "datumZapisu": "2007-01-10",
+              "datumVymazu": "2007-09-14",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "textZaOsobu": "Jed o člena DR voleného zaměstanci  v doplňovacích volbách za Ing. K. P. Klose, který rezignoval.",
+                "clenstvi": {
+                  "zanikClenstvi": "2007-08-02"
+                },
+                "funkce": {
+                  "vznikFunkce": "2006-11-24",
+                  "zanikFunkce": "2007-08-02",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 551066,
+                  "kodUlice": 32051,
+                  "nazevMestskeCastiObvodu": "Brno-Černovice",
+                  "nazevUlice": "Spáčilova",
+                  "cisloDomovni": 723,
+                  "kodCastiObce": 411752,
+                  "cisloOrientacni": 67,
+                  "nazevCastiObce": "Černovice",
+                  "kodAdresnihoMista": 19347944,
+                  "psc": 61800,
+                  "textovaAdresa": "Spáčilova 723/67, Černovice, 61800 Brno",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1952-09-27",
+                "jmeno": "Jiří",
+                "prijmeni": "Škaroupka",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2008-05-26",
+              "datumVymazu": "2009-06-16",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2008-04-01"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Bartoškova",
+                  "textovaAdresa": "Bartoškova 127/6, 83104 Bratislava, Slovensko",
+                  "cisloDoAdresy": "127/6",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "83104"
+                },
+                "datumNarozeni": "1971-01-12",
+                "jmeno": "Martin",
+                "prijmeni": "Morávek",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2009-06-16",
+              "datumVymazu": "2009-06-16",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2007-02-01",
+                  "zanikClenstvi": "2009-04-14"
+                },
+                "funkce": {
+                  "vznikFunkce": "2007-03-30",
+                  "zanikFunkce": "2009-04-14",
+                  "nazev": "místopředseda dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Mateja Bela",
+                  "textovaAdresa": "Mateja Bela 845/6, Bratislava, Česká republika",
+                  "cisloDoAdresy": "845/6",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1954-03-01",
+                "jmeno": "Ĺubomír",
+                "prijmeni": "Chrenko"
+              }
+            },
+            {
+              "datumZapisu": "2011-04-12",
+              "datumVymazu": "2013-11-07",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-03-07",
+                  "zanikClenstvi": "2013-09-01"
+                },
+                "funkce": {
+                  "vznikFunkce": "2011-03-07",
+                  "zanikFunkce": "2013-09-01",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 94,
+                  "nazevKraje": "Pardubický kraj",
+                  "kodOkresu": 3606,
+                  "nazevOkresu": "Pardubice",
+                  "kodObce": 555134,
+                  "nazevObce": "Pardubice",
+                  "kodMestskeCastiObvodu": 555126,
+                  "kodUlice": 373451,
+                  "nazevMestskeCastiObvodu": "Pardubice II",
+                  "nazevUlice": "Kunětická",
+                  "cisloDomovni": 102,
+                  "kodCastiObce": 117935,
+                  "nazevCastiObce": "Cihelna",
+                  "kodAdresnihoMista": 7729421,
+                  "psc": 53009,
+                  "textovaAdresa": "Kunětická 102, Cihelna, 53009 Pardubice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1958-12-11",
+                "jmeno": "Petr",
+                "prijmeni": "Šťastný"
+              }
+            },
+            {
+              "datumZapisu": "2010-11-23",
+              "datumVymazu": "2011-05-20",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2010-09-07",
+                  "zanikClenstvi": "2011-03-24"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Dunajská Lužná",
+                  "nazevUlice": "Nová",
+                  "cisloDomovni": 4,
+                  "textovaAdresa": "Nová 4, 90042 Dunajská Lužná, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "90042"
+                },
+                "datumNarozeni": "1974-12-21",
+                "jmeno": "Branislav",
+                "prijmeni": "Tkáčik"
+              }
+            },
+            {
+              "datumZapisu": "2020-04-01",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2019-11-25"
+                },
+                "funkce": {
+                  "vznikFunkce": "2019-12-09",
+                  "nazev": "Předseda dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Rzesów",
+                  "nazevUlice": "Ustrzycka 3c",
+                  "textovaAdresa": "Ustrzycka 3c, 35-504 Rzesów, Polsko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "35-504"
+                },
+                "datumNarozeni": "1955-10-27",
+                "jmeno": "ADAM TADEUSZ",
+                "prijmeni": "GÓRAL",
+                "statniObcanstvi": "PL"
+              }
+            },
+            {
+              "datumZapisu": "2009-06-16",
+              "datumVymazu": "2009-08-20",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2008-04-01",
+                  "zanikClenstvi": "2009-07-01"
+                },
+                "funkce": {
+                  "vznikFunkce": "2009-04-15",
+                  "zanikFunkce": "2009-07-01",
+                  "nazev": "místopředseda dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Bartoškova",
+                  "textovaAdresa": "Bartoškova 127/6, 83104 Bratislava, Slovensko",
+                  "cisloDoAdresy": "127/6",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "83104"
+                },
+                "datumNarozeni": "1971-01-12",
+                "jmeno": "Martin",
+                "prijmeni": "Morávek",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2009-08-20",
+              "datumVymazu": "2009-12-16",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2009-07-01"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Hornádska",
+                  "textovaAdresa": "Hornádska 5120/30, 82107 Bratislava, Slovensko",
+                  "cisloDoAdresy": "5120/30",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "82107"
+                },
+                "datumNarozeni": "1975-02-04",
+                "jmeno": "Ivan",
+                "prijmeni": "Országh",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2010-01-18",
+              "datumVymazu": "2015-02-17",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2009-11-25",
+                  "zanikClenstvi": "2014-11-24"
+                },
+                "funkce": {
+                  "vznikFunkce": "2009-11-26",
+                  "zanikFunkce": "2014-11-24",
+                  "nazev": "předseda dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Adam Tadeusz Góral",
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Rzeszów",
+                  "nazevUlice": "Strzyzowska",
+                  "textovaAdresa": "Strzyzowska 36, Rzeszów, Polsko",
+                  "cisloDoAdresy": "36",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1955-10-20",
+                "prijmeni": "Adam Tadeusz Góral"
+              }
+            },
+            {
+              "datumZapisu": "2009-12-16",
+              "datumVymazu": "2010-11-23",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2009-07-01",
+                  "zanikClenstvi": "2010-09-06"
+                },
+                "funkce": {
+                  "vznikFunkce": "2009-11-26",
+                  "zanikFunkce": "2010-09-06",
+                  "nazev": "místopředseda dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Hornádska",
+                  "textovaAdresa": "Hornádska 5120/30, 82107 Bratislava, Slovensko",
+                  "cisloDoAdresy": "5120/30",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "82107"
+                },
+                "datumNarozeni": "1975-02-04",
+                "jmeno": "Ivan",
+                "prijmeni": "Országh",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2011-05-20",
+              "datumVymazu": "2016-08-19",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-03-25",
+                  "zanikClenstvi": "2016-03-25"
+                },
+                "funkce": {
+                  "vznikFunkce": "2011-03-25",
+                  "zanikFunkce": "2016-03-25",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Marek Pawel Panek",
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Rzeszów",
+                  "nazevUlice": "Sanocka",
+                  "cisloDomovni": 50,
+                  "textovaAdresa": "Sanocka 50, 35504 Rzeszów, Polsko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "35504"
+                },
+                "datumNarozeni": "1969-07-08",
+                "prijmeni": "Marek Pawel Panek"
+              }
+            },
+            {
+              "datumZapisu": "2021-08-07",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2021-03-25"
+                },
+                "funkce": {
+                  "vznikFunkce": "2021-03-25",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Rzeszów",
+                  "nazevUlice": "Sanocka 50",
+                  "textovaAdresa": "Sanocka 50, 35-504 Rzeszów, Polsko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "35-504"
+                },
+                "datumNarozeni": "1969-07-08",
+                "jmeno": "MAREK PAWEŁ",
+                "prijmeni": "PANEK",
+                "statniObcanstvi": "PL"
+              }
+            },
+            {
+              "datumZapisu": "2007-03-29",
+              "datumVymazu": "2008-02-18",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04",
+                  "zanikClenstvi": "2008-01-15"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-09-04",
+                  "zanikFunkce": "2008-01-15",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Dariusz Robert Górka",
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Elk",
+                  "nazevUlice": "ul. Slowackiego",
+                  "textovaAdresa": "ul. Slowackiego 21/13, Elk, Polsko",
+                  "cisloDoAdresy": "21/13",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1965-05-04",
+                "prijmeni": "Dariusz Robert Górka"
+              }
+            },
+            {
+              "datumZapisu": "2007-03-19",
+              "datumVymazu": "2007-05-18",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2007-02-01"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Trstínská",
+                  "textovaAdresa": "Trstínská 51, 84106 Bratislava, Slovensko",
+                  "cisloDoAdresy": "51",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "84106"
+                },
+                "datumNarozeni": "1961-10-21",
+                "jmeno": "Jozef",
+                "prijmeni": "Klein"
+              }
+            },
+            {
+              "datumZapisu": "2007-03-19",
+              "datumVymazu": "2007-05-18",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2007-02-01"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Mateja Bela",
+                  "textovaAdresa": "Mateja Bela 845/6, 81106 Bratislava, Slovensko",
+                  "cisloDoAdresy": "845/6",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "81106"
+                },
+                "datumNarozeni": "1954-03-01",
+                "jmeno": "L´ubomír",
+                "prijmeni": "Chrenko"
+              }
+            },
+            {
+              "datumZapisu": "2008-02-18",
+              "datumVymazu": "2009-08-20",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2008-01-16",
+                  "zanikClenstvi": "2009-07-01"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Segnerova",
+                  "textovaAdresa": "Segnerova 721/5, 84104 Bratislava, Slovensko",
+                  "cisloDoAdresy": "721/5",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "84104"
+                },
+                "datumNarozeni": "1979-08-08",
+                "jmeno": "Edita",
+                "prijmeni": "Angyalová",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2008-02-18",
+              "datumVymazu": "2011-01-12",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2007-12-13",
+                  "zanikClenstvi": "2010-12-16"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 35,
+                  "nazevKraje": "Jihočeský kraj",
+                  "kodOkresu": 3301,
+                  "nazevOkresu": "České Budějovice",
+                  "kodObce": 544256,
+                  "nazevObce": "České Budějovice",
+                  "kodUlice": 73750,
+                  "nazevUlice": "Dělnická",
+                  "cisloDomovni": 107,
+                  "kodCastiObce": 403903,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "České Budějovice 5",
+                  "kodAdresnihoMista": 23386100,
+                  "psc": 37006,
+                  "textovaAdresa": "Dělnická 107/1, České Budějovice 5, 37006 České Budějovice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1956-07-11",
+                "jmeno": "František",
+                "prijmeni": "Drdák",
+                "titulPredJmenem": "Ing.",
+                "titulZaJmenem": "CSc."
+              }
+            },
+            {
+              "datumZapisu": "2003-08-06",
+              "datumVymazu": "2004-03-01",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-08-06",
+                  "zanikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-08-06",
+                  "zanikFunkce": "2003-09-04",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 60,
+                  "nazevSpravnihoObvodu": "Praha 6",
+                  "kodMestskehoObvodu": 60,
+                  "nazevMestskehoObvodu": "Praha 6",
+                  "kodMestskeCastiObvodu": 500178,
+                  "kodUlice": 449652,
+                  "nazevMestskeCastiObvodu": "Praha 6",
+                  "nazevUlice": "Jemenská",
+                  "cisloDomovni": 579,
+                  "kodCastiObce": 400441,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Vokovice",
+                  "kodAdresnihoMista": 22290206,
+                  "psc": 16000,
+                  "textovaAdresa": "Jemenská 579/4, Vokovice, 16000 Praha 6",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1978-09-03",
+                "jmeno": "Tomáš",
+                "prijmeni": "Novák"
+              }
+            },
+            {
+              "datumZapisu": "2003-08-06",
+              "datumVymazu": "2004-03-01",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-08-06",
+                  "zanikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-08-06",
+                  "zanikFunkce": "2003-09-04",
+                  "nazev": "předseda dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 449300,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Jakubská",
+                  "cisloDomovni": 647,
+                  "kodCastiObce": 400017,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Staré Město",
+                  "kodAdresnihoMista": 21722846,
+                  "psc": 11000,
+                  "textovaAdresa": "Jakubská 647/2, Staré Město, 11000 Praha 1",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1971-04-05",
+                "jmeno": "Marek",
+                "prijmeni": "Rosenbaum"
+              }
+            },
+            {
+              "datumZapisu": "2003-08-06",
+              "datumVymazu": "2004-03-01",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-08-06",
+                  "zanikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-08-06",
+                  "zanikFunkce": "2003-09-04",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 108,
+                  "nazevSpravnihoObvodu": "Praha 10",
+                  "kodMestskehoObvodu": 108,
+                  "nazevMestskehoObvodu": "Praha 10",
+                  "kodMestskeCastiObvodu": 500224,
+                  "kodUlice": 453358,
+                  "nazevMestskeCastiObvodu": "Praha 10",
+                  "nazevUlice": "Krátká",
+                  "cisloDomovni": 1274,
+                  "kodCastiObce": 490181,
+                  "cisloOrientacni": 28,
+                  "nazevCastiObce": "Strašnice",
+                  "kodAdresnihoMista": 22614559,
+                  "psc": 10000,
+                  "textovaAdresa": "Krátká 1274/28, Strašnice, 10000 Praha 10",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1973-09-17",
+                "jmeno": "Jan",
+                "prijmeni": "Petráš"
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2004-03-01",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "nazev": "člen"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Ryszard Krysztof Krauze",
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "textovaAdresa": "81-309 Gdynia,ul.Warszawska 38/9",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1956-05-27",
+                "prijmeni": "Ryszard Krysztof Krauze"
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2004-03-01",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-09-04",
+                  "nazev": "člen"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Dariusz Robetr Górka",
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "textovaAdresa": "19-300,Elk,ul.Slowackiego 21/13",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1965-05-04",
+                "prijmeni": "Dariusz Robetr Górka"
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2004-03-01",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "nazev": "člen"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 504718,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Láskova",
+                  "cisloDomovni": 1797,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 13,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 21843554,
+                  "psc": 14800,
+                  "textovaAdresa": "Láskova 1797/13, Chodov, 14800 Praha 4",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1971-05-14",
+                "jmeno": "Raman",
+                "prijmeni": "Šilha",
+                "titulPredJmenem": "Mgr."
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2007-03-19",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04",
+                  "zanikClenstvi": "2007-01-31"
+                },
+                "funkce": {
+                  "nazev": "člen"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Ryszard Krzysztof Krauze",
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "textovaAdresa": "81-309 Gdynia,ul.Warszawska 38/9",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1956-05-27",
+                "prijmeni": "Ryszard Krzysztof Krauze"
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2007-03-19",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04",
+                  "zanikClenstvi": "2007-01-31"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-09-04",
+                  "zanikFunkce": "2007-01-31",
+                  "nazev": "člen"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Dariusz Robert Górka",
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "textovaAdresa": "19-300,Elk,ul.Slowackiego 21/13",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1965-05-04",
+                "prijmeni": "Dariusz Robert Górka"
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2006-10-30",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "zanikFunkce": "2006-08-31",
+                  "nazev": "člen"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 504718,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Láskova",
+                  "cisloDomovni": 1797,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 13,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 21843554,
+                  "psc": 14800,
+                  "textovaAdresa": "Láskova 1797/13, Chodov, 14800 Praha 4",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1971-05-14",
+                "jmeno": "Roman",
+                "prijmeni": "Šilha",
+                "titulPredJmenem": "Mgr."
+              }
+            },
+            {
+              "datumZapisu": "2005-02-02",
+              "datumVymazu": "2005-02-02",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2004-06-16",
+                  "zanikClenstvi": "2004-07-21"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "textovaAdresa": "ul. Kujawska 9, 81-198, Rewa",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1971-12-24",
+                "jmeno": "Bartlomiej",
+                "prijmeni": "Kolubiński"
+              }
+            },
+            {
+              "datumZapisu": "2007-05-18",
+              "datumVymazu": "2009-12-16",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2007-02-01",
+                  "zanikClenstvi": "2009-11-24"
+                },
+                "funkce": {
+                  "vznikFunkce": "2007-02-07",
+                  "zanikFunkce": "2009-11-24",
+                  "nazev": "předseda dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Trstínska",
+                  "textovaAdresa": "Trstínska 51, 84106 Bratislava, Slovensko",
+                  "cisloDoAdresy": "51",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "84106"
+                },
+                "datumNarozeni": "1961-10-21",
+                "jmeno": "Jozef",
+                "prijmeni": "Klein"
+              }
+            },
+            {
+              "datumZapisu": "2005-02-02",
+              "datumVymazu": "2006-10-30",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2004-07-01"
+                },
+                "funkce": {
+                  "zanikFunkce": "2006-06-07",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "textOsoba": "Karel Pavel Klos",
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 551007,
+                  "kodUlice": 29564,
+                  "nazevMestskeCastiObvodu": "Brno-Královo Pole",
+                  "nazevUlice": "Pionýrská",
+                  "cisloDomovni": 252,
+                  "kodCastiObce": 411973,
+                  "cisloOrientacni": 21,
+                  "nazevCastiObce": "Ponava",
+                  "kodAdresnihoMista": 19748060,
+                  "psc": 60200,
+                  "textovaAdresa": "Pionýrská 252/21, Ponava, 60200 Brno",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1957-09-05",
+                "prijmeni": "Karel Pavel Klos"
+              }
+            },
+            {
+              "datumZapisu": "2007-05-18",
+              "datumVymazu": "2009-06-16",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2007-02-01",
+                  "zanikClenstvi": "2009-02-14"
+                },
+                "funkce": {
+                  "vznikFunkce": "2007-03-30",
+                  "zanikFunkce": "2009-02-14",
+                  "nazev": "místopředseda dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Mateja Bela",
+                  "textovaAdresa": "Mateja Bela 845/6, 81106 Bratislava, Slovensko",
+                  "cisloDoAdresy": "845/6",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "81106"
+                },
+                "datumNarozeni": "1954-03-01",
+                "jmeno": "Ľubomír",
+                "prijmeni": "Chrenko"
+              }
+            },
+            {
+              "datumZapisu": "2005-02-02",
+              "datumVymazu": "2009-08-20",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2004-07-01",
+                  "zanikClenstvi": "2009-07-01"
+                },
+                "funkce": {
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 469696,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "Pplk. Sochora",
+                  "cisloDomovni": 734,
+                  "kodCastiObce": 490067,
+                  "cisloOrientacni": 39,
+                  "nazevCastiObce": "Holešovice",
+                  "kodAdresnihoMista": 22302701,
+                  "psc": 17000,
+                  "textovaAdresa": "Pplk. Sochora 734/39, Holešovice, 17000 Praha 7",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1946-07-21",
+                "jmeno": "Alena",
+                "prijmeni": "Voříšková"
+              }
+            },
+            {
+              "datumZapisu": "2006-10-30",
+              "datumVymazu": "2007-03-29",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "zanikClenstvi": "2007-01-31"
+                },
+                "funkce": {
+                  "vznikFunkce": "2006-09-01",
+                  "zanikFunkce": "2007-01-31",
+                  "nazev": "člen dozorčí rady"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Warszawa",
+                  "nazevUlice": "Skorochód-Majewskiego",
+                  "textovaAdresa": "Skorochód-Majewskiego 9/1201, Warszawa, Polsko",
+                  "cisloDoAdresy": "9/1201",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1944-07-20",
+                "jmeno": "Kazimierz",
+                "prijmeni": "Ferenc"
+              }
+            },
+            {
+              "datumZapisu": "2016-08-19",
+              "datumVymazu": "2021-08-07",
+              "typAngazma": "DOZORCI_RADA_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2016-03-25",
+                  "zanikClenstvi": "2021-03-25"
+                },
+                "funkce": {
+                  "zanikFunkce": "2021-03-25",
+                  "nazev": "člen"
+                }
+              },
+              "nazevAngazma": "Člen dozorčí rady",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "PL",
+                  "nazevStatu": "Polsko",
+                  "nazevObce": "Rzeszów",
+                  "nazevUlice": "Sanocka 50",
+                  "textovaAdresa": "Sanocka 50, 35504 Rzeszów, Polsko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "35504"
+                },
+                "datumNarozeni": "1969-07-08",
+                "jmeno": "MAREK PAVEL",
+                "prijmeni": "PANEK",
+                "statniObcanstvi": "PL"
+              }
+            }
+          ],
+          "typOrganu": "DOZORCI_RADA",
+          "nazevAngazma": "Dozorčí rada",
+          "typAngazma": "DOZORCI_RADA"
+        }
+      ],
+      "statutarniOrgany": [
+        {
+          "datumZapisu": "2003-08-06",
+          "nazevOrganu": "Statutární orgán - představenstvo",
+          "clenoveOrganu": [
+            {
+              "datumZapisu": "2018-01-25",
+              "datumVymazu": "2020-10-16",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2017-12-12",
+                  "zanikClenstvi": "2020-09-08"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Stredná 27",
+                  "textovaAdresa": "Stredná 27, 82104 Bratislava, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "82104"
+                },
+                "datumNarozeni": "1972-01-14",
+                "jmeno": "MAREK",
+                "prijmeni": "GRÁC",
+                "statniObcanstvi": "SK"
+              }
+            },
+            {
+              "datumZapisu": "2019-02-13",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2019-02-01"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Košická 17180/49",
+                  "textovaAdresa": "Košická 17180/49, 82108 Bratislava, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "82108"
+                },
+                "datumNarozeni": "1974-12-21",
+                "jmeno": "BRANISLAV",
+                "prijmeni": "TKÁČIK",
+                "statniObcanstvi": "SK"
+              }
+            },
+            {
+              "datumZapisu": "2019-02-13",
+              "datumVymazu": "2022-04-21",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2019-02-01",
+                  "zanikClenstvi": "2021-12-31"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 551279,
+                  "kodUlice": 30341,
+                  "nazevMestskeCastiObvodu": "Brno-Vinohrady",
+                  "nazevUlice": "Prušánecká",
+                  "cisloDomovni": 4148,
+                  "kodCastiObce": 490415,
+                  "cisloOrientacni": 17,
+                  "nazevCastiObce": "Židenice",
+                  "kodAdresnihoMista": 19573090,
+                  "psc": 62800,
+                  "textovaAdresa": "Prušánecká 4148/17, Židenice, 62800 Brno",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1971-07-28",
+                "jmeno": "MICHAL",
+                "prijmeni": "POLEHŇA",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2015-02-17",
+              "datumVymazu": "2016-08-19",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-06-08",
+                  "zanikClenstvi": "2016-06-08"
+                },
+                "funkce": {
+                  "vznikFunkce": "2015-02-04",
+                  "zanikFunkce": "2016-06-08",
+                  "nazev": "Místopředseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 141,
+                  "nazevKraje": "Zlínský kraj",
+                  "kodOkresu": 3705,
+                  "nazevOkresu": "Zlín",
+                  "kodObce": 585068,
+                  "nazevObce": "Zlín",
+                  "kodUlice": 701581,
+                  "nazevUlice": "Podlesí IV",
+                  "cisloDomovni": 4960,
+                  "kodCastiObce": 412244,
+                  "nazevCastiObce": "Zlín",
+                  "kodAdresnihoMista": 4252136,
+                  "psc": 76005,
+                  "textovaAdresa": "Podlesí IV 4960, 76005 Zlín",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1981-08-16",
+                "jmeno": "DAVID",
+                "prijmeni": "STOPPANI",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2014-12-11",
+              "datumVymazu": "2020-04-01",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2014-11-25",
+                  "zanikClenstvi": "2019-11-24"
+                },
+                "funkce": {
+                  "vznikFunkce": "2014-11-25",
+                  "zanikFunkce": "2019-11-24",
+                  "nazev": "předseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Trstínská",
+                  "textovaAdresa": "Trstínská 51, 84106 Bratislava, Slovensko",
+                  "cisloDoAdresy": "51",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "84106"
+                },
+                "datumNarozeni": "1961-10-21",
+                "jmeno": "JOZEF",
+                "prijmeni": "KLEIN"
+              }
+            },
+            {
+              "datumZapisu": "2003-08-06",
+              "datumVymazu": "2004-03-01",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-08-06",
+                  "zanikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-08-06",
+                  "zanikFunkce": "2003-09-04",
+                  "nazev": "člen"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 498521,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Zdiměřická",
+                  "cisloDomovni": 1430,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 15,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 21839832,
+                  "psc": 14900,
+                  "textovaAdresa": "Zdiměřická 1430/15, Chodov, 14900 Praha 4",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1973-07-12",
+                "jmeno": "Veronika",
+                "prijmeni": "Hornychová"
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2004-03-01",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-12-18",
+                  "nazev": "místopředseda"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3703,
+                  "nazevOkresu": "Brno-venkov",
+                  "kodObce": 583596,
+                  "nazevObce": "Ostopovice",
+                  "kodUlice": 41751,
+                  "nazevUlice": "Vinohradská",
+                  "cisloDomovni": 48,
+                  "kodCastiObce": 113395,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Ostopovice",
+                  "kodAdresnihoMista": 24137332,
+                  "psc": 66449,
+                  "textovaAdresa": "Vinohradská 48/4, 66449 Ostopovice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1956-04-19",
+                "jmeno": "Marian",
+                "prijmeni": "Pijarski"
+              }
+            },
+            {
+              "datumZapisu": "2023-02-18",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2023-01-01"
+                },
+                "funkce": {
+                  "nazev": "Člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 564915,
+                  "nazevObce": "Herink",
+                  "kodUlice": 809217,
+                  "nazevUlice": "Fíkova",
+                  "cisloDomovni": 107,
+                  "kodCastiObce": 27669,
+                  "nazevCastiObce": "Herink",
+                  "kodAdresnihoMista": 27664368,
+                  "psc": 25101,
+                  "textovaAdresa": "Fíkova 107, 25101 Herink",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1983-03-01",
+                "jmeno": "VLADIMÍR",
+                "prijmeni": "DZURILLA",
+                "statniObcanstvi": "SK"
+              }
+            },
+            {
+              "datumZapisu": "2020-04-01",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2019-11-25"
+                },
+                "funkce": {
+                  "vznikFunkce": "2019-12-09",
+                  "nazev": "Předseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Trstínska 51",
+                  "textovaAdresa": "Trstínska 51, 84106 Bratislava, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "84106"
+                },
+                "datumNarozeni": "1961-10-21",
+                "jmeno": "JOZEF",
+                "prijmeni": "KLEIN",
+                "statniObcanstvi": "SK"
+              }
+            },
+            {
+              "datumZapisu": "2021-08-07",
+              "datumVymazu": "2022-10-20",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2021-06-08",
+                  "zanikClenstvi": "2022-08-23"
+                },
+                "funkce": {
+                  "vznikFunkce": "2021-06-08",
+                  "zanikFunkce": "2022-08-23",
+                  "nazev": "místopředseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 141,
+                  "nazevKraje": "Zlínský kraj",
+                  "kodOkresu": 3705,
+                  "nazevOkresu": "Zlín",
+                  "kodObce": 585068,
+                  "nazevObce": "Zlín",
+                  "kodUlice": 701581,
+                  "nazevUlice": "Podlesí IV",
+                  "cisloDomovni": 4960,
+                  "kodCastiObce": 412244,
+                  "nazevCastiObce": "Zlín",
+                  "kodAdresnihoMista": 4252136,
+                  "psc": 76005,
+                  "textovaAdresa": "Podlesí IV 4960, 76005 Zlín",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1981-08-16",
+                "jmeno": "DAVID",
+                "prijmeni": "STOPPANI",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2005-12-02",
+              "datumVymazu": "2006-04-04",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "2005-10-11",
+                  "nazev": "předseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3703,
+                  "nazevOkresu": "Brno-venkov",
+                  "kodObce": 583596,
+                  "nazevObce": "Ostopovice",
+                  "kodUlice": 41751,
+                  "nazevUlice": "Vinohradská",
+                  "cisloDomovni": 48,
+                  "kodCastiObce": 113395,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Ostopovice",
+                  "kodAdresnihoMista": 24137332,
+                  "psc": 66449,
+                  "textovaAdresa": "Vinohradská 48/4, 66449 Ostopovice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1956-04-19",
+                "jmeno": "Marian",
+                "prijmeni": "Pijarski"
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2005-11-07",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04",
+                  "zanikClenstvi": "2005-10-11"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-12-18",
+                  "zanikFunkce": "2005-10-11",
+                  "nazev": "předseda"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 108,
+                  "nazevSpravnihoObvodu": "Praha 10",
+                  "kodMestskehoObvodu": 108,
+                  "nazevMestskehoObvodu": "Praha 10",
+                  "kodMestskeCastiObvodu": 547409,
+                  "kodUlice": 455971,
+                  "nazevMestskeCastiObvodu": "Praha-Štěrboholy",
+                  "nazevUlice": "Měcholupská",
+                  "cisloDomovni": 67,
+                  "kodCastiObce": 400921,
+                  "cisloOrientacni": 11,
+                  "nazevCastiObce": "Štěrboholy",
+                  "kodAdresnihoMista": 22637460,
+                  "psc": 10200,
+                  "textovaAdresa": "Měcholupská 67/11, Štěrboholy, 10200 Praha 10",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1945-04-11",
+                "jmeno": "Jiří",
+                "prijmeni": "Fabián",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2005-11-07",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "vznikFunkce": "2003-12-18",
+                  "zanikFunkce": "2005-10-11",
+                  "nazev": "místopředseda"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3703,
+                  "nazevOkresu": "Brno-venkov",
+                  "kodObce": 583596,
+                  "nazevObce": "Ostopovice",
+                  "kodUlice": 41718,
+                  "nazevUlice": "Lípová",
+                  "cisloDomovni": 205,
+                  "kodCastiObce": 113395,
+                  "cisloOrientacni": 48,
+                  "nazevCastiObce": "Ostopovice",
+                  "kodAdresnihoMista": 24138886,
+                  "psc": 66449,
+                  "textovaAdresa": "Lípová 205/48, 66449 Ostopovice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1956-04-19",
+                "jmeno": "Marian",
+                "prijmeni": "Pijarski"
+              }
+            },
+            {
+              "datumZapisu": "2005-11-07",
+              "datumVymazu": "2005-12-02",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "2005-10-11",
+                  "zanikFunkce": "2005-10-11",
+                  "nazev": "místopředseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3703,
+                  "nazevOkresu": "Brno-venkov",
+                  "kodObce": 583596,
+                  "nazevObce": "Ostopovice",
+                  "kodUlice": 41751,
+                  "nazevUlice": "Vinohradská",
+                  "cisloDomovni": 48,
+                  "kodCastiObce": 113395,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Ostopovice",
+                  "kodAdresnihoMista": 24137332,
+                  "psc": 66449,
+                  "textovaAdresa": "Vinohradská 48/4, 66449 Ostopovice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1956-04-19",
+                "jmeno": "Marian",
+                "prijmeni": "Pijarski"
+              }
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2006-04-04",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04",
+                  "zanikClenstvi": "2005-08-31"
+                },
+                "funkce": {
+                  "nazev": "člen"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha 5-Jinonice",
+                  "kodUlice": 506010,
+                  "nazevUlice": "K Rovinám",
+                  "textovaAdresa": "K Rovinám 574/9, 15800 Praha 5-Jinonice, Česká republika",
+                  "cisloDoAdresy": "574/9",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "15800"
+                },
+                "datumNarozeni": "1966-06-04",
+                "jmeno": "Andre",
+                "prijmeni": "Spark"
+              }
+            },
+            {
+              "datumZapisu": "2006-09-22",
+              "datumVymazu": "2007-09-05",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "funkce": {
+                  "vznikFunkce": "2006-09-01",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 132,
+                  "nazevKraje": "Moravskoslezský kraj",
+                  "kodOkresu": 3804,
+                  "nazevOkresu": "Nový Jičín",
+                  "kodObce": 599344,
+                  "nazevObce": "Frenštát pod Radhoštěm",
+                  "kodUlice": 308528,
+                  "nazevUlice": "Dolní",
+                  "cisloDomovni": 497,
+                  "kodCastiObce": 413542,
+                  "nazevCastiObce": "Frenštát pod Radhoštěm",
+                  "kodAdresnihoMista": 8426481,
+                  "psc": 74401,
+                  "textovaAdresa": "Dolní 497, 74401 Frenštát pod Radhoštěm",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1966-07-20",
+                "jmeno": "Roman",
+                "prijmeni": "Vybíral",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2008-12-18",
+              "datumVymazu": "2009-12-16",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2008-09-04",
+                  "zanikClenstvi": "2009-11-30"
+                },
+                "funkce": {
+                  "vznikFunkce": "2008-09-04",
+                  "zanikFunkce": "2009-11-30",
+                  "nazev": "místopředseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3210,
+                  "nazevOkresu": "Praha-západ",
+                  "kodObce": 539571,
+                  "nazevObce": "Průhonice",
+                  "kodUlice": 703567,
+                  "nazevUlice": "U Komárova",
+                  "cisloDomovni": 656,
+                  "kodCastiObce": 403181,
+                  "nazevCastiObce": "Průhonice",
+                  "kodAdresnihoMista": 26091046,
+                  "psc": 25243,
+                  "textovaAdresa": "U Komárova 656, 25243 Průhonice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1956-04-19",
+                "jmeno": "Marian Julian",
+                "prijmeni": "Pijarski",
+                "titulPredJmenem": "Mgr."
+              }
+            },
+            {
+              "datumZapisu": "2005-02-02",
+              "datumVymazu": "2009-06-16",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2004-05-31",
+                  "zanikClenstvi": "2009-05-31"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 43,
+                  "nazevKraje": "Plzeňský kraj",
+                  "kodOkresu": 3405,
+                  "nazevOkresu": "Plzeň-město",
+                  "kodObce": 558371,
+                  "nazevObce": "Starý Plzenec",
+                  "kodUlice": 389838,
+                  "nazevUlice": "Karolíny Světlé",
+                  "cisloDomovni": 373,
+                  "kodCastiObce": 155152,
+                  "nazevCastiObce": "Starý Plzenec",
+                  "kodAdresnihoMista": 25257650,
+                  "psc": 33202,
+                  "textovaAdresa": "Karolíny Světlé 373, 33202 Starý Plzenec",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1963-10-23",
+                "jmeno": "Tomáš",
+                "prijmeni": "Vaník",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2006-04-04",
+              "datumVymazu": "2007-09-05",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04"
+                },
+                "funkce": {
+                  "vznikFunkce": "2005-10-11",
+                  "zanikFunkce": "2007-08-03",
+                  "nazev": "předseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3210,
+                  "nazevOkresu": "Praha-západ",
+                  "kodObce": 539571,
+                  "nazevObce": "Průhonice",
+                  "kodUlice": 703567,
+                  "nazevUlice": "U Komárova",
+                  "cisloDomovni": 656,
+                  "kodCastiObce": 403181,
+                  "nazevCastiObce": "Průhonice",
+                  "kodAdresnihoMista": 26091046,
+                  "psc": 25243,
+                  "textovaAdresa": "U Komárova 656, 25243 Průhonice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1956-04-19",
+                "jmeno": "Marian Julian",
+                "prijmeni": "Pijarski",
+                "titulPredJmenem": "Mgr."
+              }
+            },
+            {
+              "datumZapisu": "2009-06-16",
+              "datumVymazu": "2009-12-16",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2009-05-31",
+                  "zanikClenstvi": "2009-11-30"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 43,
+                  "nazevKraje": "Plzeňský kraj",
+                  "kodOkresu": 3405,
+                  "nazevOkresu": "Plzeň-město",
+                  "kodObce": 558371,
+                  "nazevObce": "Starý Plzenec",
+                  "kodUlice": 389838,
+                  "nazevUlice": "Karolíny Světlé",
+                  "cisloDomovni": 373,
+                  "kodCastiObce": 155152,
+                  "nazevCastiObce": "Starý Plzenec",
+                  "kodAdresnihoMista": 25257650,
+                  "psc": 33202,
+                  "textovaAdresa": "Karolíny Světlé 373, 33202 Starý Plzenec",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1963-10-23",
+                "jmeno": "Tomáš",
+                "prijmeni": "Vaník",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2007-09-05",
+              "datumVymazu": "2009-12-16",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2007-08-03"
+                },
+                "funkce": {
+                  "vznikFunkce": "2007-08-03",
+                  "zanikFunkce": "2009-11-30",
+                  "nazev": "předseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538167,
+                  "nazevObce": "Dobřejovice",
+                  "kodUlice": 411612,
+                  "nazevUlice": "Horní",
+                  "cisloDomovni": 196,
+                  "kodCastiObce": 27642,
+                  "nazevCastiObce": "Dobřejovice",
+                  "kodAdresnihoMista": 11698594,
+                  "psc": 25101,
+                  "textovaAdresa": "Horní 196, 25101 Dobřejovice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1970-01-13",
+                "jmeno": "Jan",
+                "prijmeni": "Přerovský"
+              }
+            },
+            {
+              "datumZapisu": "2007-09-05",
+              "datumVymazu": "2008-12-18",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2003-09-04",
+                  "zanikClenstvi": "2008-09-03"
+                },
+                "funkce": {
+                  "vznikFunkce": "2007-08-03",
+                  "zanikFunkce": "2008-09-03",
+                  "nazev": "místopředseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3210,
+                  "nazevOkresu": "Praha-západ",
+                  "kodObce": 539571,
+                  "nazevObce": "Průhonice",
+                  "kodUlice": 703567,
+                  "nazevUlice": "U Komárova",
+                  "cisloDomovni": 656,
+                  "kodCastiObce": 403181,
+                  "nazevCastiObce": "Průhonice",
+                  "kodAdresnihoMista": 26091046,
+                  "psc": 25243,
+                  "textovaAdresa": "U Komárova 656, 25243 Průhonice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1956-04-19",
+                "jmeno": "Marian Julian",
+                "prijmeni": "Pijarski",
+                "titulPredJmenem": "Mgr."
+              }
+            },
+            {
+              "datumZapisu": "2007-09-05",
+              "datumVymazu": "2009-12-16",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2006-09-01"
+                },
+                "funkce": {
+                  "vznikFunkce": "2007-08-03",
+                  "zanikFunkce": "2009-11-30",
+                  "nazev": "místopředseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 132,
+                  "nazevKraje": "Moravskoslezský kraj",
+                  "kodOkresu": 3804,
+                  "nazevOkresu": "Nový Jičín",
+                  "kodObce": 599344,
+                  "nazevObce": "Frenštát pod Radhoštěm",
+                  "kodUlice": 308528,
+                  "nazevUlice": "Dolní",
+                  "cisloDomovni": 497,
+                  "kodCastiObce": 413542,
+                  "nazevCastiObce": "Frenštát pod Radhoštěm",
+                  "kodAdresnihoMista": 8426481,
+                  "psc": 74401,
+                  "textovaAdresa": "Dolní 497, 74401 Frenštát pod Radhoštěm",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1966-07-20",
+                "jmeno": "Roman",
+                "prijmeni": "Vybíral",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2009-12-16",
+              "datumVymazu": "2011-01-12",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2009-12-01",
+                  "zanikClenstvi": "2010-12-31"
+                },
+                "funkce": {
+                  "vznikFunkce": "2009-12-01",
+                  "zanikFunkce": "2010-12-31",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 35,
+                  "nazevKraje": "Jihočeský kraj",
+                  "kodOkresu": 3306,
+                  "nazevOkresu": "Prachatice",
+                  "kodObce": 550094,
+                  "nazevObce": "Prachatice",
+                  "kodUlice": 510203,
+                  "nazevUlice": "Skalka",
+                  "cisloDomovni": 905,
+                  "kodCastiObce": 404853,
+                  "nazevCastiObce": "Prachatice II",
+                  "kodAdresnihoMista": 17706114,
+                  "psc": 38301,
+                  "textovaAdresa": "Skalka 905, Prachatice II, 38301 Prachatice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1957-02-08",
+                "jmeno": "Miloš",
+                "prijmeni": "Houska",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2009-12-16",
+              "datumVymazu": "2010-02-10",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2007-08-03",
+                  "zanikClenstvi": "2010-01-31"
+                },
+                "funkce": {
+                  "vznikFunkce": "2009-12-01",
+                  "zanikFunkce": "2010-01-31",
+                  "nazev": "místopředseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3209,
+                  "nazevOkresu": "Praha-východ",
+                  "kodObce": 538167,
+                  "nazevObce": "Dobřejovice",
+                  "kodUlice": 411612,
+                  "nazevUlice": "Horní",
+                  "cisloDomovni": 196,
+                  "kodCastiObce": 27642,
+                  "nazevCastiObce": "Dobřejovice",
+                  "kodAdresnihoMista": 11698594,
+                  "psc": 25101,
+                  "textovaAdresa": "Horní 196, 25101 Dobřejovice",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1970-01-13",
+                "jmeno": "Jan",
+                "prijmeni": "Přerovský"
+              }
+            },
+            {
+              "datumZapisu": "2009-12-16",
+              "datumVymazu": "2014-12-11",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2009-11-25",
+                  "zanikClenstvi": "2014-11-25"
+                },
+                "funkce": {
+                  "vznikFunkce": "2009-12-01",
+                  "zanikFunkce": "2014-11-25",
+                  "nazev": "předseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Trstínska",
+                  "textovaAdresa": "Trstínska 51, 84106 Bratislava, Česká republika",
+                  "cisloDoAdresy": "51",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "84106"
+                },
+                "datumNarozeni": "1961-10-21",
+                "jmeno": "Jozef",
+                "prijmeni": "Klein",
+                "titulPredJmenem": "RNDr."
+              }
+            },
+            {
+              "datumZapisu": "2009-12-16",
+              "datumVymazu": "2010-03-18",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2006-09-01"
+                },
+                "funkce": {
+                  "vznikFunkce": "2009-12-01",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 132,
+                  "nazevKraje": "Moravskoslezský kraj",
+                  "kodOkresu": 3804,
+                  "nazevOkresu": "Nový Jičín",
+                  "kodObce": 599344,
+                  "nazevObce": "Frenštát pod Radhoštěm",
+                  "kodUlice": 308528,
+                  "nazevUlice": "Dolní",
+                  "cisloDomovni": 497,
+                  "kodCastiObce": 413542,
+                  "nazevCastiObce": "Frenštát pod Radhoštěm",
+                  "kodAdresnihoMista": 8426481,
+                  "psc": 74401,
+                  "textovaAdresa": "Dolní 497, 74401 Frenštát pod Radhoštěm",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1966-07-20",
+                "jmeno": "Roman",
+                "prijmeni": "Vybíral",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2010-03-18",
+              "datumVymazu": "2011-01-12",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2006-09-01",
+                  "zanikClenstvi": "2010-12-31"
+                },
+                "funkce": {
+                  "vznikFunkce": "2009-12-01",
+                  "zanikFunkce": "2010-12-31",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3703,
+                  "nazevOkresu": "Brno-venkov",
+                  "kodObce": 583251,
+                  "nazevObce": "Kuřim",
+                  "kodUlice": 692417,
+                  "nazevUlice": "Vontská",
+                  "cisloDomovni": 1449,
+                  "kodCastiObce": 412015,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Kuřim",
+                  "kodAdresnihoMista": 26066033,
+                  "psc": 66434,
+                  "textovaAdresa": "Vontská 1449/5, 66434 Kuřim",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1966-07-20",
+                "jmeno": "Roman",
+                "prijmeni": "Vybíral",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2011-01-12",
+              "datumVymazu": "2011-01-12",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-11-01"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3809,
+                  "nazevOkresu": "Šumperk",
+                  "kodObce": 553221,
+                  "nazevObce": "Hrabová",
+                  "cisloDomovni": 42,
+                  "kodCastiObce": 46540,
+                  "nazevCastiObce": "Hrabová",
+                  "kodAdresnihoMista": 7987021,
+                  "psc": 78901,
+                  "textovaAdresa": "č.p. 42, 78901 Hrabová",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1975-12-22",
+                "jmeno": "Martin",
+                "prijmeni": "Skyva"
+              }
+            },
+            {
+              "datumZapisu": "2011-01-12",
+              "datumVymazu": "2014-07-24",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-01-01"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 29475,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Pellicova",
+                  "cisloDomovni": 656,
+                  "kodCastiObce": 411591,
+                  "cisloOrientacni": 49,
+                  "nazevCastiObce": "Staré Brno",
+                  "kodAdresnihoMista": 19109717,
+                  "psc": 60200,
+                  "textovaAdresa": "Pellicova 656/49, Staré Brno, 60200 Brno",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1965-06-10",
+                "jmeno": "Radek",
+                "prijmeni": "Levíček",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2014-07-24",
+              "datumVymazu": "2014-12-11",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-01-01",
+                  "zanikClenstvi": "2014-11-11"
+                },
+                "funkce": {
+                  "zanikFunkce": "2014-11-11",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 29475,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Pellicova",
+                  "cisloDomovni": 656,
+                  "kodCastiObce": 411591,
+                  "cisloOrientacni": 49,
+                  "nazevCastiObce": "Staré Brno",
+                  "kodAdresnihoMista": 19109717,
+                  "psc": 60200,
+                  "textovaAdresa": "Pellicova 656/49, Staré Brno, 60200 Brno",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1965-06-10",
+                "jmeno": "RADEK",
+                "prijmeni": "LEVÍČEK",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2016-08-19",
+              "datumVymazu": "2021-08-07",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2016-06-08",
+                  "zanikClenstvi": "2021-06-08"
+                },
+                "funkce": {
+                  "vznikFunkce": "2016-06-08",
+                  "zanikFunkce": "2021-06-08",
+                  "nazev": "místopředseda představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 141,
+                  "nazevKraje": "Zlínský kraj",
+                  "kodOkresu": 3705,
+                  "nazevOkresu": "Zlín",
+                  "kodObce": 585068,
+                  "nazevObce": "Zlín",
+                  "kodUlice": 701581,
+                  "nazevUlice": "Podlesí IV",
+                  "cisloDomovni": 4960,
+                  "kodCastiObce": 412244,
+                  "nazevCastiObce": "Zlín",
+                  "kodAdresnihoMista": 4252136,
+                  "psc": 76005,
+                  "textovaAdresa": "Podlesí IV 4960, 76005 Zlín",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1981-08-16",
+                "jmeno": "DAVID",
+                "prijmeni": "STOPPANI",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2022-04-21",
+              "datumVymazu": "2023-08-18",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2021-12-17",
+                  "zanikClenstvi": "2023-07-12"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Černyševského 1274/13",
+                  "textovaAdresa": "Černyševského 1274/13, 85101 Bratislava, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "85101"
+                },
+                "datumNarozeni": "1981-07-17",
+                "jmeno": "PETER",
+                "prijmeni": "LAKATA",
+                "statniObcanstvi": "SK"
+              }
+            },
+            {
+              "datumZapisu": "2011-01-12",
+              "datumVymazu": "2011-08-03",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-01-01",
+                  "zanikClenstvi": "2011-07-27"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3809,
+                  "nazevOkresu": "Šumperk",
+                  "kodObce": 553221,
+                  "nazevObce": "Hrabová",
+                  "cisloDomovni": 42,
+                  "kodCastiObce": 46540,
+                  "nazevCastiObce": "Hrabová",
+                  "kodAdresnihoMista": 7987021,
+                  "psc": 78901,
+                  "textovaAdresa": "č.p. 42, 78901 Hrabová",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1975-12-22",
+                "jmeno": "Martin",
+                "prijmeni": "Skyva"
+              }
+            },
+            {
+              "datumZapisu": "2011-01-12",
+              "datumVymazu": "2011-05-20",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-01-04",
+                  "zanikClenstvi": "2011-05-04"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "textovaAdresa": "Bratislava, Ružinov, Mliekárenská 16009/3, PSČ 82109",
+                  "standardizaceAdresy": false
+                },
+                "datumNarozeni": "1965-10-23",
+                "jmeno": "Jaroslav",
+                "prijmeni": "Mašek",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2011-06-15",
+              "datumVymazu": "2012-11-20",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-06-08",
+                  "zanikClenstvi": "2012-10-31"
+                },
+                "funkce": {
+                  "vznikFunkce": "2011-06-08",
+                  "zanikFunkce": "2012-10-31",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 94,
+                  "nazevSpravnihoObvodu": "Praha 9",
+                  "kodMestskehoObvodu": 94,
+                  "nazevMestskehoObvodu": "Praha 9",
+                  "kodMestskeCastiObvodu": 500216,
+                  "kodUlice": 769894,
+                  "nazevMestskeCastiObvodu": "Praha 9",
+                  "nazevUlice": "Valečovská",
+                  "cisloDomovni": 837,
+                  "kodCastiObce": 400718,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Prosek",
+                  "kodAdresnihoMista": 26678527,
+                  "psc": 19000,
+                  "textovaAdresa": "Valečovská 837/1, Prosek, 19000 Praha 9",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1969-07-16",
+                "jmeno": "Miroslav",
+                "prijmeni": "Řezníček",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2011-06-15",
+              "datumVymazu": "2015-02-17",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2011-06-08"
+                },
+                "funkce": {
+                  "vznikFunkce": "2011-06-08",
+                  "zanikFunkce": "2015-02-04",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 141,
+                  "nazevKraje": "Zlínský kraj",
+                  "kodOkresu": 3705,
+                  "nazevOkresu": "Zlín",
+                  "kodObce": 585068,
+                  "nazevObce": "Zlín",
+                  "kodUlice": 701581,
+                  "nazevUlice": "Podlesí IV",
+                  "cisloDomovni": 4960,
+                  "kodCastiObce": 412244,
+                  "nazevCastiObce": "Zlín",
+                  "kodAdresnihoMista": 4252136,
+                  "psc": 76005,
+                  "textovaAdresa": "Podlesí IV 4960, 76005 Zlín",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1981-08-16",
+                "jmeno": "David",
+                "prijmeni": "Stoppani",
+                "titulPredJmenem": "Ing."
+              }
+            },
+            {
+              "datumZapisu": "2013-01-18",
+              "datumVymazu": "2014-03-26",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2012-12-13"
+                },
+                "funkce": {
+                  "vznikFunkce": "2012-12-13",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Podhorany",
+                  "nazevUlice": "Sokolníky 70",
+                  "textovaAdresa": "Sokolníky 70, 95146 Podhorany, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "95146"
+                },
+                "datumNarozeni": "1972-01-14",
+                "jmeno": "Marek",
+                "prijmeni": "Grác"
+              }
+            },
+            {
+              "datumZapisu": "2014-03-26",
+              "datumVymazu": "2018-01-25",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2012-12-13",
+                  "zanikClenstvi": "2017-12-12"
+                },
+                "funkce": {
+                  "vznikFunkce": "2012-12-13",
+                  "zanikFunkce": "2017-12-12",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava-Ružinov",
+                  "nazevUlice": "Stredná 18049/27",
+                  "textovaAdresa": "Stredná 18049/27, 82104 Bratislava-Ružinov, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "82104"
+                },
+                "datumNarozeni": "1972-01-14",
+                "jmeno": "MAREK",
+                "prijmeni": "GRÁC"
+              }
+            },
+            {
+              "datumZapisu": "2013-01-18",
+              "datumVymazu": "2014-03-26",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2012-12-13",
+                  "zanikClenstvi": "2014-02-28"
+                },
+                "funkce": {
+                  "vznikFunkce": "2012-12-13",
+                  "zanikFunkce": "2014-02-28",
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Bratislava",
+                  "nazevUlice": "Pod záhradami 3201/64A",
+                  "textovaAdresa": "Pod záhradami 3201/64A, 84102 Bratislava, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "84102"
+                },
+                "datumNarozeni": "1963-02-27",
+                "jmeno": "Tomáš",
+                "prijmeni": "Osuský"
+              }
+            },
+            {
+              "datumZapisu": "2024-01-24",
+              "typAngazma": "STATUTARNI_ORGAN_CLEN",
+              "clenstvi": {
+                "clenstvi": {
+                  "vznikClenstvi": "2024-01-01"
+                },
+                "funkce": {
+                  "nazev": "člen představenstva"
+                }
+              },
+              "nazevAngazma": "Člen statutárního orgánu",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 35,
+                  "nazevKraje": "Jihočeský kraj",
+                  "kodOkresu": 3302,
+                  "nazevOkresu": "Český Krumlov",
+                  "kodObce": 545392,
+                  "nazevObce": "Český Krumlov",
+                  "kodUlice": 83895,
+                  "nazevUlice": "Pod Horou",
+                  "cisloDomovni": 274,
+                  "kodCastiObce": 22969,
+                  "nazevCastiObce": "Horní Brána",
+                  "kodAdresnihoMista": 8678791,
+                  "psc": 38101,
+                  "textovaAdresa": "Pod Horou 274, Horní Brána, 38101 Český Krumlov",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1975-09-24",
+                "jmeno": "DAVID",
+                "prijmeni": "ŠINDELÁŘ",
+                "statniObcanstvi": "CZ"
+              }
+            }
+          ],
+          "typOrganu": "STATUTARNI_ORGAN",
+          "nazevAngazma": "Statutární orgán - představenstvo",
+          "typAngazma": "STATUTARNI_ORGAN",
+          "zpusobJednani": [
+            {
+              "datumZapisu": "2015-12-31",
+              "hodnota": "Za společnost jednají ve všech záležitostech členové představenstva, a to vždy dva (2) členové představenstva společně. Podepisují se tak, že k napsané nebo natištěné obchodní firmě připojí svůj podpis spolu s označením své funkce.\nNení-li právním jednáním vůči zaměstnancům společnosti pověřen jiný člen představenstva, vykonává tuto působnost předseda představenstva."
+            },
+            {
+              "datumZapisu": "2003-08-06",
+              "datumVymazu": "2004-03-01",
+              "hodnota": "Za představenstvo jedná navenek jménem společnosti předseda představenstva samostatně nebo místopředseda představesntva samostatně. Má-li společnost jediného akcionáře a jednoho člena představenstva, jedná jménem společnosti tento jediný člen představenstva samostatně.\n\nPodepisování za společnost se provádí tak, že k vytištěnému nebo jinak vyznačenému obchodní firmě společnosti připojí svůj podpis předseda představenstva nebo místopředseda představesntva. Má-li společnost jediného akcionáře a jednoho člena představenstva, připojí svůj podpis tento jediný člen představenstva."
+            },
+            {
+              "datumZapisu": "2004-03-01",
+              "datumVymazu": "2005-02-02",
+              "hodnota": "Jménem společnosti jedná ve všech záležitostech představenstvo, a to každý člen představenstva samostatně.\nPři podepisování za společnost připojí svůj podpis k vytištěné nebo napsané obchodní firmě společnosti osoby oprávněné jednat jménem společnosti, a to každý člen představenstva samostatně."
+            },
+            {
+              "datumZapisu": "2005-02-02",
+              "datumVymazu": "2015-12-31",
+              "hodnota": "Jménem společnosti jedná ve všech záležitostech představenstvo, a to vždy dva členové představenstva společně.\nPři podepisování za společnost připojí svůj podpis k vytištěné nebo napsané obchodní firmě společnosti osoby oprávněné jednat jménem společnosti, a to vždy dva členové představenstva společně."
+            }
+          ]
+        },
+        {
+          "datumZapisu": "2011-11-29",
+          "nazevOrganu": "Prokura",
+          "clenoveOrganu": [
+            {
+              "datumZapisu": "2019-02-13",
+              "datumVymazu": "2020-04-01",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {},
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 35,
+                  "nazevKraje": "Jihočeský kraj",
+                  "kodOkresu": 3302,
+                  "nazevOkresu": "Český Krumlov",
+                  "kodObce": 545392,
+                  "nazevObce": "Český Krumlov",
+                  "kodUlice": 83895,
+                  "nazevUlice": "Pod Horou",
+                  "cisloDomovni": 274,
+                  "kodCastiObce": 22969,
+                  "nazevCastiObce": "Horní Brána",
+                  "kodAdresnihoMista": 8678791,
+                  "psc": 38101,
+                  "textovaAdresa": "Pod Horou 274, Horní Brána, 38101 Český Krumlov",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1975-09-24",
+                "jmeno": "DAVID",
+                "prijmeni": "ŠINDELÁŘ",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2015-02-17",
+              "datumVymazu": "2019-02-13",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a podepisuje samostatně."
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 551279,
+                  "kodUlice": 30341,
+                  "nazevMestskeCastiObvodu": "Brno-Vinohrady",
+                  "nazevUlice": "Prušánecká",
+                  "cisloDomovni": 4148,
+                  "kodCastiObce": 490415,
+                  "cisloOrientacni": 17,
+                  "nazevCastiObce": "Židenice",
+                  "kodAdresnihoMista": 19573090,
+                  "psc": 62800,
+                  "textovaAdresa": "Prušánecká 4148/17, Židenice, 62800 Brno",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1971-07-28",
+                "jmeno": "MICHAL",
+                "prijmeni": "POLEHŇA",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2014-12-11",
+              "datumVymazu": "2015-12-31",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a podepisuje samostatně."
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3201,
+                  "nazevOkresu": "Benešov",
+                  "kodObce": 529303,
+                  "nazevObce": "Benešov",
+                  "kodUlice": 689351,
+                  "nazevUlice": "Villaniho",
+                  "cisloDomovni": 2155,
+                  "kodCastiObce": 400947,
+                  "nazevCastiObce": "Benešov",
+                  "kodAdresnihoMista": 25416146,
+                  "psc": 25601,
+                  "textovaAdresa": "Villaniho 2155, 25601 Benešov",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1965-10-31",
+                "jmeno": "HANA",
+                "prijmeni": "CHMIELOVÁ",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2020-11-11",
+              "datumVymazu": "2021-08-07",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a  podepisuje samostatně."
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3202,
+                  "nazevOkresu": "Beroun",
+                  "kodObce": 533963,
+                  "nazevObce": "Skřipel",
+                  "cisloDomovni": 63,
+                  "kodCastiObce": 148911,
+                  "nazevCastiObce": "Skřipel",
+                  "kodAdresnihoMista": 79935940,
+                  "psc": 26724,
+                  "textovaAdresa": "č.p. 63, 26724 Skřipel",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1955-07-31",
+                "jmeno": "HANA",
+                "prijmeni": "BEČKOVÁ",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2022-07-28",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a podepisuje samostatně."
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 550973,
+                  "kodUlice": 24716,
+                  "nazevMestskeCastiObvodu": "Brno-střed",
+                  "nazevUlice": "Jaselská",
+                  "cisloDomovni": 207,
+                  "kodCastiObce": 411639,
+                  "cisloOrientacni": 29,
+                  "nazevCastiObce": "Veveří",
+                  "kodAdresnihoMista": 19166605,
+                  "psc": 60200,
+                  "textovaAdresa": "Jaselská 207/29, Veveří, 60200 Brno",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1981-10-21",
+                "jmeno": "JIŘÍ",
+                "prijmeni": "WINKLER",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2020-04-01",
+              "datumVymazu": "2024-01-24",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a podepisuje samostatně."
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 35,
+                  "nazevKraje": "Jihočeský kraj",
+                  "kodOkresu": 3302,
+                  "nazevOkresu": "Český Krumlov",
+                  "kodObce": 545392,
+                  "nazevObce": "Český Krumlov",
+                  "kodUlice": 83895,
+                  "nazevUlice": "Pod Horou",
+                  "cisloDomovni": 274,
+                  "kodCastiObce": 22969,
+                  "nazevCastiObce": "Horní Brána",
+                  "kodAdresnihoMista": 8678791,
+                  "psc": 38101,
+                  "textovaAdresa": "Pod Horou 274, Horní Brána, 38101 Český Krumlov",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1975-09-24",
+                "jmeno": "DAVID",
+                "prijmeni": "ŠINDELÁŘ",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2011-11-29",
+              "datumVymazu": "2017-11-30",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a  podepisuje samostatně."
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3202,
+                  "nazevOkresu": "Beroun",
+                  "kodObce": 531057,
+                  "nazevObce": "Beroun",
+                  "kodUlice": 738905,
+                  "nazevUlice": "K Dubu",
+                  "cisloDomovni": 1714,
+                  "kodCastiObce": 401901,
+                  "nazevCastiObce": "Beroun-Město",
+                  "kodAdresnihoMista": 26179741,
+                  "psc": 26601,
+                  "textovaAdresa": "K Dubu 1714, Beroun-Město, 26601 Beroun",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1955-07-31",
+                "jmeno": "Hana",
+                "prijmeni": "Bečková"
+              }
+            },
+            {
+              "datumZapisu": "2017-11-30",
+              "datumVymazu": "2020-11-11",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a  podepisuje samostatně."
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 27,
+                  "nazevKraje": "Středočeský kraj",
+                  "kodOkresu": 3202,
+                  "nazevOkresu": "Beroun",
+                  "kodObce": 531057,
+                  "nazevObce": "Beroun",
+                  "kodUlice": 738905,
+                  "nazevUlice": "K Dubu",
+                  "cisloDomovni": 1714,
+                  "kodCastiObce": 401901,
+                  "nazevCastiObce": "Beroun-Město",
+                  "kodAdresnihoMista": 26179741,
+                  "psc": 26601,
+                  "textovaAdresa": "K Dubu 1714, Beroun-Město, 26601 Beroun",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1955-07-31",
+                "jmeno": "HANA",
+                "prijmeni": "BEČKOVÁ",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2022-04-21",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a podepisuje samostatně."
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 551279,
+                  "kodUlice": 30341,
+                  "nazevMestskeCastiObvodu": "Brno-Vinohrady",
+                  "nazevUlice": "Prušánecká",
+                  "cisloDomovni": 4148,
+                  "kodCastiObce": 490415,
+                  "cisloOrientacni": 17,
+                  "nazevCastiObce": "Židenice",
+                  "kodAdresnihoMista": 19573090,
+                  "psc": 62800,
+                  "textovaAdresa": "Prušánecká 4148/17, Židenice, 62800 Brno",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1971-07-28",
+                "jmeno": "MICHAL",
+                "prijmeni": "POLEHŇA",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2020-09-15",
+              "datumVymazu": "2021-12-28",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a podepisuje samostatně"
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 116,
+                  "nazevKraje": "Jihomoravský kraj",
+                  "kodOkresu": 3702,
+                  "nazevOkresu": "Brno-město",
+                  "kodObce": 582786,
+                  "nazevObce": "Brno",
+                  "kodMestskeCastiObvodu": 551007,
+                  "kodUlice": 34193,
+                  "nazevMestskeCastiObvodu": "Brno-Královo Pole",
+                  "nazevUlice": "Vackova",
+                  "cisloDomovni": 1352,
+                  "kodCastiObce": 411965,
+                  "cisloOrientacni": 51,
+                  "nazevCastiObce": "Královo Pole",
+                  "kodAdresnihoMista": 19705981,
+                  "psc": 61200,
+                  "textovaAdresa": "Vackova 1352/51, Královo Pole, 61200 Brno",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1969-08-10",
+                "jmeno": "FILIP",
+                "prijmeni": "KADEŘÁBEK",
+                "statniObcanstvi": "CZ"
+              }
+            },
+            {
+              "datumZapisu": "2013-01-18",
+              "datumVymazu": "2014-03-26",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {},
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Banská Bystrica",
+                  "nazevUlice": "Javornícka 10",
+                  "textovaAdresa": "Javornícka 10, 97411 Banská Bystrica, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "97411"
+                },
+                "datumNarozeni": "1959-05-23",
+                "jmeno": "Ľubomír",
+                "prijmeni": "Libič"
+              }
+            },
+            {
+              "datumZapisu": "2014-03-26",
+              "datumVymazu": "2014-09-09",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {},
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "SK",
+                  "nazevStatu": "Slovensko",
+                  "nazevObce": "Banská Bystrica - Sásová",
+                  "nazevUlice": "Rudohorská 6449/28",
+                  "textovaAdresa": "Rudohorská 6449/28, 97411 Banská Bystrica - Sásová, Slovensko",
+                  "standardizaceAdresy": false,
+                  "pscTxt": "97411"
+                },
+                "datumNarozeni": "1959-05-23",
+                "jmeno": "ĽUBOMÍR",
+                "prijmeni": "LIBIČ"
+              }
+            },
+            {
+              "datumZapisu": "2024-01-24",
+              "typAngazma": "PROKURA_OSOBA",
+              "clenstvi": {
+                "textZaOsobu": "Prokurista jedná a podepisuje samostatně."
+              },
+              "nazevAngazma": "Prokura",
+              "fyzickaOsoba": {
+                "adresa": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 108,
+                  "nazevKraje": "Kraj Vysočina",
+                  "kodOkresu": 3714,
+                  "nazevOkresu": "Žďár nad Sázavou",
+                  "kodObce": 595209,
+                  "nazevObce": "Žďár nad Sázavou",
+                  "kodUlice": 655775,
+                  "nazevUlice": "Špálova",
+                  "cisloDomovni": 1511,
+                  "kodCastiObce": 412856,
+                  "cisloOrientacni": 3,
+                  "nazevCastiObce": "Žďár nad Sázavou 7",
+                  "kodAdresnihoMista": 3417280,
+                  "psc": 59101,
+                  "textovaAdresa": "Špálova 1511/3, Žďár nad Sázavou 7, 59101 Žďár nad Sázavou",
+                  "typCisloDomovni": "1",
+                  "standardizaceAdresy": true
+                },
+                "datumNarozeni": "1980-11-18",
+                "jmeno": "JAN",
+                "prijmeni": "ŠTEIDL",
+                "statniObcanstvi": "CZ"
+              }
+            }
+          ],
+          "typOrganu": "PROKURA",
+          "nazevAngazma": "Prokura",
+          "typAngazma": "PROKURA"
+        }
+      ]
+    }
+  ]
+}
